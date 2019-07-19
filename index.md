@@ -7,4 +7,7 @@ title: Home
 permalink: /index/
 ---
 
+<div class="site-header">
 <h1>{{ "Hello World!" | downcase }}</h1>
+<h2> Single-page Home </h2>
+</div>
