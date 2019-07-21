@@ -68,22 +68,29 @@
   color: rgb(27, 182, 27);
 }
 
+/* footer.html ---------------------------------------*/
+.footer{
+  padding: 2em 6em;
+  margin-top: 
+  background-color:  #F1E0C5;
+
+}
+
 /* Home Page ---------------------------------------*/
 .main-container{
   display: grid;
   grid-template-columns: 2.3vw auto 6vw;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: auto repeat(6, 1fr) auto;
   z-index: 15;
 }
 
 .center-container{
   grid-column: 2;
-  grid-row: 1 / span 6;
+  grid-row: 1;
   min-width: 70vw;
   padding: 2em 7em 8em;
   bottom: 0;
   background-color: #FCFCFC;
-
 }
 
 body{
