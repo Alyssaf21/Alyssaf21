@@ -11,6 +11,21 @@ permalink: /index/
 <div class="site-header">
     <h2> Come back in a few days to see the real thing </h2>
 </div>
+
+<ul class="projects-section">
+    {% for block in site.data.my-projects.projects %}
+    <li> 
+        <div class="project-name">
+            {{ block.name }}
+        </div>
+        <div class="project-info">
+            {{ block.status }} <hr>
+            {{ block.type }} <hr>
+            {{ block.platform }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
 <!-- 
         {% for project in site.data.projects %}
         <div class="section">

@@ -1,0 +1,50 @@
+---
+projects:
+  - name: Starbird
+    status: complete
+    type: game
+    tools: 
+      - html
+      - css
+      - javascript
+      - jquery
+    platform: web
+  
+  - name: Sharebio
+    status: incomplete
+    type: website
+    tools: 
+      - php
+      - html
+      - css
+      - yii2
+    platform: web
+
+  - name: Video Narrative
+    status: complete
+    type: video
+    tools: 
+      - photoshop
+      - windows movie maker
+    platform: n/a
+
+  - name: Stardew Sprite Generator
+    status: incomplete
+    type: web app
+    tools: 
+      - html
+      - css
+      - javascript
+    platform: web
+
+  - name: Portfolio Site
+    status: incomplete
+    type: website
+    tools: 
+      - html
+      - css
+      - scss
+      - jekyll
+    platform: web
+
+
