@@ -1,0 +1,19 @@
+$content-width: 800px;
+$primary: #96acb7;
+$secondary: #36558f;
+$tertiary: #40376e;
+$light: #d4e4bc;
+$dark: #3b2534;
+$font-style: 'Open Sans', sans-serif;
+$link-color: #425469;
+$heading-font: 'Muli', sans-serif;
+$header: #1d1425;
+$font-bgcolor: rgb(248, 248, 207); 
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

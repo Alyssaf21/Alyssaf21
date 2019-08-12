@@ -7,6 +7,10 @@ title: Home
 permalink: /index/
 ---
 
+{% include hero.html %}
+
+<div class="main-container">
+<div class="center-container">
 
 <div class="site-header">
     <h2> Come back in a few days to see the real thing </h2>
@@ -19,8 +23,10 @@ permalink: /index/
             {{ block.name }}
         </div>
         <div class="project-info">
-            {{ block.status }} <hr>
-            {{ block.type }} <hr>
+            <btn class="status-btn">
+                {{ block.status }}
+            </btn>
+            {{ block.type }}
             {{ block.platform }}
         </div>
         <div class="project-desc">
@@ -29,20 +35,6 @@ permalink: /index/
     </li>
     {% endfor %}
 </ul>
-<!-- 
-        {% for project in site.data.projects %}
-        <div class="section">
-            <div class="section-text">
-                <h3>
-                    {{ project.name }}
-                </h3>
-                <hr>
-                <p>
-                    {{ project.descr }}
-                </p>
-            </div>
-            <div class="section-image">
-                <img src="{{ project.image }}" </div> </div>
-        {% endfor %}
 
--->
+</div>
+</div>
