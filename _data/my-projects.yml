@@ -9,6 +9,7 @@ projects:
       - javascript
       - jquery
     platform: web
+    desc: "A platformer game about a bird. In space. It's pretty cool- and I did all of the graphics and animations!"
   
   - name: Sharebio
     status: incomplete
@@ -19,6 +20,7 @@ projects:
       - css
       - yii2
     platform: web
+    desc: "An intercollegiate bioinformatics platform. Worked on version II of the site with Dr. Jones this past summer."
 
   - name: Video Narrative
     status: complete
@@ -27,6 +29,7 @@ projects:
       - photoshop
       - windows movie maker
     platform: n/a
+    desc: "Highlights from a personal narrative project about struggling with faith. A total of 300 hand-animated frames were used in the final cut."
 
   - name: Stardew Sprite Generator
     status: incomplete
@@ -36,6 +39,7 @@ projects:
       - css
       - javascript
     platform: web
+    desc: "Recreates the character builder in the beginning of Stardew valley. Added some additional customization options as well."
 
   - name: Portfolio Site
     status: incomplete
@@ -46,5 +50,6 @@ projects:
       - scss
       - jekyll
     platform: web
+    desc: "A site that showcases a selection of the artwork I have done over the past couple years. Mixed media stuff stemming from a variety of assignments and personal endeavors."
 
 
