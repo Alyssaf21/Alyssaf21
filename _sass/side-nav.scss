@@ -1,4 +1,68 @@
 // navbar
+.mysidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 90px;  
+}
+
+.mysidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mysidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mysidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin-top: .75em;
+    color: white;
+    background-color: #2ea6af;
+    border-radius: 15px;
+    width: 260px;
+    height: 1.4em;
+    text-align: left;
+    padding: 0;
+    padding-left: 16px;
+    font-size: 30px;
+}
+
+
+#open-btn {
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-left: 1em;
+    background-color: $secondary;
+    border-radius: 15px;
+    width: 1.4em;
+    height: 1.4em;
+    text-align: center;
+    padding: 5px;
+    margin-top: .75em;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*
+
+
 
 #navbar {
   font-size: .85em;
@@ -44,4 +108,4 @@
 
 #navbar a:last-child::after {
     display: none;
-}
+}*/

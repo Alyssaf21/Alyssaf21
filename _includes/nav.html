@@ -1,5 +1,5 @@
-<nav id="navbar">
-    <div id="inner-nav">
+<nav id="side-nav" class="mysidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#home" class="nav-btn">
         Home
     </a>
@@ -15,5 +15,16 @@
     <a href="#docs" class="nav-btn">
         Docs
     </a>
-    </div>
 </nav>
+
+<script>
+    function openNav() {
+        document.getElementById("side-nav").style.width = "250px";
+        document.getElementById("main-container").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("side-nav").style.width = "0";
+        document.getElementById("main-container").style.marginLeft = "0";
+    }
+</script>
