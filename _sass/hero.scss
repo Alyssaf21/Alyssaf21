@@ -26,13 +26,13 @@
 	padding: 1em;
 	box-sizing: border-box;
 	color: white;
-	background: url(../assets/images/clouds.jpg) center center no-repeat;
+	background: url(../assets/images/library_11.gif) center center no-repeat;
 	background-size: cover;
 }
 
 .hero-header {
-    margin-top: -30vh;
-    margin-left: 2vw;
+    margin-bottom: -30vh;
+    margin-right: 2vw;
 }
 
 .hero-title,
@@ -40,15 +40,18 @@
 	max-width: 16em;
 	margin: 0;
 	font-size: 12vh;
-	font-weight: bold;
+	font-weight: 500;
 	line-height: .9;
+	color: $dark;
+//    font-family: $font-family-secondary;
 }
 
 .hero-title-alt {
     color: $primary;
-    background-color: $tertiary;
+    background-color: $accent;
     display: inline-block;
-    padding: 9px 9px 6px 9px;
+    padding: 9px 9px 1px 9px;
+    font-weight: 700!important;
 }
 	
 @media only screen and (min-width: 32em) { .hero-title { font-size: 14vh; } }	
@@ -63,10 +66,14 @@
 	color: white;
 	text-decoration: none;
 	border: .1em solid white;
-
 }
 
 .button-primary {
 	color: black;
 	background-color: white;
+}
+
+#logo {
+    font-weight: 400;
+    color: $secondary;
 }

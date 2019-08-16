@@ -1,49 +1,77 @@
-// navbar
+// Project Tile
 
-#navbar {
-  font-size: .85em;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  margin: 25% 4%;
-  right: 0;
+h2 {
+  padding-left: 38px;
+  text-align: center;
 }
 
-#inner-nav {    
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
+.projects-section {
+  padding-top: 2em;
+}
+
+.project-tile {
+  display: grid; 
+  grid-template-columns: 5em 1fr;
+  column-gap: 2rem;
+  border: 2px solid $secondary;
+  margin-top: 1em;
+  padding: 1.5em;
+}
+
+.project-icon {
+  grid-column: 1;
+  grid-row: 1/4;
   height: 100%;
-  filter: invert(80%);
-  background-color: beige;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.project-name {
+  align-self: center;
+  grid-row: 1;
+  font-size: 1.2em;
+  color: $accent;
+  background-color: $dark;
+  display: block;
+  grid-column: 2;
+  font-weight: 700;
+}
+
+.project-info, .project-desc {
+  grid-column: 2; 
+}
+
+.status-btn {
+  grid-row: 1;
+  justify-self: end;
+  border: 2px solid #a6808c;
+  color: #a6808c;
+  padding: .2em .5em;
+  text-align: center;
+  border-radius: 10px;
+  font-size: .75em;
+}
+
+// Footer
+
+.footer {
   display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  padding: 7px 0;
+  padding: 1em 3em;
+  text-align: center;
+  background-color: $dark;
 }
 
-#navbar a {
-    padding: .5em;
-    text-decoration: none !important;
-    color: $light;
-    text-align: center;
+.footer > * {
+  color: $primary;
 }
 
-#navbar a::after {
-    height: 2em;
-    width: .2em;
-    background-color: $dark;
-    content: " ";
-    display: block;
-    margin: auto;
-    margin-top: .5em;
+.footer > *::after {
+  content: "|";
+  margin: 0 2em;
+  height: 1em;
+  width: 2px;
 }
-
-#navbar a:last-child::after {
-    display: none;
-}
-
 
 
 /*

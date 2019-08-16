@@ -1,6 +1,7 @@
 ---
 projects:
   - name: Starbird
+    icon: "../assets/images/hurt-bird.gif"
     status: complete
     type: game
     tools: 
@@ -12,6 +13,7 @@ projects:
     desc: "A platformer game about a bird. In space. It's pretty cool- and I did all of the graphics and animations!"
   
   - name: Sharebio
+    icon: "../assets/images/funk.png"
     status: incomplete
     type: website
     tools: 
@@ -23,6 +25,7 @@ projects:
     desc: "An intercollegiate bioinformatics platform. Worked on version II of the site with Dr. Jones this past summer."
 
   - name: Video Narrative
+    icon: "../assets/images/funk.png"
     status: complete
     type: video
     tools: 
@@ -32,6 +35,7 @@ projects:
     desc: "Highlights from a personal narrative project about struggling with faith. A total of 300 hand-animated frames were used in the final cut."
 
   - name: Stardew Sprite Generator
+    icon: "../assets/images/funk.png"
     status: incomplete
     type: web app
     tools: 

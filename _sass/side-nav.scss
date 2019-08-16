@@ -1,0 +1,47 @@
+// navbar
+
+#navbar {
+  font-size: .85em;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+    right: 0;
+    top: 0;
+    margin-right: .75em;
+    margin-top: 3em;
+}
+
+#inner-nav {    
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+  filter: opacity(70%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 7px 0;
+}
+
+#navbar a {
+    padding: .5em;
+    text-decoration: none !important;
+    color: $dark;
+    text-align: center;
+}
+
+#navbar a::after {
+    height: 2em;
+    width: .2em;
+    background-color: $accent;
+    content: " ";
+    display: block;
+    margin: auto;
+    margin-top: .5em;
+}
+
+#navbar a:last-child::after {
+    display: none;
+}

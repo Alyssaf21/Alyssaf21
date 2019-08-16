@@ -16,16 +16,19 @@ permalink: /index/
     <h2> Come back in a few days to see the real thing </h2>
 </div>
 
-<ul class="projects-section">
-    {% for block in site.data.my-projects.projects %}
-    <li> 
+<ul id="projects" class="projects-section"> 
+    {% for block in site.data.my-projects.projects %} 
+    <li class="project-tile"> 
+
+        <div class="project-icon" style=" background-image: url('{{ block.icon | asset_url }}')"> </div>
+
         <div class="project-name">
             {{ block.name }}
         </div>
+        <btn class="status-btn">
+            {{ block.status }}
+        </btn>
         <div class="project-info">
-            <btn class="status-btn">
-                {{ block.status }}
-            </btn>
             {{ block.type }}
             {{ block.platform }}
         </div>

@@ -132,14 +132,35 @@ h2 {
 
 h1 {
   color: #1E2749; }*/
+html {
+  font-family: $font-family-primary;
+}
 
 body {
-  background-color: $primary;
+  background-color: $light;
   margin: 0;
 }
 
 // main container
 
 .main-container {
-  padding: 5px;
+    width: 60%;
+    min-width: 465px;
+    margin: auto;
+    margin-top: 5em;
+    line-height: 1.3em;
 }
+
+
+::-webkit-scrollbar {
+  width: .5em; }
+
+::-webkit-scrollbar-track {
+  background: transparent url("../assets/images/scrollbar.png") repeat-y !important; }
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent url("../assets/images/scrollbar.png") repeat-y !important; }
+
+::-webkit-scrollbar-thumb {
+  background-color: $dark; }
+
