@@ -7,24 +7,35 @@ title: Home
 permalink: /index/
 ---
 
+{% include hero.html %}
 
+<div id="center-container">
+<span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&plus;</span>
 <div class="site-header">
     <h2> Come back in a few days to see the real thing </h2>
 </div>
-<!-- 
-        {% for project in site.data.projects %}
-        <div class="section">
-            <div class="section-text">
-                <h3>
-                    {{ project.name }}
-                </h3>
-                <hr>
-                <p>
-                    {{ project.descr }}
-                </p>
-            </div>
-            <div class="section-image">
-                <img src="{{ project.image }}" </div> </div>
-        {% endfor %}
 
--->
+<ul id="projects" class="projects-section"> 
+    {% for block in site.data.my-projects.projects %} 
+    <li class="project-tile"> 
+
+        <div class="project-icon" style=" background-image: url('{{ block.icon | asset_url }}')"> </div>
+
+        <div class="project-name">
+            {{ block.name }}
+        </div>
+        <btn class="status-btn">
+            {{ block.status }}
+        </btn>
+        <div class="project-info">
+            {{ block.type }}
+            {{ block.platform }}
+        </div>
+        <div class="project-desc">
+            {{ block.desc }}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+</div>

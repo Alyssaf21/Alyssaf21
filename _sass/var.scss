@@ -1,0 +1,22 @@
+$content-width: 800px;
+$primary: #D6EFFF;
+$secondary: #2ea6af;
+$accent: #fb517d;
+$light: #fffdfa;
+$dark: #444470;
+$font-style: 'Open Sans', sans-serif;
+$muted-light: #7C90A0;
+$muted-alt: #fffdfa;
+$heading-font: 'Muli', sans-serif;
+$header: #1d1425;
+$font-bgcolor: rgb(248, 248, 207); 
+$font-family-primary: 'Lexend Deca', sans-serif;
+$font-family-secondary: 'Crimson Pro', sans-serif;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

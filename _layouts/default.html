@@ -4,19 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title> 
-    <link rel="stylesheet" href="../main.css"> 
+    <link rel="stylesheet" href="../css/styles.css"> 
     <link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro|Lexend+Deca&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    {% include navigation.html %}
-    {% include splash.html %}
-    <div class="main-container">
-        <div class="center-container">
+    {% include nav.html %}
+    <div id="main-container">
+        
     {{ content }}
-    </div>
-    </div>
     {% include footer.html %}
+    </div>
 </body>
 
 </html>

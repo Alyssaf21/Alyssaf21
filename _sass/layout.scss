@@ -1,0 +1,80 @@
+// Project Tile
+
+h2 {
+  padding-left: 38px;
+  text-align: center;
+}
+
+.projects-section {
+  padding-top: 2em;
+  padding: 1em;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.project-tile {
+  display: grid; 
+  grid-template-columns: 5em 1fr;
+  column-gap: 2rem;
+  border: 2px solid $secondary;
+  margin-top: 1em;
+  padding: 1.5em;
+}
+
+.project-icon {
+  grid-column: 1;
+  grid-row: 1/4;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  min-width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.project-name {
+  align-self: center;
+  grid-row: 1;
+  font-size: 1.2em;
+  color: $accent;
+  background-color: $dark;
+  display: block;
+  grid-column: 2;
+  font-weight: 700;
+}
+
+.project-info, .project-desc {
+  grid-column: 2; 
+}
+
+.status-btn {
+  grid-row: 1;
+  justify-self: end;
+  border: 2px solid #a6808c;
+  color: #a6808c;
+  padding: .2em .5em;
+  text-align: center;
+  border-radius: 10px;
+  font-size: .75em;
+}
+
+// Footer
+
+.footer {
+  display: flex;
+  padding: 1em 3em;
+  text-align: center;
+  background-color: $dark;
+}
+
+.footer > * {
+  color: $primary;
+}
+
+.footer > *::after {
+  content: "|";
+  margin: 0 2em;
+  height: 1em;
+  width: 2px;
+}
