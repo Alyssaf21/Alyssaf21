@@ -10,7 +10,9 @@ projects:
       - javascript
       - jquery
     platform: web
-    desc: "A platformer game about a bird. In space. It's pretty cool- and I did all of the graphics and animations!"
+    desc: "A game about a bird. In space. Starbird is a small browser platformer made with HTML, 
+          CSS and Javascript. I created of all of the graphics, animations, and web design going 
+          into the site, as well as several of the backend components using JS."
   
   - name: Sharebio
     icon: "../assets/images/funk.png"
@@ -22,7 +24,10 @@ projects:
       - css
       - yii2
     platform: web
-    desc: "An intercollegiate bioinformatics platform. Worked on version II of the site with Dr. Jones this past summer."
+    desc: "Sharebio is a research-sharing platform for biology undergraduate students and 
+          faculty. Over the course of the summer, I've been extensively 
+          testing, debugging, redesigning and adding new features to Sharebio and will continue 
+          to oversee its development through its relaunch this fall. ."
 
   - name: Video Narrative
     icon: "../assets/images/funk.png"
@@ -32,21 +37,14 @@ projects:
       - photoshop
       - windows movie maker
     platform: n/a
-    desc: "Highlights from a personal narrative project about struggling with faith. A total of 300 hand-animated frames were used in the final cut."
-
-  - name: Stardew Sprite Generator
-    icon: "../assets/images/funk.png"
-    status: incomplete
-    type: web app
-    tools: 
-      - html
-      - css
-      - javascript
-    platform: web
-    desc: "Recreates the character builder in the beginning of Stardew valley. Added some additional customization options as well."
+    desc: "The sum total of over 300 hand-drawn frames, this project originated as
+          a Writing II midterm that changed into something else entirely. I used my ipod to 
+          take pictures of the backgrounds and modified them in photoshop, which is also where 
+          I drew and animated the sketch and paper layers to go on top. "
 
   - name: Portfolio Site
     status: incomplete
+    icon: "../assets/images/funk.png"
     type: website
     tools: 
       - html
@@ -54,6 +52,7 @@ projects:
       - scss
       - jekyll
     platform: web
-    desc: "A site that showcases a selection of the artwork I have done over the past couple years. Mixed media stuff stemming from a variety of assignments and personal endeavors."
+    desc: "A site that showcases a selection of the artwork I have done over the past couple years. 
+          Mixed media stuff stemming from a variety of assignments and personal endeavors."
 
 

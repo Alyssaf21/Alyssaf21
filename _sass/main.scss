@@ -10,27 +10,27 @@ body {
 // main container
 
 #main-container {
-  width: 100%;
+  width: auto;
   min-width: 465px;
   line-height: 1.3em;
   transition: margin-left .5s;
   overflow-x: hidden;
 }
 
-.center-container {
+#center-container {
   margin-top: 5em;
 }
 
 
-
 ::-webkit-scrollbar {
-  width: .5em; }
+  width: .5em;
+  margin-right: -.5em; }
 
 ::-webkit-scrollbar-track {
-  background: transparent url("../assets/images/scrollbar.png") repeat-y !important; }
+  background: transparent url("../assets/images/blank.png") repeat-y !important; }
 
 ::-webkit-scrollbar-track-piece:end {
-  background: transparent url("../assets/images/scrollbar.png") repeat-y !important; }
+  background: transparent url("../assets/images/blank.png") repeat-y !important; }
 
 ::-webkit-scrollbar-thumb {
   background-color: $dark; }
