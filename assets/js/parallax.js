@@ -1,4 +1,4 @@
-var parallax = document.querySelector(".hero");
+var parallax = document.querySelector(".parallax");
 
 window.addEventListener("scroll", function () {
 
