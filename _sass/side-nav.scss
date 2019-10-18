@@ -46,14 +46,14 @@
     top: 0;
     left: 0;
     position: fixed;
-    margin-left: 1em;
     background-color: $secondary;
     border-radius: 15px;
-    width: 1.4em;
+    width: 240px;
     height: 1.4em;
     text-align: center;
     padding: 5px;
     margin-top: .75em;
+    margin-left: -10px;
 }
 
 @media screen and (max-height: 450px) {
