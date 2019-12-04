@@ -1,7 +1,7 @@
 ---
 projects:
   - name: Starbird
-    icon: "../assets/images/hurt-bird.gif"
+    icon: "../assets/images/funk.png"
     status: complete
     type: game
     tools: 

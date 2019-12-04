@@ -16,7 +16,7 @@ h2 {
   display: grid; 
   grid-template-columns: 5em 1fr;
   column-gap: 2rem;
-  border: 2px solid $secondary;
+  //border: 2px solid $secondary;
   margin-top: 1em;
   padding: 1.5em;
 }
@@ -38,10 +38,10 @@ h2 {
   grid-row: 1;
   font-size: 1.2em;
   color: $accent;
-  background-color: $dark;
   display: block;
   grid-column: 2;
   font-weight: 700;
+  margin-bottom: .75em;
 }
 
 .project-info, .project-desc {
@@ -63,18 +63,32 @@ h2 {
 
 .footer {
   display: flex;
-  padding: 1em 3em;
-  text-align: center;
+  padding: 2em 5em;
+  /*text-align: center;*/
   background-color: $dark;
+  margin-top: 6em;
 }
 
 .footer > * {
   color: $primary;
+  text-decoration: none;
 }
 
-.footer > *::after {
+.footer-link{
+  margin-left: .5em;
+}
+
+.footer-link::after {
   content: "|";
   margin: 0 2em;
   height: 1em;
   width: 2px;
 }
+
+/*
+.footer > *::after {
+  content: "|";
+  margin: 0 2em;
+  height: 1em;
+  width: 2px;
+}*/

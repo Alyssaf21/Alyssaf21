@@ -18,6 +18,7 @@
     
 // hero
 
+
 .hero-container {
 	display: flex;
 	flex-direction: row;
@@ -59,7 +60,7 @@
 	font-weight: 500;
 	line-height: .9;
 	color: $dark;
-//    font-family: $font-family-secondary;
+	font-family: $font-primary;
 }
 
 .hero-title-alt { // "Alyssa's"
