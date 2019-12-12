@@ -1,7 +1,7 @@
 ---
 projects:
   - name: Starbird
-    icon: "../assets/images/funk.png"
+    icon: "../assets/images/sharebio.png"
     status: complete
     type: game
     tools: 
@@ -15,7 +15,7 @@ projects:
           into the site, as well as several of the backend components using JS."
   
   - name: Sharebio
-    icon: "../assets/images/funk.png"
+    icon: "../assets/images/sharebio.png"
     status: incomplete
     type: website
     tools: 
@@ -30,7 +30,7 @@ projects:
           to oversee its development through its relaunch this fall. ."
 
   - name: Video Narrative
-    icon: "../assets/images/funk.png"
+    icon: "../assets/images/sharebio.png"
     status: complete
     type: video
     tools: 
@@ -44,7 +44,7 @@ projects:
 
   - name: Portfolio Site
     status: incomplete
-    icon: "../assets/images/funk.png"
+    icon: "../assets/images/sharebio.png"
     type: website
     tools: 
       - html

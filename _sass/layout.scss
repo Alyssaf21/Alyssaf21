@@ -1,4 +1,7 @@
 // Project Tile
+*{
+  box-sizing: border-box;
+}
 
 h2 {
   padding-left: 38px;
@@ -6,46 +9,44 @@ h2 {
 }
 
 .projects-section {
-  padding-top: 2em;
-  padding: 1em;
-  margin-left: 20%;
-  margin-right: 20%;
+  padding: 0;
+  margin: 0;
+  //padding: 1em;
 }
 
+
 .project-tile {
-  display: grid; 
-  grid-template-columns: 5em 1fr;
-  column-gap: 2rem;
-  //border: 2px solid $secondary;
-  margin-top: 1em;
-  padding: 1.5em;
+  margin-bottom: 20em;
+  display: flex;
 }
 
 .project-icon {
-  grid-column: 1;
-  grid-row: 1/4;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  min-width: 80%;
+  height: 30em;
+  width: 59%;
+  min-width: 360px;
   background-size: contain;
   background-repeat: no-repeat;
+}
 
+.project-text{
+  display: flex;
+  flex-direction: column;
+  padding: 12em 3em;
+  width: 60%;
 }
 
 .project-name {
-  align-self: center;
-  grid-row: 1;
+   color: $accent;
   font-size: 1.2em;
-  color: $accent;
-  display: block;
-  grid-column: 2;
+  color: #fb517d;
   font-weight: 700;
   margin-bottom: .75em;
+  height: 1em;
 }
 
 .project-info, .project-desc {
-  grid-column: 2; 
+  min-width: 18em;
+  max-width: 30em;
 }
 
 .status-btn {
@@ -63,7 +64,7 @@ h2 {
 
 .footer {
   display: flex;
-  padding: 2em 5em;
+  padding: 2em 20%;
   /*text-align: center;*/
   background-color: $dark;
   margin-top: 6em;
@@ -85,10 +86,3 @@ h2 {
   width: 2px;
 }
 
-/*
-.footer > *::after {
-  content: "|";
-  margin: 0 2em;
-  height: 1em;
-  width: 2px;
-}*/
