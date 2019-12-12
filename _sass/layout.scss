@@ -1,11 +1,17 @@
-// Project Tile
-*{
-  box-sizing: border-box;
-}
+*{  box-sizing: border-box; }
 
-h2 {
-  padding-left: 38px;
+// Projects Section //////////////////////////////////////////////////////////
+
+.site-header{
   text-align: center;
+  margin: 12em 14em 8em 14em;
+  font-family: $font-primary;
+  letter-spacing: 2px;
+  font-size: 1.6em;
+  border: solid rgb(161, 30, 85) 2px;
+  padding: 1em 0em;
+  background-color: white;
+  color: $accent;
 }
 
 .projects-section {
@@ -14,9 +20,8 @@ h2 {
   //padding: 1em;
 }
 
-
 .project-tile {
-  margin-bottom: 20em;
+  margin-bottom: 16em;
   display: flex;
 }
 
@@ -31,14 +36,17 @@ h2 {
 .project-text{
   display: flex;
   flex-direction: column;
-  padding: 12em 3em;
+  padding: 10em 3em;
   width: 60%;
 }
 
 .project-name {
-   color: $accent;
-  font-size: 1.2em;
-  color: #fb517d;
+  font-family: $font-primary;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $hero-bg;
+  font-size: 1.4em;
+  //color: #fb517d;
   font-weight: 700;
   margin-bottom: .75em;
   height: 1em;
@@ -47,6 +55,8 @@ h2 {
 .project-info, .project-desc {
   min-width: 18em;
   max-width: 30em;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.62);
 }
 
 .status-btn {
@@ -60,11 +70,15 @@ h2 {
   font-size: .75em;
 }
 
-// Footer
+//End Projects Section//////////////////////////////////////////////////////////
+
+
+
+// Footer //////////////////////////////////////////////////////////
 
 .footer {
   display: flex;
-  padding: 2em 20%;
+  padding: 4em 20%;
   /*text-align: center;*/
   background-color: $dark;
   margin-top: 6em;
@@ -86,3 +100,4 @@ h2 {
   width: 2px;
 }
 
+// End Footer //////////////////////////////////////////////////////////

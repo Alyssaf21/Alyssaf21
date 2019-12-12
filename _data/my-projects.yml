@@ -1,24 +1,24 @@
 ---
 projects:
-  - name: Starbird
-    icon: "../assets/images/sharebio.png"
+  - name: Lorien Herbs & Natural Foods
+    icon: "../assets/images/lorien2.png"
     status: complete
-    type: game
+    type: website
     tools: 
       - html
       - css
       - javascript
       - jquery
     platform: web
-    desc: "A game about a bird. In space. Starbird is a small browser platformer made with HTML, 
-          CSS and Javascript. I created of all of the graphics, animations, and web design going 
-          into the site, as well as several of the backend components using JS."
+    desc: "Mockups for Lorien Herbs & Natural Foods, a local herbal remedy shop on Perry Street. 
+          A website redesign challenge, and an exercise in using Adobe Xd. The biggest challenge in this 
+          project was trying to accommodate all of the site's text in a neat, readable way. "
   
   - name: Sharebio
     icon: "../assets/images/sharebio.png"
     status: incomplete
     type: website
-    tools: 
+    tools:  
       - php
       - html
       - css
@@ -27,32 +27,16 @@ projects:
     desc: "Sharebio is a research-sharing platform for biology undergraduate students and 
           faculty. Over the course of the summer, I've been extensively 
           testing, debugging, redesigning and adding new features to Sharebio and will continue 
-          to oversee its development through its relaunch this fall. ."
+          to oversee its development through its relaunch this spring."
 
-  - name: Video Narrative
-    icon: "../assets/images/sharebio.png"
+  - name: Spine and Scoliosis Clinic
+    icon: "../assets/images/SSC-site1.png"
     status: complete
     type: video
     tools: 
       - photoshop
       - windows movie maker
     platform: n/a
-    desc: "The sum total of over 300 hand-drawn frames, this project originated as
-          a Writing II midterm that changed into something else entirely. I used my ipod to 
-          take pictures of the backgrounds and modified them in photoshop, which is also where 
-          I drew and animated the sketch and paper layers to go on top. "
-
-  - name: Portfolio Site
-    status: incomplete
-    icon: "../assets/images/sharebio.png"
-    type: website
-    tools: 
-      - html
-      - css
-      - scss
-      - jekyll
-    platform: web
-    desc: "A site that showcases a selection of the artwork I have done over the past couple years. 
-          Mixed media stuff stemming from a variety of assignments and personal endeavors."
-
-
+    desc: "Another redesign for Web Design II, with more content to work with this time- The Spine and Scoliosis
+          Clinic is a small chiropractic clinic that needed to display a lot of information in as few pages as 
+          possible. Unlike Lorien, the SSC also wants to get visitors to make appointments through the site."

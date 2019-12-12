@@ -10,6 +10,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 90px;  
+  font-family: $font-primary;
 }
 
 .mysidenav a {
@@ -38,7 +39,7 @@
     text-align: left;
     padding: 0;
     padding-left: 16px;
-    font-size: 30px;
+    //font-size: 36px;
 }
 
 
@@ -48,12 +49,13 @@
     position: fixed;
     background-color: $secondary;
     border-radius: 15px;
-    width: 240px;
+    width: 140px;
     height: 1.4em;
     text-align: center;
     padding: 5px;
     margin-top: .75em;
     margin-left: -10px;
+    font-size: 36px;
 }
 
 @media screen and (max-height: 450px) {
