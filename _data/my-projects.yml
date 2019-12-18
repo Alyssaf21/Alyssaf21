@@ -1,14 +1,18 @@
 ---
+buttons:
+  - title: Visual Design
+    link: "link to page"
+
+  - title: Programming
+    link: "link to page"
+
+  - title: Illustration
+    link: "link to page"
+
 projects:
   - name: Lorien Herbs & Natural Foods
     icon: "../assets/images/lorien2.png"
-    status: complete
-    type: website
-    tools: 
-      - html
-      - css
-      - javascript
-      - jquery
+    date: Adobe Xd
     platform: web
     desc: "Mockups for Lorien Herbs & Natural Foods, a local herbal remedy shop on Perry Street. 
           A website redesign challenge, and an exercise in using Adobe Xd. The biggest challenge in this 
@@ -16,27 +20,18 @@ projects:
   
   - name: Sharebio
     icon: "../assets/images/sharebio.png"
-    status: incomplete
-    type: website
-    tools:  
-      - php
-      - html
-      - css
-      - yii2
-    platform: web
+    date: June and July 2019
+    platform: Yii2 PHP framework
     desc: "Sharebio is a research-sharing platform for biology undergraduate students and 
           faculty. Over the course of the summer, I've been extensively 
           testing, debugging, redesigning and adding new features to Sharebio and will continue 
           to oversee its development through its relaunch this spring."
-
+        
   - name: Spine and Scoliosis Clinic
     icon: "../assets/images/SSC-site1.png"
-    status: complete
-    type: video
-    tools: 
-      - photoshop
-      - windows movie maker
-    platform: n/a
-    desc: "Another redesign for Web Design II, with more content to work with this time- The Spine and Scoliosis
-          Clinic is a small chiropractic clinic that needed to display a lot of information in as few pages as 
-          possible. Unlike Lorien, the SSC also wants to get visitors to make appointments through the site."
+    date: November 2019
+    platform: Adobe Xd
+    desc: "A website redesign for the Spine and Scoliosis Clinic aimed at providing information about the practice, 
+    walking clients through common procedures, and booking appointments online. Made in Adobe Xd, this 
+    mockup... is a mockup."
+

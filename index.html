@@ -24,18 +24,32 @@ permalink:
             <div class="project-name">
                 {{ block.name }}
        
-        </div> <!-- 
-        <div class="project-info">
-            {{ block.type }}
-            {{ block.platform }}
-        </div> -->
-        
+        </div>
         <div class="project-desc">
             {{ block.desc }}
         </div>
     </div>
     </li>
     {% endfor %}
+
+    <li class="project-tile">
+        <div class="project-icon">
+            {% include starbird.html %}
+        </div>
+        <div class="project-text">
+            <div class="project-name">
+                Starbird
+       
+        </div>
+        <div class="project-desc">
+            A game about a bird. In space. <br>
+            Starbird is a side scrolling, astroid dodging browser game coded in javascript. 
+            Click on the image on the left to see if you can make it to the space ship in one piece!
+        </div>
+    </li>
 </ul>
+
+
+
 
 </div>
