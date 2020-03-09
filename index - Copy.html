@@ -1,0 +1,67 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Home
+permalink:
+---
+
+{% include hero.html %}
+
+<div id="center-container">
+
+<span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&plus;</span>
+<!--<div  id="" class="site-header">
+    <!-- <h2> My Projects </h2> -->
+<!--</div>-->
+
+<ul class="projects-section"> 
+    {% for block in site.data.my-projects.projects %} 
+    <li class="project-tile"> 
+
+        <div class="project-icon" style=" background-image: url('{{ block.icon | asset_url }}')"> </div>
+        <div class="project-text">
+            <div class="project-name">
+                {{ block.name }}
+       
+        </div> <!-- 
+        <div class="project-info">
+            {{ block.type }}
+            {{ block.platform }}
+        </div> -->
+        <div class="project-desc">
+            {{ block.desc }}
+        </div>
+    </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<div id="gallery" class="site-header">
+    <h2> Gallery </h2>
+</div>
+
+<ul class="gallery-section">
+    {% for block in site.data.my-projects.gallery %}
+    <li class="gallery-tile">
+        <div class="gallery-icon" style=" background-image: url('{{ block.icon | asset_url }}')"> 
+        <div class="gallery-name">
+            {{ block.name }}
+        </div>
+        </div>
+            
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- 
+<div id="about" class="site-header">
+    <h2> About </h2>
+</div>
+
+<div class="me">
+    it's a me
+</div> -->
+
+</div> 

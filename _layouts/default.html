@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title> 
-    <link rel="stylesheet" href="../css/styles.css"> 
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lexend+Deca&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lexend+Deca&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/nest_hover3_iw8_icon.ico" type="image/x-icon">
-        
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-    {% include nav.html %}
+    <!-- {% include nav.html %} -->
     <div id="main-container">
-    {{ content }}
-    {% include footer.html %}
+        {{ content }}
+        {% include footer.html %}
     </div>
 </body>
 
@@ -25,6 +26,38 @@
 <script>
     // Accepts any class name
     var rellax = new Rellax('.rellax');
-</script>
+    var slideUp = {
+        distance: '50px',
+        origin: 'bottom',
+        opacity: 0,
+        // delay: 50,
+        duration: 1300,
+        //easing: 'ease-in-out',
+        easing: 'cubic-bezier(0.5, 0, .25, 1)',
+    };
+    var slideLeft = {
+        distance: '80px',
+        origin: 'left',
+        opacity: 0,
+        duration: 1300,
+        easing: 'cubic-bezier(0.5, 0, .25, 1)',
+    }
 
+    var slideDown = {
+            interval: 250,
+            distance: '80px',
+            delay: 20,
+            origin: 'top',
+            opacity: 0,
+            duration: 1300,
+            easing: 'cubic-bezier(0.5, 0, .25, 1)',
+        }
+
+    ScrollReveal().reveal('.gallery-tile', slideDown);    
+    ScrollReveal().reveal('.project-desc', slideUp);
+    ScrollReveal().reveal('.project-name', slideUp);
+    ScrollReveal().reveal('.project-img', slideLeft);
+
+    // ScrollReveal().reveal('.project-name');
+</script>
 </html>

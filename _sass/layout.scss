@@ -11,7 +11,8 @@
   border: solid rgb(161, 30, 85) 2px;
   padding: 1em 0em;
   background-color: white;
-  color: $accent;
+  color: $dark;
+  box-shadow: 2px 4px 8px #00000034;
 }
 
 .projects-section {
@@ -72,7 +73,59 @@
 
 //End Projects Section//////////////////////////////////////////////////////////
 
+.gallery-section {
+  padding: 0 12em;
+  margin: 0;
+ // display: flex;
+  flex-wrap: wrap;
+  //padding: 1em;
+  display: flex;
+  justify-content: center;
+}
 
+.gallery-tile {
+  //margin-bottom: 16em;
+  //display: flex;
+  //flex-direction: row;
+  width: 30%;
+  margin: .5em -1em;
+  display: inline-block;
+  align-self: center;
+}
+
+.gallery-icon {
+  height: 24em;
+  width: 25%;
+  min-width: 15em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //display: inline-block;
+  padding: .5em;
+  margin: .75em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+}
+
+.gallery-name {
+  font-family: $font-primary;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $dark;
+  font-size: 1.4em;
+  //color: #fb517d;
+  font-weight: 700;
+  margin-bottom: .75em;
+  //height: 1em;
+  background-color: beige;
+  padding: .5em;
+}
+
+.me{
+  height: 38em;
+  margin-top: -5em;
+  background: url(../assets/images/me.png) center center no-repeat;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 // Footer //////////////////////////////////////////////////////////
 

@@ -11,7 +11,7 @@ projects:
       - jquery
     platform: web
     desc: "Mockups for Lorien Herbs & Natural Foods, a local herbal remedy shop on Perry Street. 
-          A website redesign challenge, and an exercise in using Adobe Xd. The biggest challenge in this 
+          A website redesign challenge and an exercise in using Adobe Xd. The biggest challenge in this 
           project was trying to accommodate all of the site's text in a neat, readable way. "
   
   - name: Sharebio
@@ -40,3 +40,22 @@ projects:
     desc: "Another redesign for Web Design II, with more content to work with this time- The Spine and Scoliosis
           Clinic is a small chiropractic clinic that needed to display a lot of information in as few pages as 
           possible. Unlike Lorien, the SSC also wants to get visitors to make appointments through the site."
+gallery:
+  - name: Doorstop
+    icon: "../assets/images/doorstop2.png"
+  
+  - name: Montage
+    icon: "../assets/images/montage.png"
+   
+  - name: Video Narrative
+    icon: "../assets/images/hub.gif"
+
+  - name: Starbird
+    icon: "../assets/images/starbird.png"
+
+  - name: Business Club Logo
+    icon: "../assets/images/business-club.jpg"
+
+  - name: Native American Heritage Month Poster
+    icon: "../assets/images/heritage-month.jpg"
+   
