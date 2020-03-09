@@ -1,12 +1,12 @@
 ---
 buttons:
-  - title: Visual Design
+  - title: UX Design
     link: "link to page"
 
-  - title: Programming
+  - title: Graphic/Web Design
     link: "link to page"
 
-  - title: Illustration
+  - title: Coding Projects
     link: "link to page"
 
 projects:
@@ -29,7 +29,6 @@ projects:
         
   - name: Spine and Scoliosis Clinic
     icon: "../assets/images/SSC-site1.png"
-<<<<<<< HEAD
     status: complete
     type: video
     tools: 
@@ -58,11 +57,3 @@ gallery:
   - name: Native American Heritage Month Poster
     icon: "../assets/images/heritage-month.jpg"
    
-=======
-    date: November 2019
-    platform: Adobe Xd
-    desc: "A website redesign for the Spine and Scoliosis Clinic aimed at providing information about the practice, 
-    walking clients through common procedures, and booking appointments online. Made in Adobe Xd, this 
-    mockup... is a mockup."
-
->>>>>>> 0d94ee72e898925a789ae40c46c24ce789f17cc3
