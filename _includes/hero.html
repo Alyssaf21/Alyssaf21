@@ -15,8 +15,12 @@
     </header>
  
     <footer class="hero-footer rellax" data-rellax-speed="1">
-        <a class="button button-primary" href="#">button one</a>
+        {% for block in site.data.my-projects.buttons %} 
+        <a class="button" href="#"> {{ block.title }}</a>
+        <!-- 
         <a class="button" href="#">button two</a>
+        <a class="button" href="#">button two</a> -->
+        {% endfor %}
     </footer>
     </div>
 </section>
