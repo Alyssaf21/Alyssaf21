@@ -24,15 +24,17 @@ nav {
     white-space: nowrap;
     margin-top: 7.5em; 
     text-transform: uppercase;
+    text-decoration: none;
+    color: white;
 }
 
 .highlight-pink {
-    color: $highlight-pink;
+    color: $highlight-bright;
 }
 
 #circle {
-    width: $nav-item-size;
-    height: $nav-item-size;
+    width: $nav-btn-size;
+    height: $nav-btn-size;
     border: 1.4px solid $highlight-pink;
     background-color: $main-color;
     border-radius: 50%;
@@ -67,16 +69,73 @@ nav {
 }
 
 .vl {
-  border-left: 2px solid $highlight-pink;
+  border-left: 2px solid $highlight-dark;
   height: 500px;
   position: absolute;
   z-index: 5;
 }
 
 .main-container {
-    padding-left: $nav-width + 1em;
+    padding-left: $nav-width;
+    height: 100vh;
+    width: auto;
+    min-width: 465px;
+    line-height: 1.3em;
+    transition: margin-left .5s;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "project1 project2 project3"
+        "myinfo gallery about";
 }
 
 .project-item {
-    padding: 50px;
+    padding-top: 50px;
+}
+
+.project1 {
+    padding-left: 50px;
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.my-info {
+    padding: 0px 50px;
+    grid-area: myinfo;
+}
+
+.my-info-label {
+    margin: 0;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.gallery  > img{
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    grid-area: about;
+}
+
+.about > img{
+    width: 100%;
+    height: auto;
 }
