@@ -7,60 +7,92 @@ title: Home
 permalink:
 ---
 
-{% include hero.html %}
 
-<div id="center-container">
+<!-- Side nav -->
+    <!-- Name -->
+    <!-- Nav button Container -->
+        <!-- Nav Button -->
+            <!-- Nav Icon -->
+        <!-- Nav Button -->
+            <!-- Nav Icon -->
+        <!-- Nav Button -->
+            <!-- Nav Icon -->
+        <!-- Nav Button -->
+            <!-- Nav Icon -->
+        <!-- Nav line -->
+<!--  -->
 
-    <!-- <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&plus;</span> -->
-    <!--<div  id="" class="site-header">
-     <h2> My Projects </h2> -->
-    <!--</div>-->
-
-    {% for block in site.data.my-projects.projects %}
-    <li class="project-tile">
-
-        <!-- <div class="project-icon" style=" background-image: url('{{ block.icon | asset_url }}')"> </div>-->
-        <img src="{{ block.icon | asset_url }}" id="{{ block.name | asset_url }}-img" class="project-img">
-        <div class="project-text">
-            <div class="project-name">
-                {{ block.name }}
-
-            </div>
-            <!-- 
-        <div class="project-info">
-            {{ block.type }}
-            {{ block.platform }}
-        </div> -->
-            <div class="project-desc">
-                {{ block.desc }}
-            </div>
+<nav>
+    <div class="my-name rotate">
+        Alyssa <span class="highlight-pink">Fusato</span>
+    </div>
+    <div class="nav-container">
+        <div id="circle" class="nav-btn">
+            <i class="nav-icon"></i>
         </div>
-    </li>
-    {% endfor %}
-    </ul>
+        <div id="circle" class="nav-btn">
+            
+            <i class="nav-icon"></i>
+        </div>
+        <div id="circle" class="nav-btn">
+            
+            <i class="nav-icon"></i>
+        </div>
+        <div id="circle" class="nav-btn">
+            
+            <i class="nav-icon"></i>
+        </div>
+        <div class="vl"></div>
+    </div>
+</nav>
 
-    <!-- <div id="gallery" class="site-header">
-    <h2> Gallery </h2>
-</div> -->
-
-    <ul class="gallery-section">
-        {% for block in site.data.my-projects.gallery %}
-        <li class="gallery-tile">
-            <div class="gallery-icon" style=" background-image: url('{{ block.icon | asset_url }}')">
-                <div class="gallery-name">
-                    {{ block.name }}
-                </div>
-            </div>
-
-        </li>
-        {% endfor %}
-    </ul>
-
-    <!-- 
-<div id="about" class="site-header">
-    <h2> About </h2>
+<!-- Main Container -->
+    <!-- Projects -->
+        <!-- Label -->
+            <!-- Project item -->
+            <!-- Project item -->
+            <!-- Project item --> 
+    <!-- Contact Info -->
+        <!-- Contact Title -->
+            <!-- Contact info -->
+        <!-- Contact Title -->
+            <!-- Contact info -->
+    <!-- Gallery -->
+        <!-- Label -->
+        <!-- Gallery Container -->
+            <!-- Gallery item -->
+            <!-- Gallery item -->
+            <!-- Gallery item -->
+            <!-- Gallery item -->
+    <!-- About -->
+        <!-- Label -->
+        <!-- About item -->
+<!--  -->
+<div class="main-container">
+    <div class="Projects">
+        <div class="label"></div>
+        <div class="project-item">
+            Project 1
+        </div>
+        <div class="project-item">
+            Project 2
+        </div>
+        <div class="project-item">
+            Project 3
+        </div>
+    </div>
+    <div class="Contact">
+        <div class="label"></div>
+        <div class="project-item"></div>
+    </div>
+    <div class="Gallery">
+        <div class="label"></div>
+        <div class="project-item"></div>
+    </div>
+    <div class="About">
+        <div class="label"></div>
+        <div class="project-item">
+            
+        </div>
+    </div>
 </div>
-
-<div class="me">
-    it's a me
-</div> -->
