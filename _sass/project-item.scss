@@ -1,141 +1,185 @@
+/*----------------------------------------
+- NAVBAR                                 
+----------------------------------------*/
+
 nav {
-    float: left;
-    width: $nav-width;
-    height: 100vh;
-    border-right: 1px solid $pale-purple;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+  float: left;
+  width: $nav-width;
+  height: 100vh;
+  border-right: 1px solid $pale-purple;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
 }
 
 .nav-container {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nav-container:last-child{
-    margin-bottom: 3em;
+.nav-container:last-child {
+  margin-bottom: 3em;
 }
 
 .my-name {
-    font-size: 1.5em;
-    white-space: nowrap;
-    margin-top: 7.5em; 
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
+  font-size: 1.5em;
+  white-space: nowrap;
+  margin-top: 7.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 .highlight-pink {
-    color: $highlight-bright;
-}
-
-#circle {
-    width: $nav-btn-size;
-    height: $nav-btn-size;
-    border: 1.4px solid $highlight-pink;
-    background-color: $main-color;
-    border-radius: 50%;
-    margin-bottom: 2em;
-    z-index: 10;
-    // cursor: hover;
-}
-
-#circle:hover{
-    // @debug desaturate($main-color, 10);
-    background: darken($main-color, 10%)
+  color: $highlight-bright;
 }
 
 .rotate {
-    
+  //Rotates my-name in the side nav
   transform: rotate(-90deg);
-
   /* Safari */
   -webkit-transform: rotate(-90deg);
-
   /* Firefox */
   -moz-transform: rotate(-90deg);
-
   /* IE */
   -ms-transform: rotate(-90deg);
-
   /* Opera */
   -o-transform: rotate(-90deg);
-
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-.vl {
+#circle {
+  width: $nav-btn-size;
+  height: $nav-btn-size;
+  border: 1.4px solid $highlight-pink;
+  background-color: $main-color;
+  border-radius: 50%;
+  margin-bottom: 2em;
+  z-index: 10;
+}
+
+#circle:hover {
+  // @debug desaturate($main-color, 10);
+  background: darken($main-color, 10%);
+}
+
+.vertical-line {
   border-left: 2px solid $highlight-dark;
   height: 500px;
   position: absolute;
   z-index: 5;
 }
 
+/*----------------------------------------
+- MAIN AREA                                 
+----------------------------------------*/
+
 .main-container {
-    padding-left: $nav-width;
-    height: 100vh;
-    width: auto;
-    min-width: 465px;
-    line-height: 1.3em;
-    transition: margin-left .5s;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "project1 project2 project3"
-        "myinfo gallery about";
+  margin-top: 10px;
+  padding-left: $nav-width + 1em;
+  height: 100vh;
+  width: auto;
+  min-width: 465px;
+  transition: margin-left 0.5s;
+  overflow-x: hidden;
+  display: grid;
+  grid: {
+    template-columns: .5fr 5fr 5fr 2fr 3fr 1fr;
+    template-rows: 30px 1fr 30px 1fr;
+    template-areas: ". pl1 pl2 pl3 pl3 ." ". proj1 proj2 proj3 proj3 ." ". . gl . al ."
+      ". info gallery gallery about about ";
+    gap: 5px;
+  }
 }
+
+.label {
+  text-transform: uppercase;
+}
+
+/*----------------------------------------
+- PROJECTS SECTION                                 
+----------------------------------------*/
 
 .project-item {
-    padding-top: 50px;
+  height: 100%;
+  width: auto;
+  align-items: start;
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
 }
 
-.project1 {
-    padding-left: 50px;
-    grid-area: project1;
+#label-p1 {
+  grid-area: pl1;
 }
 
-.project2 {
-    grid-area: project2;
+#project1 {
+  //   grid-area: 2/2/3/3;
+  grid-area: proj1;
+  background-image: url("/assets/images/sharebio-thumbnail.png");
 }
 
-.project3 {
-    grid-area: project3;
+#label-p2 {
+  grid-area: pl2;
 }
 
-.project-item > img {
-    width: 100%;
-    height: auto;
+#project2 {
+  //   grid-area: 2/3/3/4;
+  grid-area: proj2;
+  background-image: url("/assets/images/montage-thumbnail.png");
 }
+
+#label-p3 {
+  grid-area: pl3;
+}
+
+#project3 {
+  //   grid-area: 2/4/3/6;
+  grid-area: proj3;
+  background-image: url("/assets/images/pietime-thumbnail.png");
+}
+
+/*----------------------------------------
+- CONTACT INFO SECTION                                 
+----------------------------------------*/
 
 .my-info {
-    padding: 0px 50px;
-    grid-area: myinfo;
+  padding-right: 50px;
+  grid-area: info;
+  //   grid-area: 2/2/3/3;
+
+  .label {
+    margin: 0.6em 0 0.3em 0;
+  }
 }
 
-.my-info-label {
-    margin: 0;
+/*----------------------------------------
+- GALLERY SECTION                                 
+----------------------------------------*/
+
+#label-g {
+  grid-area: gl;
 }
 
-.gallery {
-    grid-area: gallery;
+#gallery1 {
+  grid-area: gallery;
+  background-image: url("/assets/images/montage-thumbnail.png");
 }
 
-.gallery  > img{
-    width: 100%;
-    height: auto;
+/*----------------------------------------
+- ABOUT SECTION                                 
+----------------------------------------*/
+
+#label-a {
+  grid-area: al;
 }
 
-.about {
-    grid-area: about;
-}
-
-.about > img{
-    width: 100%;
-    height: auto;
+#about1 {
+  grid-area: about;
+  background-image: url("/assets/images/montage-thumbnail.png");
 }

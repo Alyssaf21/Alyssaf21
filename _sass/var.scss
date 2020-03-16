@@ -8,19 +8,77 @@ $hero-bg: #5688ac;
 $muted-light: #7C90A0;
 $muted-alt: #fffdfa;
 $header: #1d1425;
-$font-bgcolor: rgb(248, 248, 207); 
-$font-primary: 'Lexend Deca', sans-serif;
-$font-secondary: 'Inter', sans-serif;
+$font-bgcolor: #f8f8cf;
+$font-primary: 'Lexend Deca',
+sans-serif;
+$font-secondary: 'Inter',
+sans-serif;
+
+
+/*----------------------------------------
+- SIZING                                 
+----------------------------------------*/
 
 $nav-width: 4em;
+$nav-btn-size: 2.4em;
+
+
+/*----------------------------------------
+- COLORS                                 
+----------------------------------------*/
+
 $highlight-pink: #FF558D;
 $highlight-dark: #DB4778;
 $highlight-bright: #EF1F65;
 $text-primary: #F5F5F5;
 $text-secondary: #EFEFEF;
-$nav-btn-size: 2.4em;
-$pale-purple: rgb(103, 81, 121);
+$pale-purple: #675179;
 $main-color: #0A4668;
+
+
+/*----------------------------------------
+- RESPONSIVE RESIZE                                 
+----------------------------------------*/
+
+$breakpoint-small: 600px;
+$breakpoint-med-small: 960px;
+$breakpoint-med: 1175px;
+
+@mixin screen($size, $type: max, $pixels: $breakpoint-small) {
+  @if $size == 'small' {
+    @media screen and ($type + -width: $breakpoint-small) {
+        @content;
+    }
+  }
+  @else if $size == 'med-small' {
+    @media screen and ($type + -width: $breakpoint-med-small) {
+        @content;
+    }
+  }
+  @else if $size == 'med' {
+    @media screen and ($type + -width: $breakpoint-med) {
+        @content;
+    }
+  }
+ @else if $size == 'large' {
+    @media screen and ($type + -width: $breakpoint-med) {
+        @content;
+    }
+  }
+  @else if $size == 'custom' {
+    @media screen and ($type + -width: $pixels + px) {
+     @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}
+
+
+/*----------------------------------------
+- MISC.                                 
+----------------------------------------*/
 
 *,
 *::before,
