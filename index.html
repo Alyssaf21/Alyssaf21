@@ -7,7 +7,6 @@ title: Home
 permalink:
 ---
 
-
 <!-- Side nav -->
 <!-- Name -->
 <!-- Nav button Container -->
@@ -43,68 +42,72 @@ permalink:
     </div>
 </nav>
 
-<!-- Main Container -->
-<!-- Projects -->
-<!-- Label -->
-<!-- Project item -->
-<!-- Project item -->
-<!-- Project item -->
-<!-- Contact Info -->
-<!-- Contact Title -->
-<!-- Contact info -->
-<!-- Contact Title -->
-<!-- Contact info -->
-<!-- Gallery -->
-<!-- Label -->
-<!-- Gallery Container -->
-<!-- Gallery item -->
-<!-- Gallery item -->
-<!-- Gallery item -->
-<!-- Gallery item -->
-<!-- About -->
-<!-- Label -->
-<!-- About item -->
-<!--  -->
 <div class="main-container">
-    <!-- <div class="projects">
-        <div class="label"></div>
-        <div class="project-item">
-            Project 1
-            blah blah blah
+    <div class="preview-container">
+
+        <div id="label-p1" class="bodytext-2 label"> Projects </div>
+        <div id="project1" class="project-item">
         </div>
-        <div class="project-item">
-            Project 2
-            blah blah blah
+        <div id="label-p2" class="bodytext-2 label"> &nbsp; </div>
+        <div id="project2" class="project-item">
         </div>
-        <div class="project-item">
-            Project 3
-            blah blah blah
+        <div id="label-p3" class="bodytext-2 label"> &nbsp; </div>
+        <div id="project3" class="project-item">
         </div>
-    </div> -->
-    <div id="label-p1" class="bodytext-2 label"> Projects </div>
-    <div id="project1" class="project-item">
-    </div>
-    <div id="label-p2" class="bodytext-2 label"> &nbsp; </div>
-    <div id="project2" class="project-item">
-    </div>
-    <div id="label-p3" class="bodytext-2 label"> &nbsp; </div>
-    <div id="project3" class="project-item">
+
+        <div class="my-info">
+            <h1 class="label"> Interests: </h1>
+            <div class="bodytext-2"> UX, UI, Front end,
+                Web dev, Visual Design</div>
+            <h1 class="label"> How to reach me: </h1>
+            <div class="bodytext-2">a.c.fusato@gmail.com <br>
+                (808) 344 8534
+            </div>
+        </div>
+
+        <div id="label-g" class="label bodytext-2">Gallery</div>
+        <div id="gallery-thumb">
+        </div>
+        <div id="label-a" class="label bodytext-2">About</div>
+        <div id="about-thumb">
+        </div>
+
     </div>
 
-    <div class="my-info">
-        <h1 class="label"> Interests: </h1>
-        <div class="bodytext-2"> UX, UI, Front end,
-            Web dev, Visual Design</div>
-        <h1 class="label"> How to reach me: </h1>
-        <div class="bodytext-2">a.c.fusato@gmail.com <br>
-            (808) 344 8534
+    <!-- 
+                projects
+                go to project page, contains short blurb about each project
+                Gallery
+                Go to gallery page, contains preview image and small caption
+                About
+                About page, contains picture, short bio, contact info
+            -->
+
+    <div id="projects" class="projects-container">
+
+        {% for block in site.data.my-projects.projects %}
+
+        <div id="{{ block.name | asset_url }}-img" class="project-preview"
+            style="background: url('{{ block.icon | asset_url }}');">
         </div>
+
+        <div class="project-name">
+            {{ block.name }}
+        </div>
+
+        <div class="project-desc">
+            {{ block.desc }}
+        </div>
+
+        {% endfor %}
+
     </div>
-    
-    <div id="label-g" class="label bodytext-2">Gallery</div>
-    <div id="gallery1">
+
+    <div id="gallery" class="gallery-container">
+
     </div>
-    <div id="label-a" class="label bodytext-2">About</div>
-    <div id="about1">
+    <div id="about" class="about-container">
+
     </div>
+
 </div>
