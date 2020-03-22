@@ -7,20 +7,6 @@ title: Home
 permalink:
 ---
 
-<!-- Side nav -->
-<!-- Name -->
-<!-- Nav button Container -->
-<!-- Nav Button -->
-<!-- Nav Icon -->
-<!-- Nav Button -->
-<!-- Nav Icon -->
-<!-- Nav Button -->
-<!-- Nav Icon -->
-<!-- Nav Button -->
-<!-- Nav Icon -->
-<!-- Nav line -->
-<!--  -->
-
 <nav>
     <a href="#home" class="my-name rotate">
         Alyssa <span class="highlight-pink">Fusato</span>
@@ -43,71 +29,51 @@ permalink:
 </nav>
 
 <div class="main-container">
-    <div class="preview-container">
-
-        <div id="label-p1" class="bodytext-2 label"> Projects </div>
-        <div id="project1" class="project-item">
-        </div>
-        <div id="label-p2" class="bodytext-2 label"> &nbsp; </div>
-        <div id="project2" class="project-item">
-        </div>
-        <div id="label-p3" class="bodytext-2 label"> &nbsp; </div>
-        <div id="project3" class="project-item">
-        </div>
-
-        <div class="my-info">
-            <h1 class="label"> Interests: </h1>
-            <div class="bodytext-2"> UX, UI, Front end,
-                Web dev, Visual Design</div>
-            <h1 class="label"> How to reach me: </h1>
-            <div class="bodytext-2">a.c.fusato@gmail.com <br>
-                (808) 344 8534
+    <div id="landing">
+        <div class="roles-contact">
+            <div class="roles">
+                ux / ui / front end
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="contact">
+                a.c.fusato@gmail.com
             </div>
         </div>
-
-        <div id="label-g" class="label bodytext-2">Gallery</div>
-        <div id="gallery-thumb">
+        <div class="landing-img">
+            <div class="landing-gif">
+                <div class="year">
+                    20 <br> 20
+                </div>
+                <div class="vertical-line"></div>
+                <div class="title">
+                    Port <br> folio
+                </div>
+            </div>
         </div>
-        <div id="label-a" class="label bodytext-2">About</div>
-        <div id="about-thumb">
-        </div>
-
+        <div class="landing-color"></div>
     </div>
-
-    <!-- 
-                projects
-                go to project page, contains short blurb about each project
-                Gallery
-                Go to gallery page, contains preview image and small caption
-                About
-                About page, contains picture, short bio, contact info
-            -->
-
-    <div id="projects" class="projects-container">
-
-        {% for block in site.data.my-projects.projects %}
-
-        <div id="{{ block.name | asset_url }}-img" class="project-preview"
-            style="background: url('{{ block.icon | asset_url }}');">
-        </div>
-
-        <div class="project-name">
-            {{ block.name }}
-        </div>
-
-        <div class="project-desc">
-            {{ block.desc }}
-        </div>
-
-        {% endfor %}
-
+    <div id="projects">
+        <div class="project-item"></div>
+        <div class="project-item"></div>
+        <div class="project-item"></div>
     </div>
-
-    <div id="gallery" class="gallery-container">
-
+    <div id="gallery">
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
     </div>
-    <div id="about" class="about-container">
+    <div id="about">
+        <div class="about-img"></div>
+        <p>
+            Hi! This is text about Alyssa. I like
+            puzzles and art, and see UX and UI design
+            as a fascinating mix of both. Other interests
+            include psychology, philosophy and digital
+            illustration.
 
+        </p>
     </div>
-
 </div>
