@@ -8,11 +8,13 @@
     <!-- <link rel="stylesheet" href="../css/lightgallery.min.css"> -->
     <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lexend+Deca&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:300,400,400i,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:200,300,400,400i,600,700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/nest_hover3_iw8_icon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
-    </script>
-
+    <script src="../assets/js/lightgallery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,5 +66,10 @@
 
     // ScrollReveal().reveal('.project-name');
 </script> -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#lightgallery").lightGallery();
+    });
+</script>
 
 </html>
