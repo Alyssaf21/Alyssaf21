@@ -117,7 +117,7 @@ nav {
   position: absolute;
   background-color: #ce426f;
   mix-blend-mode: overlay;
-  opacity: 65%;
+  // opacity: 65%;
   right: 0;
   bottom: 1em;
 }
@@ -164,12 +164,14 @@ nav {
         size: cover;
         position: center;
       }
+
       left: 0;
       top: 20%;
       z-index: 1;
-      background-color: #ef749d;
+      background-color: #fa95b7;
       background-blend-mode: hard-light;
     }
+
     .gif-shadow {
       @include gif-position();
       background-color: #062739;
@@ -195,6 +197,10 @@ nav {
     z-index: 5;
     opacity: 100%;
     mix-blend-mode: screen;
+    > div::selection {
+      color: rgb(5, 27, 99);
+      background: lightskyblue;
+    }
 
     .vertical-line {
       @include vert-line(1.4em, 2px, $highlight-dark);
@@ -233,13 +239,17 @@ nav {
     text-shadow: 0.06em 0.06em #00324e;
     margin-right: 0.3em;
     mix-blend-mode: luminosity;
+
+    &::selection {
+      color: rgb(246, 239, 255);
+      background: #0e90db;
+    }
   }
 }
 
 #projects {
   margin-left: $content-margin-left;
   margin-top: 7em;
-
 
   .project-wrapper {
     display: flex;
@@ -281,14 +291,11 @@ nav {
 #gallery {
   margin-left: $content-margin-left;
   margin-bottom: 5em;
-  height: 740px;
 
   #lightgallery {
     display: flex;
     align-content: stretch;
     flex-wrap: wrap;
-    padding: 0 4px;
-    height: 300px;
 
     @media screen and (max-width: 800px) {
       .gallery-column {
@@ -304,21 +311,29 @@ nav {
       }
     }
 
+    .gallery-link {
+      width: 33.3%;
+      .gallery-item {
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        // width: 20em;
+        height: 15em;
+        background: {
+          repeat: no-repeat;
+          size: cover;
+          position: center;
+        }
+        &:hover {
+          background-color: #1e91c3c2;
+          background-blend-mode: soft-light;
+        }
+        // border: 2px solid cyan;
+      }
+    }
     .gallery-column {
       flex: 33%;
       min-width: 30%;
       padding-right: 0.5em;
-
-      .gallery-link {
-        // height: 24vw;
-        // width: 100px;
-        .gallery-item {
-          margin-bottom: 0.5em;
-          width: 100%;
-          height: 100%;
-          // border: 2px solid cyan;
-        }
-      }
     }
   }
 }

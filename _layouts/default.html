@@ -5,19 +5,23 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- <link rel="stylesheet" href="../css/lightgallery.min.css"> -->
+    <link rel="stylesheet" href="../css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lexend+Deca&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:200,300,400,400i,600,700&display=swap"
-        rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:200,300,400,400i,600,700&display=swap"
+    rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/nest_hover3_iw8_icon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../assets/js/lightgallery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/lightgallery.min.js"></script>
+    <script src="../assets/js/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    
     <!-- {% include nav.html %} -->
     <div id="main-container">
         {{ content }}
@@ -26,49 +30,54 @@
 </body>
 
 <!-- <script src="/assets/js/parallax.js"></script>
-<script src="/assets/js/rellax.min.js"></script>
-<script src="/assets/js/lightgallery.min.js"></script>
-<script>
-    // Accepts any class name
-    var rellax = new Rellax('.rellax');
-    var slideUp = {
-        distance: '50px',
-        origin: 'bottom',
-        opacity: 0,
-        // delay: 50,
-        duration: 1300,
-        //easing: 'ease-in-out',
-        easing: 'cubic-bezier(0.5, 0, .25, 1)',
-    };
-    var slideLeft = {
-        distance: '80px',
-        origin: 'left',
-        opacity: 0,
-        duration: 1300,
-        easing: 'cubic-bezier(0.5, 0, .25, 1)',
-    }
-
-    var slideDown = {
-        interval: 250,
-        distance: '80px',
-        delay: 20,
-        origin: 'top',
-        opacity: 0,
-        duration: 1300,
-        easing: 'cubic-bezier(0.5, 0, .25, 1)',
-    }
-
-    ScrollReveal().reveal('.gallery-tile', slideDown);
-    ScrollReveal().reveal('.project-desc', slideUp);
-    ScrollReveal().reveal('.project-name', slideUp);
-    ScrollReveal().reveal('.project-img', slideLeft);
-    lightGallery(document.getElementById('lightgallery'));
-
-    // ScrollReveal().reveal('.project-name');
-</script> -->
-<script type="text/javascript">
+    <script src="/assets/js/rellax.min.js"></script>
+    <script src="/assets/js/lightgallery.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+        var slideUp = {
+            distance: '50px',
+            origin: 'bottom',
+            opacity: 0,
+            // delay: 50,
+            duration: 1300,
+            //easing: 'ease-in-out',
+            easing: 'cubic-bezier(0.5, 0, .25, 1)',
+        };
+        var slideLeft = {
+            distance: '80px',
+            origin: 'left',
+            opacity: 0,
+            duration: 1300,
+            easing: 'cubic-bezier(0.5, 0, .25, 1)',
+        }
+        
+        var slideDown = {
+            interval: 250,
+            distance: '80px',
+            delay: 20,
+            origin: 'top',
+            opacity: 0,
+            duration: 1300,
+            easing: 'cubic-bezier(0.5, 0, .25, 1)',
+        }
+        
+        ScrollReveal().reveal('.gallery-tile', slideDown);
+        ScrollReveal().reveal('.project-desc', slideUp);
+        ScrollReveal().reveal('.project-name', slideUp);
+        ScrollReveal().reveal('.project-img', slideLeft);
+        lightGallery(document.getElementById('lightgallery'));
+        
+        // ScrollReveal().reveal('.project-name');
+    </script> -->
+    <script type="text/javascript">
     $(document).ready(function () {
-        $("#lightgallery").lightGallery();
+        $("#lightgallery").lightGallery({
+            selector: '.gallery-link',
+            thumbnail: true,
+            animateThumb: false,
+            showThumbByDefault: false
+        });
     });
 </script>
 
