@@ -297,20 +297,6 @@ nav {
     align-content: stretch;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 800px) {
-      .gallery-column {
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .gallery-column {
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-
     .gallery-link {
       width: 33.3%;
       .gallery-item {
@@ -329,11 +315,6 @@ nav {
         }
         // border: 2px solid cyan;
       }
-    }
-    .gallery-column {
-      flex: 33%;
-      min-width: 30%;
-      padding-right: 0.5em;
     }
   }
 }
