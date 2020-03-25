@@ -30,6 +30,8 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 1000000000000000000;
+  background-color: $main-color;
 
   .nav-container {
     margin-top: 20vh;
@@ -302,7 +304,7 @@ $rounded-rect: 7px;
         &:hover {
           background-blend-mode: multiply;
           background-color: #062739;
-          transition: ease-in 0.15s;
+          transition: ease-in 0.15s !important;
 
           span {
             backdrop-filter: contrast(0.3);
@@ -351,8 +353,18 @@ a:-webkit-any-link {
         }
 
         &:hover {
-          background-color: #10485e;
-          background-blend-mode: soft-light;
+          background-blend-mode: multiply;
+          background-color: #062739;
+          transition: ease-in 0.15s;
+
+          span {
+            backdrop-filter: contrast(0.3);
+            mix-blend-mode: screen;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none !important;
+          }
         }
 
         span {
@@ -377,20 +389,6 @@ a:-webkit-any-link {
           }
         }
 
-        &:hover {
-          background-blend-mode: multiply;
-          background-color: #062739;
-          transition: ease-in 0.15s;
-
-          span {
-            backdrop-filter: contrast(0.3);
-            mix-blend-mode: screen;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-decoration: none !important;
-          }
-        }
       }
     }
   }

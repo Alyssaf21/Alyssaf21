@@ -15,7 +15,7 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.3;
-  letter-spacing: .75px; 
+  letter-spacing: 0.75px;
 }
 
 .bodytext-2 {
@@ -32,7 +32,7 @@ h1 {
   width: auto;
   min-width: 465px;
   line-height: 1.3em;
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   overflow-x: hidden;
 }
 
@@ -40,17 +40,50 @@ h1 {
   margin-top: 5em;
 }
 
+// 404 page styling
+
+.container-404 {
+  padding: 5em 8em;
+
+  h1 {
+    font-size: 80px;
+    margin: 0px 20px 20px 0px;
+    font-weight: 600;
+    color: $highlight-dark;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 18px;
+    width: 23em;
+    span {
+      font-size: 28px;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 5vw;
+    bottom: 10vh;
+    height: 40vh;
+    width: auto;
+  }
+}
 
 ::-webkit-scrollbar {
-  width: .5em;
-  margin-right: -.5em; }
+  width: 0.5em;
+  margin-right: -0.5em;
+}
 
 ::-webkit-scrollbar-track {
-  background: transparent url("../assets/images/blank.png") repeat-y !important; }
+  background: transparent url("../assets/images/blank.png") repeat-y !important;
+}
 
 ::-webkit-scrollbar-track-piece:end {
-  background: transparent url("../assets/images/blank.png") repeat-y !important; }
+  background: transparent url("../assets/images/blank.png") repeat-y !important;
+}
 
 ::-webkit-scrollbar-thumb {
-  background-color: $dark; }
-
+  background-color: $dark;
+}

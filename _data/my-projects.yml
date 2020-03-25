@@ -11,7 +11,7 @@ buttons:
 
 projects:
   - name: Sharebio
-    link: 
+    link: /sharebio/
     icon: "/assets/images/sharebio-thumbnail.png"
     color: "#08416a"
     date: Summer 2019 - Present
