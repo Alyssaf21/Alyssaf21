@@ -247,6 +247,8 @@ nav {
   }
 }
 
+$rounded-rect: 7px;
+
 #projects {
   margin-left: $content-margin-left;
   margin-top: 7em;
@@ -266,7 +268,7 @@ nav {
       .project-item {
         width: 100%;
         height: 90%;
-        $rounded-rect: 7px;
+
         border-radius: $rounded-rect;
         background: {
           size: cover;
@@ -291,14 +293,13 @@ nav {
             margin: 0;
           }
         }
+
         &:hover {
           background-blend-mode: multiply;
           background-color: #062739;
           transition: ease-in 0.15s;
 
           span {
-            // -webkit-backdrop-filter: blur(40px);
-            // backdrop-filter: blur(40px);
             backdrop-filter: contrast(0.3);
             mix-blend-mode: screen;
             display: flex;
@@ -337,6 +338,7 @@ a:-webkit-any-link {
         margin-bottom: 0.5em;
         margin-right: 0.5em;
         height: 15em;
+        border-radius: $rounded-rect;
         background: {
           repeat: no-repeat;
           size: cover;
@@ -347,7 +349,43 @@ a:-webkit-any-link {
           background-color: #10485e;
           background-blend-mode: soft-light;
         }
-        // border: 2px solid cyan;
+
+        span {
+          height: 100%;
+          width: 100%;
+          display: none;
+          color: rgb(255, 255, 255);
+          padding: 0 5%;
+          border-radius: $rounded-rect;
+
+          h2 {
+            margin: 10% 0%;
+            line-height: 1;
+            font-size: 200%;
+          }
+          p {
+            font-weight: 300;
+            line-height: 1.2;
+            font-size: 20px;
+            margin: 0;
+            opacity: .7;
+          }
+        }
+
+        &:hover {
+          background-blend-mode: multiply;
+          background-color: #062739;
+          transition: ease-in 0.15s;
+
+          span {
+            backdrop-filter: contrast(0.3);
+            mix-blend-mode: screen;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none !important;
+          }
+        }
       }
     }
   }

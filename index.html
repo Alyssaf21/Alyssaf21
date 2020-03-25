@@ -65,14 +65,16 @@ permalink:
             </div>
         </div>
     </div>
+
     <div id="projects" class="main-section">
         <div class="highlight">
             <h2>Projects</h2>
         </div>
 
         <div class="project-wrapper">
+
             {% for block in site.data.my-projects.projects %}
-            <a href="#home" class="project-link">
+            <a href="{{ block.link }}" class="project-link">
                 <div class="project-item" style="background-image: url('{{ block.icon | asset_url }}')">
                     <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
                         <h2>
@@ -86,23 +88,6 @@ permalink:
             </a>
             {% endfor %}
 
-            <!-- <div class="project-item" style="background-image: url('/assets/images/sharebio-thumbnail.png')">
-                    <span class="project-text">
-                        <h2>
-                            Sharebio
-                        </h2>
-                        <p>
-                            A project-sharing platform for bioinformatics research
-                        </p>
-                    </span>
-                </div>
-            </a>
-            <a href="" class="project-link">
-                <div class="project-item" style="background-image: url('/assets/images/montage-thumbnail.png')"></div>
-            </a>
-            <a href="" class="project-link">
-                <div class="project-item" style="background-image: url('/assets/images/starbird-thumbnail.png')"></div>
-            </a> -->
         </div>
     </div>
 
@@ -112,8 +97,30 @@ permalink:
         </div>
 
         <div id="lightgallery">
-            <!-- <div class="gallery-column"> -->
-            <a href="/assets/images/pietime-thumbnail.png" class="gallery-link">
+            {% for block in site.data.my-projects.gallery %}
+
+            <a href="{{ block.image | asset_url }}" class="gallery-link">
+                <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
+                    <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
+                        <h2>
+                            {{ block.name }}
+                        </h2>
+                        <p>
+                            <!-- {{ block.type }} <br> -->
+                            {% for type in block.type %}
+                                {{ type }}
+                                {% if forloop.last == true %}
+                                    {% break %}
+                                {% else %}
+                                    &nbsp; // &nbsp;
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+            <!-- <a href="/assets/images/pietime-thumbnail.png" class="gallery-link">
                 <div class="gallery-item" style="background-image: url('/assets/images/pietime-thumbnail.png')">
                 </div>
             </a>
@@ -141,7 +148,7 @@ permalink:
                 <div class="gallery-item" style="background-image: url('/assets/images/business-club.jpg')"
                     data-src="/assets/images/business-club.jpg">
                 </div>
-            </a>
+            </a> -->
 
         </div>
     </div>

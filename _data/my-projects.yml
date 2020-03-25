@@ -43,23 +43,52 @@ projects:
     - UI design
     - graphic design
     desc: "A classic astroid-doging, side-scrolling adventure about a bird
-          trying to find its way home through space."
+          trying to find its way home across the."
 gallery:
-  - name: Doorstop
-    icon: "../assets/images/doorstop2.png"
+  - name: Pietime
+    icon: "/assets/images/pietime-thumbnail.png"
+    image: "/assets/images/pietime-thumbnail.png"
+    color: "#217984"
+    type: 
+    - concept
+    - mockup
   
-  - name: Montage
-    icon: "../assets/images/montage.png"
+  - name: Video Narrative animations
+    icon: "/assets/images/street_corner.png"
+    image: "/assets/images/video_narrative.png"
+    color: "#34530a"
+    type:
+    - animation
+    - illustration
    
-  - name: Video Narrative
-    icon: "../assets/images/hub.gif"
+  - name: Spine and Scoliosis Clinic
+    icon: "/assets/images/SSC-site-edited.png"
+    image: "/assets/images/SSC-site-edited.png"
+    color: "#2067a0"
+    type:
+    - mockup
+    - site redesign
 
-  - name: Starbird
-    icon: "../assets/images/starbird.png"
+  - name: Boo Boo Zoo
+    icon: "/assets/images/bbz-thumbnail.png"
+    image: "/assets/images/bbz-divided.png"
+    color: "#ab4d2b"
+    type:
+    - mockup
+    - site redesign
 
-  - name: Business Club Logo
-    icon: "../assets/images/business-club.jpg"
+  - name: Lorien Herbs & Natural Foods
+    icon: "/assets/images/lorien.png"
+    image: "/assets/images/lorien.png"
+    color: "#37356b"
+    type:
+    - mockup
+    - site redesign
 
-  - name: Native American Heritage Month Poster
-    icon: "../assets/images/heritage-month.jpg"
-   
+  - name: Business Club logo
+    icon: "/assets/images/business-club.jpg"
+    image: "/assets/images/business-club.jpg" 
+    color: "#620d22"
+    type:
+    - branding
+    - graphic design
