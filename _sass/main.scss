@@ -34,6 +34,7 @@ h1 {
   line-height: 1.3em;
   transition: margin-left 0.5s;
   overflow-x: hidden;
+  padding-left: 4em;
 }
 
 #center-container {
@@ -43,7 +44,7 @@ h1 {
 // 404 page styling
 
 .container-404 {
-  padding: 5em 8em;
+  padding: 5em 6em;
 
   h1 {
     font-size: 80px;

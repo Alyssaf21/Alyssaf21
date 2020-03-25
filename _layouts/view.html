@@ -3,14 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title> 
+    <title>{{ page.title }}</title>
     <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:200,300,400,400i,600,700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/nest_hover3_iw8_icon.ico" type="image/x-icon">
 </head>
 
 <body>
     {% include sidenav.html %}
-    {{ content }}
+    <div id="main-container" class="main-project-view">
+        {{ content }}
+    </div>
 </body>
 
 </html>
