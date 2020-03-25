@@ -10,34 +10,40 @@ buttons:
     link: "link to page"
 
 projects:
-  - name: Lorien Herbs & Natural Foods
-    icon: "../assets/images/lorien2.png"
-    date: Adobe Xd
-    platform: web
-    desc: "Mockups for Lorien Herbs & Natural Foods, a local herbal remedy shop on Perry Street. 
-          A website redesign challenge and an exercise in using Adobe Xd. The biggest challenge in this 
-          project was trying to accommodate all of the site's text in a neat, readable way. "
-  
   - name: Sharebio
-    icon: "../assets/images/sharebio.png"
-    date: June and July 2019
-    platform: Yii2 PHP framework
-    desc: "Sharebio is a research-sharing platform for biology undergraduate students and 
-          faculty. Over the course of the summer, I've been extensively 
-          testing, debugging, redesigning and adding new features to Sharebio and will continue 
-          to oversee its development through its relaunch this spring."
+    link: 
+    icon: "/assets/images/sharebio-thumbnail.png"
+    color: "#08416a"
+    date: Summer 2019 - Present
+    skills: 
+    - front-end development 
+    - UI design 
+    - branding
+    desc: "An intercollegiate platform that hosts bioinformatics research
+          materials shared between Whitworth, Reed, and Lewis & Clark College."
+  
+  - name: Montage
+    link: 
+    icon: "/assets/images/montage-thumbnail.png"
+    color: "#0d8b8b"
+    date: Fall 2019
+    skills: 
+    - UX design 
+    - UI design
+    desc: "Aimed towards TAs and students in freshman seminar, Montage helps 
+          instructors easily coordinate multiple appointments and advising meetings."
         
-  - name: Spine and Scoliosis Clinic
-    icon: "../assets/images/SSC-site1.png"
-    status: complete
-    type: video
-    tools: 
-      - photoshop
-      - windows movie maker
-    platform: n/a
-    desc: "Another redesign for Web Design II, with more content to work with this time- The Spine and Scoliosis
-          Clinic is a small chiropractic clinic that needed to display a lot of information in as few pages as 
-          possible. Unlike Lorien, the SSC also wants to get visitors to make appointments through the site."
+  - name: Starbird
+    link: 
+    icon: "/assets/images/starbird-thumbnail.png"
+    color: "#4a3296"
+    date: January 2019
+    skills: 
+    - front-end development
+    - UI design
+    - graphic design
+    desc: "A classic astroid-doging, side-scrolling adventure about a bird
+          trying to find its way home through space."
 gallery:
   - name: Doorstop
     icon: "../assets/images/doorstop2.png"
