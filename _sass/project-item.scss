@@ -131,7 +131,7 @@ nav {
   .roles-contact {
     width: 90%;
     margin-left: 2em;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     font-family: "Public Sans", Arial, Helvetica, sans-serif;
@@ -147,12 +147,13 @@ nav {
 
   .home-img {
     height: 100%;
+    width: 100%;
     $home-height: 78%;
     $home-width: 72%;
     @mixin gif-position {
       height: $home-height / 1.5;
       width: $home-width / 1.5;
-      position: absolute;
+      position: absolute !important;
       margin-left: $nav-width + 4em;
     }
 
@@ -189,10 +190,12 @@ nav {
       family: "Public Sans", Arial, Helvetica, sans-serif;
     }
     line-height: 0.85;
-    display: flex;
+    display: flex !important;
     position: absolute;
-    right: 10%;
-    bottom: 0.5em;
+    // right: 10% !important;
+    // bottom: 0.5em !important;
+    left: 53% !important;
+    top: 65% !important;
     margin: 0 0.1em 0.3em 0;
     z-index: 5;
     opacity: 100%;
@@ -212,8 +215,10 @@ nav {
 
   .shadow {
     color: $main-color;
-    right: -0.15em;
-    bottom: -0.35em;
+    // right: -0.15em;
+    // bottom: -0.35em;
+    left: 1.7% !important;
+    top: 1.7% !important;
     z-index: 4;
 
     .vertical-line {
@@ -368,7 +373,7 @@ a:-webkit-any-link {
             line-height: 1.2;
             font-size: 20px;
             margin: 0;
-            opacity: .7;
+            opacity: 0.7;
           }
         }
 

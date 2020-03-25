@@ -20,7 +20,10 @@
     <script src="../assets/js/lightgallery.min.js"></script>
     <script src="../assets/js/lg-thumbnail.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+    <script src="/assets/js/parallax.min.js"></script>
+    <!-- <script src="/assets/js/parallax.js"></script> -->
+    <!-- <script src="/assets/js/rellax.min.js"></script> -->
     <!-- {% include nav.html %} -->
     <div id="main-container">
         {{ content }}
@@ -29,8 +32,6 @@
 </body>
 
 <!-- <script src="/assets/js/parallax.js"></script>
-    <script src="/assets/js/rellax.min.js"></script>
-    <script src="/assets/js/lightgallery.min.js"></script>
     <script>
         // Accepts any class name
         var rellax = new Rellax('.rellax');
@@ -77,6 +78,45 @@
             animateThumb: false,
             showThumbByDefault: false
         });
+
+        var slideDown = {
+            interval: 60,
+            distance: '50px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 800,
+            easing: 'ease-in-out'
+        }
+
+        var slowSlide = {
+            interval: 150,
+            distance: '80px',
+            delay: 150,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-in-out'
+        }
+
+        var easeIn = {
+            interval: 60,
+            distance: '10px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-out',
+            reset: true,
+        }
+
+        ScrollReveal().reveal('.gallery-item', slideDown);
+        ScrollReveal().reveal('.project-item', slideDown);
+        ScrollReveal().reveal('.slowSlide', slowSlide);
+        ScrollReveal().reveal('.slideDown', easeIn);
+
+        var scene = document.getElementById('home');
+        var parallaxInstance = new Parallax(home);
     });
 </script>
 
