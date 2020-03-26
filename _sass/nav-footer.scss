@@ -1,0 +1,106 @@
+/*----------------------------------------
+- NAVBAR                                 
+----------------------------------------*/
+
+nav {
+  float: left;
+  width: $nav-width;
+  height: 100vh;
+  border-right: 1px solid $pale-purple;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000000000000000000;
+  // background-color: $main-color;
+  background-color: $dark-blue;
+
+  .nav-container {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 3em;
+    }
+
+    #circle {
+      width: $nav-btn-size;
+      height: $nav-btn-size;
+      border: 1.4px solid $highlight-pink;
+      // background-color: $main-color;
+      background-color: $dark-blue;
+      border-radius: 50%;
+      margin-bottom: 2em;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        // @debug desaturate($main-color, 10);
+        // background: darken($dark-blue, 10%);
+        background: $highlight-pink;
+        transition: ease-in 0.3s;
+
+        .nav-icon {
+          display: none;
+        }
+        .nav-icon-span {
+          display: flex;
+          // color: rgb(255, 255, 255);
+          color: $main-color;
+        }
+      }
+
+      .nav-icon {
+        color: aliceblue;
+        opacity: 0.75;
+        // position: absolute;
+      }
+      .nav-icon-span {
+        display: none;
+      }
+    }
+  }
+
+  .my-name {
+    font-size: 1.5em;
+    white-space: nowrap;
+    margin-top: 7.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    .highlight-pink {
+      color: $highlight-pink;
+      font-weight: 700;
+    }
+  }
+
+  .rotate {
+    //Rotates my-name in the side nav
+    transform: rotate(-90deg);
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
+@mixin vert-line($height, $thickness, $color) {
+  border-left: $thickness solid $color;
+  height: $height;
+  z-index: 5;
+}
+
+.vertical-line {
+  @include vert-line(100%, 2px, $highlight-dark);
+  position: absolute;
+}

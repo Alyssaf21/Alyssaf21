@@ -1,97 +1,123 @@
-.main-project-view {
-  padding-left: 4em !important;
-  display: grid;
-  grid-template-rows: 700px 650px 650px 650px;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "overview"
-    "tasks"
-    "ux"
-    "design";
+.proj-section {
+  padding-left: 6em;
+  margin-bottom: 5em;
+}
 
-  #overview {
-    grid-area: overview;
-    display: grid;
-    grid-template-columns: 1fr 550px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "img text"
-      "img text"
-      "img details";
+$hero-size: 55vh;
 
-    .img-half {
-      grid-area: img;
-      height: 100%;
-      width: 100%;
-      background-color: white;
-      display: flex;
-      align-items: center;
+#landing {
+  padding-top: $hero-size;
+  margin-top: 1.75em;
 
-      .hero {
-        height: 80%;
-        width: 100%;
-        background: {
-          image: url("../assets/images/sharebio.png");
-          repeat: no-repeat;
-          size: cover;
-          position: center top;
-        }
-        img {
-          height: 100%;
-          width: auto;
-        }
-      }
-    }
-
-    .text {
-      grid-area: text;
-
-      .title {
-        padding: 2em 2em 0 2em;
-        display: flex;
-        flex-direction: column;
-        //   margin-top: 2em;
-
-        h1 {
-          font-size: 50px;
-          margin-bottom: 5px;
-          color: rgb(255, 255, 255);
-        }
-        span {
-          color: $highlight-dark;
-          letter-spacing: 1.1px;
-          font-size: 20px;
-        }
-      }
-
-      .desc {
-        padding: 1em 3em 2em 2em;
-        line-height: 1.7;
-        letter-spacing: 0.4px;
-      }
-    }
-
-    .details {
-        grid-area: details;
-        display: flex;
-        padding: 0em 3em 2em 2em;
+  .hero {
+    background-color: #c4e7f9;
+    width: 100%;
+    height: $hero-size;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: {
+      image: url("../assets/images/sharebio.png");
+      size: contain;
+      position: left;
     }
   }
 
-  #tasks {
-    grid-area: tasks;
-    display: grid;
-    background-color: cornsilk;
+  .roles-time {
+    max-width: 90%;
+    width: 43em;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Public Sans", Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+
+    .horizontal-line {
+      border-top: 1px solid $highlight-dark;
+      flex-grow: 2;
+      margin: 0em 1em;
+      z-index: 5;
+    }
   }
 
-  #ux {
-    grid-area: ux;
-    display: grid;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    color: white;
   }
 
-  #design {
-    grid-area: design;
-    display: grid;
-    background-color: cornsilk;
+  h3 {
+    color: steelblue;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  p {
+    width: 40em;
+    // min-width: 30em;
+    max-width: 95%;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .info-wrapper {
+    margin-top: 6em;
+    display: flex;
+    justify-content: flex-start;
+
+    .info {
+      &::after {
+        margin-left: 2em;
+        margin-right: 2em;
+        content: "|";
+      }
+    }
+  }
+}
+
+#objectives {
+  background-color: white;
+  color: $main-color;
+
+  .objective-wrapper {
+    height: 20em;
+    width: 40em;
+    min-width: 27em;
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .vert-divider {
+      @include vert-line(3em, 1px, steelblue);
+      align-self: center;
+    }
+
+    .objective {
+      // border-left: 2px solid white;
+      // border-right: 2px solid white;
+      margin-top: -1em;
+      padding: 0em 3.5em;
+
+      img {
+        width: 120%;
+        height: auto;
+      }
+
+      h4 {
+        margin: .5em 0;
+        font-size: 28px;
+      }
+
+      p {
+        margin: 0 .2em;
+        font-size: 18px;
+      }
+    }
   }
 }

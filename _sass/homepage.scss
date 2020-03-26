@@ -18,86 +18,10 @@
   }
 }
 
-/*----------------------------------------
-- NAVBAR                                 
-----------------------------------------*/
-
-nav {
-  float: left;
-  width: $nav-width;
-  height: 100vh;
-  border-right: 1px solid $pale-purple;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  z-index: 1000000000000000000;
-  background-color: $main-color;
-
-  .nav-container {
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &:last-child {
-      margin-bottom: 3em;
-    }
-
-    #circle {
-      width: $nav-btn-size;
-      height: $nav-btn-size;
-      border: 1.4px solid $highlight-pink;
-      background-color: $main-color;
-      border-radius: 50%;
-      margin-bottom: 2em;
-      z-index: 10;
-
-      &:hover {
-        // @debug desaturate($main-color, 10);
-        background: darken($main-color, 10%);
-      }
-    }
-  }
-
-  .my-name {
-    font-size: 1.5em;
-    white-space: nowrap;
-    margin-top: 7.5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-
-    .highlight-pink {
-      color: $highlight-bright;
-      font-weight: 500;
-    }
-  }
-
-  .rotate {
-    //Rotates my-name in the side nav
-    transform: rotate(-90deg);
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-}
-
 @mixin vert-line($height, $thickness, $color) {
   border-left: $thickness solid $color;
   height: $height;
   z-index: 5;
-}
-
-.vertical-line {
-  @include vert-line(500px, 2px, $highlight-dark);
-  position: absolute;
 }
 
 /*----------------------------------------
@@ -118,10 +42,11 @@ nav {
   width: 36vh;
   position: absolute;
   background-color: #ce426f;
-  mix-blend-mode: overlay;
-  // opacity: 65%;
+  mix-blend-mode: color-dodge;
+  opacity: 65%;
   right: 0;
   bottom: 1em;
+  z-index: 1;
 }
 
 #home {
@@ -138,6 +63,8 @@ nav {
     justify-content: space-between;
     font-family: "Public Sans", Arial, Helvetica, sans-serif;
     letter-spacing: 1.5px;
+    // color: $dark-blue;
+  
 
     .horizontal-line {
       border-top: 1px solid $highlight-dark;
@@ -171,18 +98,18 @@ nav {
       left: 0;
       top: 20%;
       z-index: 1;
-      background-color: #fa95b7;
-      background-blend-mode: hard-light;
+      background-color: #be84a1;
+      background-blend-mode: overlay;
     }
 
     .gif-shadow {
       @include gif-position();
-      background-color: #062739;
-      mix-blend-mode: hard-light;
+      // background-color: #062739;
+      mix-blend-mode: overlay;
+      background-color: #2382b6;
       left: 7%;
       top: 25%;
-      z-index: 0;
-      opacity: 0.5;
+      z-index: 6;
     }
   }
 
@@ -201,11 +128,16 @@ nav {
     margin: 0 0.1em 0.3em 0;
     z-index: 5;
     opacity: 100%;
-    mix-blend-mode: screen;
-    > div::selection {
-      color: rgb(5, 27, 99);
-      background: lightskyblue;
-    }
+    color: $dark-blue;
+    // color: rgb(92, 135, 184);
+    // mix-blend-mode: color-dodge;
+    // mix-blend-mode: screen;
+    text-shadow: rgb(0, 172, 237) 5px 4px;
+
+    // > div::selection {
+    //   color: rgb(5, 27, 99);
+    //   background: lightskyblue;
+    // }
 
     .vertical-line {
       @include vert-line(1.4em, 2px, $highlight-dark);
@@ -216,12 +148,13 @@ nav {
   }
 
   .shadow {
-    color: $main-color;
-    // right: -0.15em;
-    // bottom: -0.35em;
-    left: 1.7% !important;
-    top: 1.7% !important;
-    z-index: 4;
+    // color: $main-color;
+    // color: $dark-blue;
+    // // right: -0.15em;
+    // // bottom: -0.35em;
+    // left: 1.7% !important;
+    // top: 1.7% !important;
+    // z-index: 1;
 
     .vertical-line {
       @include vert-line(1.4em, 2px, rgba(255, 0, 0, 0));
@@ -388,7 +321,6 @@ a:-webkit-any-link {
             opacity: 0.7;
           }
         }
-
       }
     }
   }
