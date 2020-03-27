@@ -75,12 +75,12 @@ permalink:
                         <p>
                             <!-- {{ block.type }} <br> -->
                             {% for type in block.type %}
-                                {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
-                                {% if forloop.last == true %}
-                                    {% break %}
-                                {% else %}
-                                    &nbsp;|&nbsp;
-                                {% endif %}
+                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
+                            {% if forloop.last == true %}
+                            {% break %}
+                            {% else %}
+                            &nbsp;|&nbsp;
+                            {% endif %}
                             {% endfor %}
                         </p>
                     </span>
@@ -99,16 +99,20 @@ permalink:
             <div class="about-img" style="background-image: url('/assets/images/portrait.png')"></div>
             <p>
                 <span> Hi, I'm Alyssa, an aspiring user interface and experience desginer.</span><br>
-                I like to think of the creative challenges presented by my work as a combination 
-                of two of my favorite things: puzzles and art. Whether it's by overhauling a site, 
-                designing a framework for organizing office supplies or rearranging the furniture 
-                in my house, I'm always looking for ways to improve the systems I come into 
+                I like to think of the creative challenges presented by my work as a combination
+                of two of my favorite things: puzzles and art. Whether it's by overhauling a site,
+                designing a framework for organizing office supplies or rearranging the furniture
+                in my house, I'm always looking for ways to improve the systems I come into
                 contact with. <br> <br>
-                Work aside, I also have a great love for psychology, philosophy, hand-drawn 
-                animation, and wacky puzzle games. 
+                Work aside, I also have a great love for psychology, philosophy, hand-drawn
+                animation, and wacky puzzle games. <br> <br>
+                Drop me a line at 
+                <a href="mailto:a.c.fusato@gmail.com">a.c.fusato@gmail.com</a>!
+            </p>
+
         </div>
     </div>
-</div> 
+</div>
 
 <script type="text/javascript">
     $(document).ready(function () {
