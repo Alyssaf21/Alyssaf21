@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
     <link
-        href="https://fonts.googleapis.com/css?family=Fira+Code:300,400|Public+Sans:200,300,400,400i,600,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400i,400|Public+Sans:100i,200,200i,300,400,400i,600,700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/nest_hover3_iw8_icon.ico" type="image/x-icon">
 </head>
@@ -32,54 +32,5 @@
     </div>
 </body>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#lightgallery").lightGallery({
-            selector: '.gallery-link',
-            thumbnail: false,
-            animateThumb: false,
-            showThumbByDefault: false
-        });
-
-        var slideDown = {
-            interval: 60,
-            distance: '50px',
-            delay: 10,
-            origin: 'top',
-            opacity: 0,
-            duration: 800,
-            easing: 'ease-in-out'
-        }
-
-        var slowSlide = {
-            interval: 150,
-            distance: '80px',
-            delay: 150,
-            origin: 'top',
-            opacity: 0,
-            duration: 1000,
-            easing: 'ease-in-out'
-        }
-
-        var easeIn = {
-            interval: 60,
-            distance: '10px',
-            delay: 10,
-            origin: 'top',
-            opacity: 0,
-            duration: 1000,
-            easing: 'ease-out',
-            reset: true,
-        }
-
-        ScrollReveal().reveal('.gallery-item', slideDown);
-        ScrollReveal().reveal('.project-item', slideDown);
-        ScrollReveal().reveal('.slowSlide', slowSlide);
-        ScrollReveal().reveal('.slideDown', easeIn);
-
-        var scene = document.getElementById('home');
-        var parallaxInstance = new Parallax(home);
-    });
-</script>
 
 </html>

@@ -61,10 +61,9 @@
     display: flex !important;
     align-items: center;
     justify-content: space-between;
-    font-family: "Public Sans", Arial, Helvetica, sans-serif;
+    font-family: $font-primary;
     letter-spacing: 1.5px;
     // color: $dark-blue;
-  
 
     .horizontal-line {
       border-top: 1px solid $highlight-dark;
@@ -195,10 +194,6 @@ $rounded-rect: 7px;
 
   .project-wrapper {
     display: flex;
-    // grid-template-columns: 30% 30% 30%;
-    // grid-template-rows: 30% 30% 30%;
-    // grid-template-rows: 30vh;
-    // justify-content: space-around;
 
     .project-link {
       height: 40vw;
@@ -222,15 +217,27 @@ $rounded-rect: 7px;
           color: rgb(255, 255, 255);
           padding: 10% 2em;
           border-radius: $rounded-rect;
+          overflow: hidden;
 
           h2 {
             margin: 10% 0%;
+            word-break: break-word;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            text-overflow: ellipsis;
+            line-height: .9;
+
           }
+
           p {
+            // min-width: 300px;
             font-weight: 300;
             line-height: 1.6;
             font-size: 20px;
             margin: 0;
+            
           }
         }
 
@@ -319,6 +326,7 @@ a:-webkit-any-link {
             font-size: 20px;
             margin: 0;
             opacity: 0.7;
+            font-family: $font-secondary;
           }
         }
       }
@@ -331,30 +339,37 @@ a:-webkit-any-link {
 ----------------------------------------*/
 
 #about {
-  margin-left: $content-margin-left;
-  margin-right: 5em;
+  margin: 0 5em 8em $content-margin-left;
+  margin-bottom: 8em;
+
   .about-wrapper {
     display: flex;
 
     .about-img {
-      height: 35vw;
-      width: 30vw;
-      min-width: 15em;
-      min-height: 20em;
-      margin-right: 4em;
-      // border: 2px solid aquamarine;
+      // flex-grow: 1;
+      width: 17em;
+      height: 25em;
+      // min-width: 15em;
+      margin: 0 8% 0 1em;
       @include bg-img();
+      border-radius: 15px;
     }
 
     p {
-      width: 30em;
-      max-width: 45em;
-      margin-top: 10%;
-      margin-right: 5em;
+      width: 32em;
+      margin-top: 0.5em;
+      min-width: 18em;
       line-height: 1.7;
       font-weight: 200;
       letter-spacing: 1px;
       font-size: 18px;
+
+      span {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-bottom: .5em;
+      }
     }
   }
 }

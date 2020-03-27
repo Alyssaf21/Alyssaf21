@@ -1,5 +1,5 @@
 html {
-  font-family: $font-secondary;
+  font-family: $font-primary;
 }
 
 body {
@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-  font-family: "Public Sans", "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
   color: $highlight-pink;
   font-size: 28px;
   font-weight: 300;
@@ -18,16 +17,6 @@ h1 {
   letter-spacing: 0.75px;
 }
 
-.bodytext-2 {
-  font-family: "Fira Code", monospace;
-  color: $text-secondary;
-  font-weight: 300;
-  line-height: 1.4;
-  font-size: 22px;
-}
-
-// main container
-
 #main-container {
   width: auto;
   min-width: 465px;
@@ -35,10 +24,28 @@ h1 {
   transition: margin-left 0.5s;
   overflow-x: hidden;
   padding-left: 4em;
-}
 
-#center-container {
-  margin-top: 5em;
+  .time-roles { //Appears at the top of all pages
+    max-width: 90%;
+    width: 43em;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1.4px;
+    font: {
+      style: italic;
+      family: $font-secondary;
+      size: 20px;
+      weight: 300;
+    }
+
+    .horizontal-line {
+      border-top: 1px solid $highlight-dark;
+      flex-grow: 2;
+      margin: 0em 1em;
+      z-index: 5;
+    }
+  }
 }
 
 // 404 page styling
@@ -72,6 +79,8 @@ h1 {
   }
 }
 
+// Scrollbar
+
 ::-webkit-scrollbar {
   width: 0.5em;
   margin-right: -0.5em;
@@ -86,5 +95,5 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $dark;
+  background-color: $main-color;
 }

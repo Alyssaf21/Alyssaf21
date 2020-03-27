@@ -8,9 +8,9 @@ permalink:
 
     <div class="home-highlight slideDown"></div>
     <div id="home" class="main-section">
-        <div class="roles-contact" data-depth="0.2">
+        <div class="time-roles" data-depth="0.2">
             <div class="roles">
-                ux / ui / front end
+                ux / ui / front-end
             </div>
             <div class="horizontal-line"></div>
             <div class="contact">
@@ -75,11 +75,11 @@ permalink:
                         <p>
                             <!-- {{ block.type }} <br> -->
                             {% for type in block.type %}
-                                {{ type }}
+                                {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
                                 {% if forloop.last == true %}
                                     {% break %}
                                 {% else %}
-                                    &nbsp; // &nbsp;
+                                    &nbsp;|&nbsp;
                                 {% endif %}
                             {% endfor %}
                         </p>
@@ -98,11 +98,64 @@ permalink:
         <div class="about-wrapper">
             <div class="about-img" style="background-image: url('/assets/images/portrait.png')"></div>
             <p>
-                Hi! This is text about Alyssa. I like to think of the creative challenges presented by UX
-                and UI design as a combination of two of my favorite things: puzzles and art. Other interests
-                include digital illustration, psychology, and philosophy. I also enjoy hoarding useless information
-                and rearranging furniture to achieve peak efficiency. Hire me, I can walk your dog!
-            </p>
+                <span> Hi, I'm Alyssa, an aspiring user interface and experience desginer.</span><br>
+                I like to think of the creative challenges presented by my work as a combination 
+                of two of my favorite things: puzzles and art. Whether it's by overhauling a site, 
+                designing a framework for organizing office supplies or rearranging the furniture 
+                in my house, I'm always looking for ways to improve the systems I come into 
+                contact with. <br> <br>
+                Work aside, I also have a great love for psychology, philosophy, hand-drawn 
+                animation, and wacky puzzle games. 
         </div>
     </div>
 </div> 
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#lightgallery").lightGallery({
+            selector: '.gallery-link',
+            thumbnail: false,
+            animateThumb: false,
+            showThumbByDefault: false
+        });
+
+        var slideDown = {
+            interval: 60,
+            distance: '50px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 800,
+            easing: 'ease-in-out'
+        }
+
+        var slowSlide = {
+            interval: 150,
+            distance: '80px',
+            delay: 150,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-in-out'
+        }
+
+        var easeIn = {
+            interval: 60,
+            distance: '10px',
+            delay: 10,
+            origin: 'top',
+            opacity: 0,
+            duration: 1000,
+            easing: 'ease-out',
+            reset: true,
+        }
+
+        ScrollReveal().reveal('.gallery-item', slideDown);
+        ScrollReveal().reveal('.project-item', slideDown);
+        ScrollReveal().reveal('.slowSlide', slowSlide);
+        ScrollReveal().reveal('.slideDown', easeIn);
+
+        var scene = document.getElementById('home');
+        var parallaxInstance = new Parallax(home);
+    });
+</script>
