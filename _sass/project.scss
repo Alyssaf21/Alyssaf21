@@ -113,130 +113,150 @@ $hero-size: 55vh;
   }
 }
 
+#subject-one {
+  display: flex;
+  align-items: center;
+  // padding: 1.5em 2em 0em;
+  margin-left: 0;
+  .img-wrapper {
+    padding: 0;
+    flex: 40;
+    img {
+      // height: 80%;
+      width: 100%;
+      height: auto;
+      // position: absolute;
+    }
+  }
+  .text-wrapper {
+    // margin-left: 335px;
+  }
+}
+
 #subject-two {
   display: flex;
   background-color: white;
   padding-top: 3em;
   padding-bottom: 3em;
   color: black;
+}
+.img-wrapper {
+  align-self: center;
+  padding: 2em 2em 2em 3em;
+  flex: 40;
+  height: 100%;
 
-  .img-wrapper {
-    align-self: center;
-    padding: 2em 2em 2em 3em;
-    // background-color: white;
-    flex: 25;
-    height: 100%;
-    img {
-      // width: 20em;
-      height: 3em;
-      margin-bottom: 1em;
-    }
+  img {
+    // height: 3em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
 
-    // CSS ARROW
-    @mixin rotate($angle) {
-      -moz-transform: rotate($angle);
-      -ms-transform: rotate($angle);
-      -webkit-transform: rotate($angle);
-      transform: rotate($angle);
-    }
+  // CSS ARROW
+  @mixin rotate($angle) {
+    -moz-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+    -webkit-transform: rotate($angle);
+    transform: rotate($angle);
+  }
 
-    @mixin arrow($arrowSize: 20px, $arrowBorderSize: 3px, $arrowBarWidth: 2px, $arrowBarHeight: 25px) {
+  @mixin arrow($arrowSize: 20px, $arrowBorderSize: 3px, $arrowBarWidth: 2px, $arrowBarHeight: 25px) {
+    display: inline-block;
+    height: $arrowSize;
+    position: relative;
+    width: $arrowSize;
+
+    &::after {
+      border-bottom-style: solid;
+      border-bottom-width: $arrowBorderSize;
+      border-right-style: solid;
+      border-right-width: $arrowBorderSize;
+      content: "";
       display: inline-block;
       height: $arrowSize;
-      position: relative;
+      left: 0;
+      position: absolute;
+      top: 0;
       width: $arrowSize;
-
-      &::after {
-        border-bottom-style: solid;
-        border-bottom-width: $arrowBorderSize;
-        border-right-style: solid;
-        border-right-width: $arrowBorderSize;
-        content: "";
-        display: inline-block;
-        height: $arrowSize;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: $arrowSize;
-      }
-
-      // Triangle shape state
-      &.is-triangle::after {
-        border-style: solid;
-        border-width: 0 0 $arrowSize $arrowSize;
-        height: 0;
-        width: 0;
-      }
-
-      // Check shape state
-      &.is-check::after {
-        width: $arrowSize / 2;
-      }
-
-      // Arrow Bar
-      &.arrow-bar::before {
-        bottom: 1px;
-        content: "";
-        height: $arrowBarHeight;
-        position: absolute;
-        right: 0;
-        transform-origin: bottom;
-        width: $arrowBarWidth;
-        @include rotate(-45deg);
-      }
-
-      // States
-      &.is-top {
-        @include rotate(225deg);
-      }
-
-      &.is-right {
-        @include rotate(315deg);
-      }
-
-      &.is-bottom {
-        @include rotate(45deg);
-      }
-
-      &.is-left {
-        @include rotate(135deg);
-      }
     }
 
-    @mixin arrowColor($color) {
-      &,
-      .arrow {
-        &::after {
-          border-color: $color;
-        }
-
-        &.is-triangle::after {
-          border-color: transparent;
-          border-bottom-color: $color;
-        }
-
-        &::before {
-          background-color: $color;
-        }
-      }
+    // Triangle shape state
+    &.is-triangle::after {
+      border-style: solid;
+      border-width: 0 0 $arrowSize $arrowSize;
+      height: 0;
+      width: 0;
     }
 
-    .arrow {
-      margin: 25px;
-      @include arrow(12px, 2px, 2px, 20px);
-      @include arrowColor($highlight-pink);
-      margin-left: 130px;
+    // Check shape state
+    &.is-check::after {
+      width: $arrowSize / 2;
+    }
+
+    // Arrow Bar
+    &.arrow-bar::before {
+      bottom: 1px;
+      content: "";
+      height: $arrowBarHeight;
+      position: absolute;
+      right: 0;
+      transform-origin: bottom;
+      width: $arrowBarWidth;
+      @include rotate(-45deg);
+    }
+
+    // States
+    &.is-top {
+      @include rotate(225deg);
+    }
+
+    &.is-right {
+      @include rotate(315deg);
+    }
+
+    &.is-bottom {
+      @include rotate(45deg);
+    }
+
+    &.is-left {
+      @include rotate(135deg);
     }
   }
 
-  .text-wrapper {
-    flex: 60;
-    padding: 0 3em;
-    p {
-      max-width: 30em;
-      line-height: 1.7;
-      font-weight: 300;
-      font-size: 20px;
+  @mixin arrowColor($color) {
+    &,
+    .arrow {
+      &::after {
+        border-color: $color;
+      }
+
+      &.is-triangle::after {
+        border-color: transparent;
+        border-bottom-color: $color;
+      }
+
+      &::before {
+        background-color: $color;
+      }
     }
+  }
+
+  .arrow {
+    margin: 25px;
+    @include arrow(12px, 2px, 2px, 20px);
+    @include arrowColor($highlight-pink);
+    margin-left: 130px;
+  }
+}
+
+.text-wrapper {
+  flex: 60;
+  padding: 0 3em;
+  p {
+    max-width: 30em;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 20px;
   }
 }
