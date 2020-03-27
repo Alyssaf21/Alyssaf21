@@ -31,7 +31,8 @@ projects:
     - UX design 
     - UI design
     desc: "Aimed towards TAs and students in freshman seminar, Montage helps 
-          instructors coordinate appointments and advising meetings for entire classes."
+          instructors coordinate appointments and advising meetings for entire classes.
+          (Page under construction)"
         
   - name: Starbird
     link: 
@@ -44,7 +45,7 @@ projects:
     - graphic design
     desc: "A classic browser-based side-scrolling adventure about a bird
           trying to find its way home across the galaxy. Dodge asteroids to help 
-          Starbird catch the next spaceship back!"
+          Starbird catch the next spaceship back! (Page under construction)"
 gallery:
   - name: Pietime
     icon: "/assets/images/pietime-thumbnail.png"
