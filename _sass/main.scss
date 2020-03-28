@@ -25,7 +25,8 @@ h1 {
   overflow-x: hidden;
   padding-left: 4em;
 
-  .time-roles { //Appears at the top of all pages
+  .time-roles {
+    //Appears at the top of all pages
     max-width: 90%;
     width: 43em;
     display: flex !important;
@@ -52,29 +53,44 @@ h1 {
 
 .container-404 {
   padding: 5em 6em;
+  display: flex;
+  flex-direction: column;
 
   h1 {
     font-size: 80px;
     margin: 0px 20px 20px 0px;
     font-weight: 600;
     color: $highlight-dark;
-  }
+    text-transform: capitalize;
 
+  }
+      .construction {
+        font-size: 64px;
+      }
+  
   p {
     display: inline-block;
     font-size: 18px;
     width: 23em;
     span {
+      line-height: 1.4;
       font-size: 28px;
       margin-bottom: 0.5em;
     }
+  }
+  .img-credit a{
+    color: $baby-blue;
+    position: absolute;
+    bottom: 7vh;
+    right: 5.5vw;
+    width: auto;
   }
 
   img {
     position: absolute;
     right: 5vw;
     bottom: 10vh;
-    height: 40vh;
+    height: 50vh;
     width: auto;
   }
 }

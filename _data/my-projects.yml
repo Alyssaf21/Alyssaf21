@@ -23,7 +23,7 @@ projects:
           materials shared between Whitworth, Reed, and Lewis & Clark College."
   
   - name: Montage
-    link: 
+    link: /under-construction/
     icon: "/assets/images/montage-thumbnail.png"
     color: "#0d8b8b"
     date: Fall 2019
@@ -35,7 +35,7 @@ projects:
           (Page under construction)"
         
   - name: Starbird
-    link: 
+    link: /under-construction/
     icon: "/assets/images/starbird-thumbnail.png"
     color: "#4a3296"
     date: January 2019
