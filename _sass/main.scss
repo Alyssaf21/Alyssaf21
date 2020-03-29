@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: $font-primary;
 }
@@ -23,16 +27,17 @@ h1 {
   line-height: 1.3em;
   transition: margin-left 0.5s;
   overflow-x: hidden;
-  padding-left: 4em;
 
   .time-roles {
     //Appears at the top of all pages
+    z-index: 5;
     max-width: 90%;
     width: 43em;
     display: flex !important;
     align-items: center;
     justify-content: space-between;
     letter-spacing: 1.4px;
+
     font: {
       style: italic;
       family: $font-secondary;
@@ -50,7 +55,6 @@ h1 {
 }
 
 // 404 page styling
-
 .container-404 {
   padding: 5em 6em;
   display: flex;
@@ -62,23 +66,23 @@ h1 {
     font-weight: 600;
     color: $highlight-dark;
     text-transform: capitalize;
-
   }
-      .construction {
-        font-size: 64px;
-      }
-  
+  .construction {
+    font-size: 64px;
+  }
+
   p {
     display: inline-block;
     font-size: 18px;
     width: 23em;
+
     span {
       line-height: 1.4;
       font-size: 28px;
       margin-bottom: 0.5em;
     }
   }
-  .img-credit a{
+  .img-credit a {
     color: $baby-blue;
     position: absolute;
     bottom: 7vh;
@@ -112,4 +116,116 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
   background-color: $main-color;
+}
+
+//Responsive columns
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  // border: 1px solid red;
+}
+
+@media only screen and (max-width: 870px) {
+  /* For mobile phones: */
+  html {
+    overflow-x: hidden !important;
+  }
+
+  .main-section {
+    padding: 0 !important;
+    margin-top: 3em;
+  }
+
+  [class*="col-"] {
+    // border: 1px solid rgb(139, 255, 176);
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    height: 10em !important;
+
+    span h2 {
+      margin: 0.5em 0 !important;
+    }
+  }
+
+  .project-item {
+    height: 12em !important;
+  }
+  
+
+  .col-1  {  width: 8.33%; }
+  .col-2  {  width: 16.66%;  }
+  .col-3  {  width: 25%; }
+  .col-4  {  width: 100%; }
+  .col-5  {  width: 50%; }
+  .col-6  {  width: 50%; }
+  .col-7  {  width: 100%;  }
+  .col-8  {  width: 100%;  }
+  .col-9  {  width: 100%; }
+  .col-10 {  width: 100%; }
+  .col-11 {  width: 100%; }
+  .col-12 {  width: 100%; }
+}
+
+
+@media only screen and (max-width: 1050px) and (min-width: 870px) {
+  
+  [class*="col-"] {
+    // border: 1px solid rgb(0, 200, 255);
+  }
+  
+.col-1  {  width: 8.33%; }
+.col-2  {  width: 16.66%;  }
+.col-3  {  width: 25%; }
+.col-4  {  width: 50%; }
+.col-5  {  width: 50%; }
+.col-6  {  width: 50%; }
+.col-7  {  width: 58.33%;  }
+.col-8  {  width: 66.66%;  }
+.col-9  {  width: 75%; }
+.col-10 {  width: 83.33%; }
+.col-11 {  width: 91.66%; }
+.col-12 {  width: 100%; }
 }

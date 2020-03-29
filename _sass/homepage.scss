@@ -1,11 +1,8 @@
 .main-container {
-  // margin-top: 3em;
-  padding-left: $nav-width + 1.75em;
-  padding-right: 2.75em;
+  padding-left: $nav-width;
 
   .main-section {
-    padding-top: 1.5em;
-    margin-bottom: 3em;
+    padding: 1.5em 3vw 3em;
     overflow-x: none;
 
     h2 {
@@ -55,24 +52,6 @@
   display: flex;
   align-items: flex-start;
 
-  .roles-contact {
-    width: 90%;
-    margin-left: 2em;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    font-family: $font-primary;
-    letter-spacing: 1.5px;
-    // color: $dark-blue;
-
-    .horizontal-line {
-      border-top: 1px solid $highlight-dark;
-      flex-grow: 2;
-      margin: 0em 1em;
-      z-index: 5;
-    }
-  }
-
   .home-img {
     height: 100%;
     width: 100%;
@@ -114,29 +93,19 @@
 
   .year-title {
     font: {
-      size: 124px;
+      size: 10vw;
       family: "Public Sans", Arial, Helvetica, sans-serif;
     }
     line-height: 0.85;
     display: flex !important;
     position: absolute;
-    // right: 10% !important;
-    // bottom: 0.5em !important;
     left: 53% !important;
     top: 65% !important;
     margin: 0 0.1em 0.3em 0;
     z-index: 5;
     opacity: 100%;
     color: $dark-blue;
-    // color: rgb(92, 135, 184);
-    // mix-blend-mode: color-dodge;
-    // mix-blend-mode: screen;
     text-shadow: rgb(0, 172, 237) 5px 4px;
-
-    // > div::selection {
-    //   color: rgb(5, 27, 99);
-    //   background: lightskyblue;
-    // }
 
     .vertical-line {
       @include vert-line(1.4em, 2px, $highlight-dark);
@@ -147,14 +116,6 @@
   }
 
   .shadow {
-    // color: $main-color;
-    // color: $dark-blue;
-    // // right: -0.15em;
-    // // bottom: -0.35em;
-    // left: 1.7% !important;
-    // top: 1.7% !important;
-    // z-index: 1;
-
     .vertical-line {
       @include vert-line(1.4em, 2px, rgba(255, 0, 0, 0));
       position: relative;
@@ -189,20 +150,20 @@
 $rounded-rect: 7px;
 
 #projects {
-  margin-left: $content-margin-left;
+  // margin-left: $content-margin-left;
   margin-top: 7em;
 
   .project-wrapper {
     display: flex;
+    flex-wrap: wrap;
 
     .project-link {
-      height: 40vw;
-      width: 33%;
-      margin-right: 0.5em;
+      // width: 100%;
+      // width: 33%;
+      // margin-right: 0.5em;
 
       .project-item {
-        width: 100%;
-        height: 90%;
+        height: 25em;
 
         border-radius: $rounded-rect;
         background: {
@@ -217,16 +178,11 @@ $rounded-rect: 7px;
           color: rgb(255, 255, 255);
           padding: 10% 2em;
           border-radius: $rounded-rect;
-          overflow: hidden;
+          // overflow: hidden;
 
           h2 {
             margin: 10% 0%;
             word-break: break-word;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            text-overflow: ellipsis;
             line-height: 0.9;
           }
 
@@ -269,19 +225,22 @@ a:-webkit-any-link {
 ----------------------------------------*/
 
 #gallery {
-  margin-left: $content-margin-left;
+  // margin-left: $content-margin-left;
   margin-bottom: 5em;
 
   #lightgallery {
     display: flex;
-    align-content: stretch;
+    // align-content: stretch;
     flex-wrap: wrap;
 
     .gallery-link {
-      width: 33.3%;
+      // width: 33.3%;
+      // min-width: 10em;
       .gallery-item {
         margin-bottom: 0.5em;
         margin-right: 0.5em;
+        min-height: 100%;
+        min-width: 100%;
         height: 15em;
         border-radius: $rounded-rect;
         background: {
@@ -337,30 +296,40 @@ a:-webkit-any-link {
 ----------------------------------------*/
 
 #about {
-  margin: 0 5em 8em $content-margin-left;
+  // margin: 0 5em 8em $content-margin-left;
   margin-bottom: 8em;
 
   .about-wrapper {
     display: flex;
 
+    > div {
+      align-self: center;
+    }
+
     .about-img {
-      // flex-grow: 1;
-      width: 17em;
-      height: 25em;
-      // min-width: 15em;
-      margin: 0 8% 0 1em;
+      width: 82%;
+      height: 100%;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 1em;
+      min-height: 25em;
+      min-width: 10em;
+      max-height: 80%;
       @include bg-img();
+      background-position: top;
       border-radius: 15px;
     }
 
     p {
-      width: 32em;
-      margin-top: 0.5em;
+      width: 100%;
+      max-width: 40em;
+      padding: 1em;
       min-width: 18em;
       line-height: 1.7;
       font-weight: 200;
-      letter-spacing: 1px;
-      font-size: 18px;
+      letter-spacing: .75px;
+      font-size: 16px;
+       margin: 0;
 
       span {
         font-size: 24px;
@@ -375,5 +344,53 @@ a:-webkit-any-link {
         font-weight: 400;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+
+
+
+
+}
+
+@media only screen and (max-width: 870px) {
+  .time-roles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-gif {
+    margin-left: 1em !important;
+  }
+
+  .gif-shadow {
+    margin-left: 1em !important;
+  }
+
+  .year-title {
+    font-size: 3em !important;
+    left: 5em !important;
+    // right: 8em !important;
+  }
+
+  .project-item span {
+    overflow: hidden !important;
+  }
+
+  .about-wrapper {
+    margin-left: 5%;
+  flex-direction: column;
+    div > p {
+      width: 85% !important;
+      font-size: 16px !important;
+      span {
+        font-size: 20px !important;
+      }
+    }
+  }
+  .about-img {
+     min-height: 20em !important;
+     width: 80% !important;
   }
 }

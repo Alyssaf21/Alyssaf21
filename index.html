@@ -4,11 +4,11 @@ title: Home
 permalink:
 ---
 
-<div class="main-container">
+<div class="main-container col-11">
 
-    <div class="home-highlight slideDown"></div>
+    <div class="home-highlight slideDown col-2"></div>
     <div id="home" class="main-section">
-        <div class="time-roles" data-depth="0.2">
+        <div class="time-roles col-8" data-depth="0.2">
             <div class="roles">
                 ux / ui / front-end
             </div>
@@ -17,12 +17,12 @@ permalink:
                 a.c.fusato@gmail.com
             </div>
         </div>
-        <div class="home-img" data-depth="0.1">
+        <div class="home-img col-6" data-depth="0.1">
             <div class="home-gif slideDown">
             </div>
             <div class="gif-shadow"></div>
         </div>
-        <div class="year-title" data-depth="0.6">
+        <div class="year-title col-7" data-depth="0.6">
             <div class="year slowSlide">
                 20 <br> 20
             </div>
@@ -41,18 +41,20 @@ permalink:
         <div class="project-wrapper">
 
             {% for block in site.data.my-projects.projects %}
-            <a href="{{ block.link }}" class="project-link">
-                <div class="project-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                    <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
-                        <h2>
-                            {{ block.name }}
-                        </h2>
-                        <p>
-                            {{ block.desc }}
-                        </p>
-                    </span>
-                </div>
-            </a>
+            <div class="col-4">
+                <a href="{{ block.link }}" class="project-link">
+                    <div class="project-item" style="background-image: url('{{ block.icon | asset_url }}')">
+                        <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
+                            <h2>
+                                {{ block.name }}
+                            </h2>
+                            <p>
+                                {{ block.desc }}
+                            </p>
+                        </span>
+                    </div>
+                </a>
+            </div>
             {% endfor %}
 
         </div>
@@ -66,26 +68,28 @@ permalink:
         <div id="lightgallery">
             {% for block in site.data.my-projects.gallery %}
 
-            <a href="{{ block.image | asset_url }}" class="gallery-link">
-                <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                    <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
-                        <h2>
-                            {{ block.name }}
-                        </h2>
-                        <p>
-                            <!-- {{ block.type }} <br> -->
-                            {% for type in block.type %}
-                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
-                            {% if forloop.last == true %}
-                            {% break %}
-                            {% else %}
-                            &nbsp;|&nbsp;
-                            {% endif %}
-                            {% endfor %}
-                        </p>
-                    </span>
-                </div>
-            </a>
+            <div class="col-4">
+                <a href="{{ block.image | asset_url }}" class="gallery-link">
+                    <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
+                        <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
+                            <h2>
+                                {{ block.name }}
+                            </h2>
+                            <p>
+                                <!-- {{ block.type }} <br> -->
+                                {% for type in block.type %}
+                                {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
+                                {% if forloop.last == true %}
+                                {% break %}
+                                {% else %}
+                                &nbsp;|&nbsp;
+                                {% endif %}
+                                {% endfor %}
+                            </p>
+                        </span>
+                    </div>
+                </a>
+            </div>
             {% endfor %}
 
         </div>
@@ -96,19 +100,23 @@ permalink:
             <h2>About</h2>
         </div>
         <div class="about-wrapper">
-            <div class="about-img" style="background-image: url('/assets/images/portrait.png')"></div>
-            <p>
-                <span> Hi! I'm Alyssa, an aspiring user interface and experience designer.</span><br>
-                I like to think of the creative challenges presented by my work as a combination
-                of two of my favorite things: puzzles and art. Whether it's by overhauling a site,
-                designing a framework for organizing office supplies or rearranging the furniture
-                in my house, I'm always looking for ways to improve the systems I come into
-                contact with. <br> <br>
-                Work aside, I also have a great love for psychology, philosophy, hand-drawn
-                animation, and wacky puzzle games. <br> <br>
-                Drop me a line or request a resume at 
-                <a href="mailto:a.c.fusato@gmail.com">a.c.fusato@gmail.com</a>!
-            </p>
+            <div class="col-8">
+                <div class="about-img" style="background-image: url('/assets/images/portrait.png')"></div>
+            </div>
+            <div class="col-8">
+                <p>
+                    <span> Hi! I'm Alyssa, an aspiring user interface and experience designer.</span><br>
+                    I like to think of the creative challenges presented by my work as a combination
+                    of two of my favorite things: puzzles and art. Whether it's by overhauling a site,
+                    designing a framework for organizing office supplies or rearranging the furniture
+                    in my house, I'm always looking for ways to improve the systems I come into
+                    contact with. <br> <br>
+                    Work aside, I also have a great love for psychology, philosophy, hand-drawn
+                    animation, and wacky puzzle games. <br> <br>
+                    Drop me a line or request a resume at
+                    <a href="mailto:a.c.fusato@gmail.com">a.c.fusato@gmail.com</a>!
+                </p>
+            </div>
 
         </div>
     </div>
