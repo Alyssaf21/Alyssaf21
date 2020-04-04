@@ -1,8 +1,9 @@
 .main-container {
   padding-left: $nav-width;
+  // font-size: 20px;
 
   .main-section {
-    padding: 1.5em 3vw 3em;
+    padding: 1.5em 5.25em 3em;
     overflow-x: none;
 
     h2 {
@@ -36,7 +37,7 @@
 
 .home-highlight {
   height: 78vh;
-  width: 36vh;
+  width: 27vw;
   position: absolute;
   background-color: #ce426f;
   mix-blend-mode: color-dodge;
@@ -61,7 +62,7 @@
       height: $home-height / 1.5;
       width: $home-width / 1.5;
       position: absolute !important;
-      margin-left: $nav-width + 4em;
+      margin-left: $nav-width + 4vh;
     }
 
     .home-gif {
@@ -93,14 +94,14 @@
 
   .year-title {
     font: {
-      size: 10vw;
+      size: 11.5vmax;
       family: "Public Sans", Arial, Helvetica, sans-serif;
     }
     line-height: 0.85;
     display: flex !important;
     position: absolute;
-    left: 53% !important;
-    top: 65% !important;
+    left: 41% !important;
+    top: 58% !important;
     margin: 0 0.1em 0.3em 0;
     z-index: 5;
     opacity: 100%;
@@ -301,9 +302,15 @@ a:-webkit-any-link {
 
   .about-wrapper {
     display: flex;
+    flex-direction: column;
 
     > div {
-      align-self: center;
+      align-self: flex-start;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
     }
 
     .about-img {
@@ -311,33 +318,36 @@ a:-webkit-any-link {
       height: 100%;
       vertical-align: middle;
       display: inline-block;
+      margin-right:5em;
       margin-left: 1em;
-      min-height: 25em;
-      min-width: 10em;
+      min-height: 30em;
+      min-width: 14em;
       max-height: 80%;
       @include bg-img();
       background-position: top;
       border-radius: 15px;
     }
 
+    span {
+      font-size: 2.5rem;
+      font-weight: 200;
+      line-height: 1.4;
+      margin: 1.25em .4em 1.25em;
+      line-height:1.4;
+      // margin-bottom: 1em;
+      // margin-left: 1em;
+      // color: $baby-blue;
+    }
     p {
       width: 100%;
       max-width: 40em;
-      padding: 1em;
-      min-width: 18em;
+      min-width: 16em;
       line-height: 1.7;
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: .75px;
-      font-size: 16px;
-       margin: 0;
+      font-size: 1.3rem;
+      margin: 0;
 
-      span {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 1.4;
-        margin-bottom: 0.5em;
-        // color: $baby-blue;
-      }
 
       a {
         color: $highlight-dark;
@@ -355,6 +365,9 @@ a:-webkit-any-link {
 }
 
 @media only screen and (max-width: 870px) {
+  h2 {
+    margin-left: 1em !important;
+  }
   .time-roles {
     display: flex;
     flex-direction: column;
@@ -380,17 +393,19 @@ a:-webkit-any-link {
 
   .about-wrapper {
     margin-left: 5%;
-  flex-direction: column;
-    div > p {
-      width: 85% !important;
-      font-size: 16px !important;
-      span {
-        font-size: 20px !important;
+    .about-content {
+      flex-direction: column !important;
+      .about-img {
+         min-height: 20em !important;
+         width: 80% !important;
+         margin-bottom: 2em !important;
+      }
+      p {
+        width: 85% !important;
+        padding: 1em !important;
+        font-size: 18px !important;
       }
     }
   }
-  .about-img {
-     min-height: 20em !important;
-     width: 80% !important;
-  }
+
 }
