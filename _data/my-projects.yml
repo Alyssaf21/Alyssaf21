@@ -71,13 +71,13 @@ gallery:
     - mockup
     - site redesign
 
-  - name: Boo Boo Zoo
-    icon: "/assets/images/bbz-thumbnail.png"
-    image: "/assets/images/bbz-divided.png"
+  - name: Maton Logo
+    icon: "/assets/images/maton.jpg"
+    image: "/assets/images/maton.jpg"
     color: "#ab4d2b"
     type:
-    - mockup
-    - site redesign
+    - graphic design
+    - logo
 
   - name: Lorien Herbs & Natural Foods
     icon: "/assets/images/lorien.png"

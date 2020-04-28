@@ -103,13 +103,14 @@ $tooltip-color: #675179;
 
 // 404 page styling
 .container-404 {
+  height: 100vh;
   padding: 12% 15%;
   display: flex;
   flex-direction: column;
 
   h1 {
     font-size: 80px;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 0px -17px 0px;
     font-weight: 600;
     color: $highlight-dark;
     text-transform: capitalize;
@@ -129,11 +130,17 @@ $tooltip-color: #675179;
       margin-bottom: 0.5em;
     }
   }
+  p.img-credit {
+    position: absolute;
+    bottom: 4.5vh;
+    right: 25vw;
+
+  }
   .img-credit a {
     color: $baby-blue;
-    position: absolute;
-    bottom: 7vh;
-    right: 5.5vw;
+    // position: absolute;
+    // bottom: 7vh;
+    // right: 5.5vw;
     width: auto;
   }
 
