@@ -39,7 +39,7 @@ layout: default
 
         <div class="project-wrapper">
 
-            {% for block in site.data.my-projects.projects %}
+            {% for block in site.data.graphic-design.projects %}
             <div class="col-4">
                 <a href="{{ block.link }}" class="project-link">
                     <div class="project-item" style="background-image: url('{{ block.icon | asset_url }}')">
@@ -65,7 +65,7 @@ layout: default
         </div>
 
         <div id="lightgallery">
-            {% for block in site.data.my-projects.gallery %}
+            {% for block in site.data.graphic-design.gallery %}
 
             <div class="col-4">
                 <a href="{{ block.image | asset_url }}" class="gallery-link">
