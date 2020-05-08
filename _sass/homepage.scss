@@ -1,10 +1,10 @@
 .main-container {
   padding-left: $nav-width;
-  // font-size: 20px;
 
   .main-section {
-    padding: 1.5em 5.25em 3em;
+    padding: 5em 5.25em 5em;
     overflow-x: none;
+    width: 100%;
 
     h2 {
       font: {
@@ -14,6 +14,15 @@
       }
     }
   }
+
+  #home, #projects { 
+    padding-top: 2em;
+  }
+
+  #gallery {
+    background-color: $dark-blue;
+  }
+  
 }
 
 @mixin vert-line($height, $thickness, $color) {
@@ -226,7 +235,7 @@ a:-webkit-any-link {
 
 #gallery {
   // margin-left: $content-margin-left;
-  margin-bottom: 5em;
+  // margin-bottom: 5em;
 
   #lightgallery {
     display: flex;

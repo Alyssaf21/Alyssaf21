@@ -1,0 +1,103 @@
+---
+
+projects:
+  - name: Sharebio
+    link: /sharebio/
+    icon: "/assets/images/sharebio-thumbnail.png"
+    color: "#08416a"
+    date: Summer 2019 - Present
+    skills: 
+    - front-end development 
+    - UI design 
+    - branding
+    desc: "An intercollegiate platform that hosts bioinformatics research
+          materials shared between Whitworth, Reed, and Lewis & Clark College."
+  
+  - name: Montage
+    link: /under-construction/
+    icon: "/assets/images/montage-thumbnail.png"
+    color: "#0d8b8b"
+    date: Fall 2019
+    skills: 
+    - UX design 
+    - UI design
+    desc: "Aimed towards TAs and students in freshman seminar, Montage helps 
+          instructors coordinate appointments and advising meetings for entire classes.
+          (Page under construction)"
+        
+  - name: Starbird
+    link: /under-construction/
+    icon: "/assets/images/starbird-thumbnail.png"
+    color: "#4a3296"
+    date: January 2019
+    skills: 
+    - front-end development
+    - UI design
+    - graphic design
+    desc: "A classic browser-based side-scrolling adventure about a bird
+          trying to find its way home across the galaxy. Dodge asteroids to help 
+          Starbird catch the next spaceship back! (Page under construction)"
+gallery:
+  - name: Pietime
+    icon: "/assets/images/pietime-thumbnail.png"
+    image: "/assets/images/pietime-thumbnail.png"
+    color: "#217984"
+    type: 
+    - concept
+    - mockup
+  
+  - name: Expressive
+    icon: "/assets/images/crabcrab.jpg"
+    image: "/assets/images/crabcrab.jpg"
+    color: "#34530a"
+    type:
+    - animation
+    - illustration
+   
+  - name: Kitchen Icons
+    icon: "/assets/images/p9_fusato.jpg"
+    image: "/assets/images/p9_fusato.jpg"
+    color: "#2067a0"
+    type:
+    - mockup
+    - site redesign
+
+  - name: Maton Logo
+    icon: "/assets/images/maton.jpg"
+    image: "/assets/images/maton.jpg"
+    color: "#ab4d2b"
+    type:
+    - graphic design
+    - logo
+
+  - name: Bakery Selfmailer
+    icon: "/assets/images/p4_Fusato.jpg"
+    image: "/assets/images/p4_Fusato.jpg"
+    color: "#37356b"
+    type:
+    - mockup
+    - site redesign
+
+  - name: BTP Brochure
+    icon: "/assets/images/p5_fusato.jpg"
+    image: "/assets/images/p5_fusato.jpg" 
+    color: "#620d22"
+    type:
+    - branding
+    - graphic design
+
+  - name: Play Poster
+    icon: "/assets/images/p6_fusato.jpg"
+    image: "/assets/images/p6_fusato.jpg" 
+    color: "#620d22"
+    type:
+    - branding
+    - graphic design
+
+  - name: Book Cover
+    icon: "/assets/images/bookCover.jpg"
+    image: "/assets/images/bookCover.jpg" 
+    color: "#620d22"
+    type:
+    - branding
+    - graphic design
