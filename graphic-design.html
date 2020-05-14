@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: defaultGD
 ---
 
 <div class="main-container col-12">
@@ -34,7 +34,7 @@ layout: default
 
     <div id="projects" class="main-section">
         <div class="highlight">
-            <h2>Projects</h2>
+            <h2>UI Design</h2>
         </div>
 
         <div class="project-wrapper">
@@ -64,33 +64,16 @@ layout: default
             <h2>Gallery</h2>
         </div>
 
-        <div id="lightgallery">
+        <div class="GDrow">
             {% for block in site.data.graphic-design.gallery %}
 
-            <div class="col-4">
-                <a href="{{ block.image | asset_url }}" class="gallery-link">
-                    <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                        <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
-                            <h2>
-                                {{ block.name }}
-                            </h2>
-                            <p>
-                                <!-- {{ block.type }} <br> -->
-                                {% for type in block.type %}
-                                {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
-                                {% if forloop.last == true %}
-                                {% break %}
-                                {% else %}
-                                &nbsp;|&nbsp;
-                                {% endif %}
-                                {% endfor %}
-                            </p>
-                        </span>
-                    </div>
-                </a>
-            </div>
+            <!-- <div class="col-4"> -->
+            <a class="gallery-link" href="{{ block.image | asset_url }}" title="{{ block.name }}">
+                <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
+                </div>
+            </a>
+            <!-- </div> -->
             {% endfor %}
-
         </div>
     </div>
 

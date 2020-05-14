@@ -41,6 +41,7 @@ gallery:
   - name: Pietime
     icon: "/assets/images/pietime-thumbnail.png"
     image: "/assets/images/pietime-thumbnail.png"
+    link: "/sharebio"
     color: "#217984"
     type: 
     - concept
@@ -49,14 +50,16 @@ gallery:
   - name: Expressive
     icon: "/assets/images/crabcrab.jpg"
     image: "/assets/images/crabcrab.jpg"
+    link: "/sharebio"
     color: "#34530a"
     type:
     - animation
     - illustration
    
   - name: Kitchen Icons
-    icon: "/assets/images/p9_fusato.jpg"
-    image: "/assets/images/p9_fusato.jpg"
+    icon: "/assets/images/icons.jpg"
+    image: "/assets/images/icons.jpg"
+    link: "/sharebio"
     color: "#2067a0"
     type:
     - mockup
@@ -65,6 +68,8 @@ gallery:
   - name: Maton Logo
     icon: "/assets/images/maton.jpg"
     image: "/assets/images/maton.jpg"
+    link: "/sharebio"
+    link: "/sharebio"
     color: "#ab4d2b"
     type:
     - graphic design
@@ -73,6 +78,7 @@ gallery:
   - name: Bakery Selfmailer
     icon: "/assets/images/p4_Fusato.jpg"
     image: "/assets/images/p4_Fusato.jpg"
+    link: "/sharebio"
     color: "#37356b"
     type:
     - mockup
@@ -81,6 +87,7 @@ gallery:
   - name: BTP Brochure
     icon: "/assets/images/p5_fusato.jpg"
     image: "/assets/images/p5_fusato.jpg" 
+    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
@@ -89,6 +96,7 @@ gallery:
   - name: Play Poster
     icon: "/assets/images/p6_fusato.jpg"
     image: "/assets/images/p6_fusato.jpg" 
+    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
@@ -97,6 +105,7 @@ gallery:
   - name: Book Cover
     icon: "/assets/images/bookCover.jpg"
     image: "/assets/images/bookCover.jpg" 
+    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
