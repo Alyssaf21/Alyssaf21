@@ -32,55 +32,50 @@ layout: defaultGD
         </div>
     </div>
 
-    <div id="projects" class="main-section">
-        <div class="highlight">
-            <h2>UI Design</h2>
-        </div>
 
-        <div class="project-wrapper">
+    <div id="graphicDesign" class="main-section">
+        <h2>Graphic Design</h2>
 
-            {% for block in site.data.graphic-design.projects %}
-            <div class="col-4">
-                <a href="{{ block.link }}" class="project-link">
-                    <div class="project-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                        <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
-                            <h2>
-                                {{ block.name }}
-                            </h2>
-                            <p>
-                                {{ block.desc }}
-                            </p>
-                        </span>
-                    </div>
+        <div class="GDrow chocolat-parent">
+            <div class="thumbnail-wrapper">
+                {% for block in site.data.graphic-design.gallery %}
+
+                <a id="{{ block.name }}" class="chocolat-image chocolat-child" href="{{ block.image | asset_url }}"
+                    title="{{ block.name }}">
+                    <img class="thumbnailGD" src="{{ block.icon | asset_url }}" />
                 </a>
+
+
+                {% endfor %}
             </div>
-            {% endfor %}
+            <div id="chocolat-container" class="chocolat-container">
 
+            </div>
         </div>
     </div>
+<!-- 
+    <div id="uxUiCode" class="main-section">
+        <h2>UX/UI/Code</h2>
 
-    <div id="gallery" class="main-section">
-        <div class="highlight">
-            <h2>Gallery</h2>
+        <div class="GDrow chocolat-parent">
+            <div class="thumbnail-wrapper">
+                {% for block in site.data.graphic-design.gallery %}
+
+                <a id="{{ block.name }}" class="chocolat-image chocolat-child" href="{{ block.image | asset_url }}"
+                    title="{{ block.name }}">
+                    <img class="thumbnailGD" src="{{ block.icon | asset_url }}" />
+                </a>
+
+                {% endfor %}
+            </div>
+            <div id="chocolat-container2" class="chocolat-container">
+
+            </div>
         </div>
-
-        <div class="GDrow">
-            {% for block in site.data.graphic-design.gallery %}
-
-            <!-- <div class="col-4"> -->
-            <a class="gallery-link" href="{{ block.image | asset_url }}" title="{{ block.name }}">
-                <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                </div>
-            </a>
-            <!-- </div> -->
-            {% endfor %}
-        </div>
-    </div>
+    </div> -->
 
     <div id="about" class="main-section">
-        <div class="highlight">
             <h2>About</h2>
-        </div>
         <div class="about-wrapper">
             <!-- <div class="col-8"> -->
             <div class="about-img" style="background-image: url('/assets/images/portrait.png')"></div>
@@ -155,4 +150,29 @@ layout: defaultGD
         var scene = document.getElementById('home');
         var parallaxInstance = new Parallax(home);
     });
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'), {
+            container: document.querySelector('#chocolat-container'),
+            loop: true,
+            imageSize: 'contain',
+            allowZoom: true,
+            firstImageIndex: 1,
+            firstImageIndex: 2,
+            setTitle: function () { return 'Graphic Design' }
+        })
+        // Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'), {
+        //     container: document.querySelector('#chocolat-container2'),
+        //     loop: true,
+        //     imageSize: 'contain',
+        //     allowZoom: true,
+        //     firstImageIndex: 1,
+        //     setTitle: function () { return 'UX/UI/Code' }
+        // })
+
+    })
+
+    // function myFunction() {
+    //         document.getElementById("demo").innerHTML = "Hello World";
+    //     }
 </script>
