@@ -3,8 +3,8 @@
 gallery:
   - name: Expressive
     icon: "/assets/images/thumbnail/p1.jpg"
-    image: "/assets/images/work/p1_fusato.jpg"
-    link: "/sharebio"
+    image: "/assets/images/work/p1_fusato2.png"
+    extra: "/assets/images/work/p1_fusato.jpg, raw"
     color: "#217984"
     type: 
     - concept
@@ -13,7 +13,7 @@ gallery:
   - name: The Screwtape Letters 
     icon: "/assets/images/thumbnail/p2.jpg"
     image: "/assets/images/work/p2_fusato.jpg"
-    link: "/sharebio"
+    extra: "/assets/images/work/p2_2.png, asset"
     color: "#34530a"
     type:
     - animation
@@ -22,7 +22,6 @@ gallery:
   - name: Food Fads Poster
     icon: "/assets/images/thumbnail/p3.jpg"
     image: "/assets/images/work/p3_fusato.jpg"
-    link: "/sharebio"
     color: "#2067a0"
     type:
     - mockup
@@ -31,8 +30,6 @@ gallery:
   - name: Home Maid Bakery Mailpiece
     icon: "/assets/images/thumbnail/p4.jpg"
     image: "/assets/images/work/p4_fusato.jpg"
-    link: "/sharebio"
-    link: "/sharebio"
     color: "#ab4d2b"
     type:
     - graphic design
@@ -41,8 +38,7 @@ gallery:
   - name: Beyond the Pines Brochure
     icon: "/assets/images/thumbnail/p5.jpg"
     image: "/assets/images/work/p5_fusato.jpg"
-    link: "/sharebio"
-    color: "#37356b"
+    extra: "/assets/images/work/p5draft.png, draft"
     type:
     - mockup
     - site redesign
@@ -50,7 +46,6 @@ gallery:
   - name: Play Flyer
     icon: "/assets/images/thumbnail/p6.jpg"
     image: "/assets/images/work/p6_fusato.jpg"
-    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
@@ -59,7 +54,6 @@ gallery:
   - name: Maton Logo
     icon: "/assets/images/thumbnail/p7.jpg"
     image: "/assets/images/work/p7_fusato.jpg"
-    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
@@ -68,7 +62,6 @@ gallery:
   - name: Magazine spread
     icon: "/assets/images/thumbnail/p8.jpg"
     image: "/assets/images/work/p8_fusato.jpg"
-    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
@@ -77,7 +70,6 @@ gallery:
   - name: Kitchen Icons
     icon: "/assets/images/thumbnail/p9.jpg"
     image: "/assets/images/work/p9_fusato.png" 
-    link: "/sharebio"
     color: "#620d22"
     type:
     - branding
