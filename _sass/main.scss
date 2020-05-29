@@ -4,6 +4,7 @@
 
 html {
   font-family: $font-primary;
+  overflow-y: scroll;
 }
 
 body {
@@ -19,6 +20,11 @@ h1 {
   text-transform: uppercase;
   line-height: 1.3;
   letter-spacing: 0.75px;
+}
+
+p {
+  font-family: $font-tertiary;
+  letter-spacing: 0.5px;
 }
 
 #main-container {
@@ -57,7 +63,7 @@ h1 {
 
 // Tooltips (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip)
 
-$tooltip-color: #675179; 
+$tooltip-color: #675179;
 
 .tooltip {
   position: relative;
@@ -95,7 +101,7 @@ $tooltip-color: #675179;
 }
 
 .tooltip:hover .tooltiptext {
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
   transition-delay: 1s;
   visibility: visible;
   opacity: 1;
@@ -134,7 +140,6 @@ $tooltip-color: #675179;
     position: absolute;
     bottom: 4.5vh;
     right: 25vw;
-
   }
   .img-credit a {
     color: $baby-blue;
@@ -155,22 +160,22 @@ $tooltip-color: #675179;
 
 // Scrollbar
 
-::-webkit-scrollbar {
-  width: 0.5em;
-  margin-right: -0.5em;
-}
+// ::-webkit-scrollbar {
+//   width: 0.5em;
+//   margin-right: -0.5em;
+// }
 
-::-webkit-scrollbar-track {
-  background: transparent url("../assets/images/blank.png") repeat-y !important;
-}
+// ::-webkit-scrollbar-track {
+//   background: transparent url("../assets/images/blank.png") repeat-y !important;
+// }
 
-::-webkit-scrollbar-track-piece:end {
-  background: transparent url("../assets/images/blank.png") repeat-y !important;
-}
+// ::-webkit-scrollbar-track-piece:end {
+//   background: transparent url("../assets/images/blank.png") repeat-y !important;
+// }
 
-::-webkit-scrollbar-thumb {
-  background-color: $main-color;
-}
+// ::-webkit-scrollbar-thumb {
+//   background-color: $main-color;
+// }
 
 //Responsive columns
 
@@ -247,39 +252,84 @@ $tooltip-color: #675179;
   .project-item {
     height: 12em !important;
   }
-  
 
-  .col-1  {  width: 8.33%; }
-  .col-2  {  width: 16.66%;  }
-  .col-3  {  width: 25%; }
-  .col-4  {  width: 100%; }
-  .col-5  {  width: 50%; }
-  .col-6  {  width: 50%; }
-  .col-7  {  width: 100%;  }
-  .col-8  {  width: 100%;  }
-  .col-9  {  width: 100%; }
-  .col-10 {  width: 100%; }
-  .col-11 {  width: 100%; }
-  .col-12 {  width: 100%; }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 50%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+  }
+  .col-10 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 100%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 
-
 @media only screen and (max-width: 1050px) and (min-width: 870px) {
-  
   [class*="col-"] {
     // border: 1px solid rgb(0, 200, 255);
   }
-  
-.col-1  {  width: 8.33%; }
-.col-2  {  width: 16.66%;  }
-.col-3  {  width: 25%; }
-.col-4  {  width: 50%; }
-.col-5  {  width: 50%; }
-.col-6  {  width: 50%; }
-.col-7  {  width: 58.33%;  }
-.col-8  {  width: 66.66%;  }
-.col-9  {  width: 75%; }
-.col-10 {  width: 83.33%; }
-.col-11 {  width: 91.66%; }
-.col-12 {  width: 100%; }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 50%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }

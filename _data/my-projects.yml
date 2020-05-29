@@ -1,15 +1,16 @@
 ---
-buttons:
-  - title: UX Design
-    link: "link to page"
-
-  - title: Graphic/Web Design
-    link: "link to page"
-
-  - title: Coding Projects
-    link: "link to page"
-
 projects:
+  - name: PieTime
+    link: /pietime/
+    icon: "/assets/images/pieTimeThumb.png"
+    color: "#bd3f3f"
+    date: Spring 2020
+    skills: 
+    - UX design 
+    - UI design
+    - Mobile App Dev
+    desc: "A picturesque timer for visual thinkers and people who like pie."
+        
   - name: Sharebio
     link: /sharebio/
     icon: "/assets/images/sharebio-thumbnail.png"
@@ -33,27 +34,46 @@ projects:
     desc: "Aimed towards TAs and students in freshman seminar, Montage helps 
           instructors coordinate appointments and advising meetings for entire classes.
           (Page under construction)"
-        
-  - name: Starbird
-    link: /under-construction/
-    icon: "/assets/images/starbird-thumbnail.png"
-    color: "#4a3296"
-    date: January 2019
-    skills: 
-    - front-end development
-    - UI design
-    - graphic design
-    desc: "A classic browser-based side-scrolling adventure about a bird
-          trying to find its way home across the galaxy. Dodge asteroids to help 
-          Starbird catch the next spaceship back! (Page under construction)"
+
+  # - name: Starbird
+  #   link: /under-construction/
+  #   icon: "/assets/images/starbird-thumbnail.png"
+  #   color: "#4a3296"
+  #   date: January 2019
+  #   skills: 
+  #   - front-end development
+  #   - UI design
+  #   - graphic design
+  #   desc: "A classic browser-based side-scrolling adventure about a bird
+  #         trying to find its way home across the galaxy. Dodge asteroids to help 
+  #         Starbird catch the next spaceship back! (Page under construction)"
+  
 gallery:
-  - name: Pietime
-    icon: "/assets/images/pietime-thumbnail.png"
-    image: "/assets/images/pietime-thumbnail.png"
+  - name: Starbird
+    icon: "/assets/images/starbird-thumbnail.png"
+    image: "/assets/images/starbirdscrn.png"
+    color: "#37356b"
+    type:
+    - HTML/CSS
+    - JavaScript
+    - Illustration
+
+  - name: Kitchen Icons
+    icon: "/assets/images/icons-thumb.png"
+    image: "/assets/images/icons.png"
+    color: "#37356b"
+    type:
+    - HTML/CSS
+    - JavaScript
+    - Illustration
+  - name: Maton
+    icon: "/assets/images/maton-thumb.jpg"
+    image: "/assets/images/maton.jpg"
     color: "#217984"
     type: 
     - concept
     - mockup
+    - graphic design
   
   - name: Video Narrative animations
     icon: "/assets/images/street_corner.png"
@@ -71,14 +91,6 @@ gallery:
     - mockup
     - site redesign
 
-  - name: Maton Logo
-    icon: "/assets/images/maton.jpg"
-    image: "/assets/images/maton.jpg"
-    color: "#ab4d2b"
-    type:
-    - graphic design
-    - logo
-
   - name: Lorien Herbs & Natural Foods
     icon: "/assets/images/lorien.png"
     image: "/assets/images/lorien.png"
@@ -87,10 +99,31 @@ gallery:
     - mockup
     - site redesign
 
-  - name: Business Club logo
-    icon: "/assets/images/business-club.jpg"
-    image: "/assets/images/business-club.jpg" 
-    color: "#620d22"
-    type:
-    - branding
-    - graphic design
+
+pages:
+  - name: PieTime
+    subtitle: "A multitasking visual timer"
+    info1: "UX/UI, Mobile App Dev"
+    info2: "Spring 2020 - Present"
+    hero: "../assets/images/works/pieTimeMockup3.jpg"
+    description: "../assets/images/works/pieTimeMockup.jpg"
+    problem1: "../assets/images/works/visualTimers.jpg"
+    problem2: "../assets/images/works/visualTimers2.jpg"
+    concept: "../assets/images/works/concept.jpg"
+    process: "../assets/images/works/pieTimeFigmaHQ.jpg"
+    challenges:
+    results: "../assets/images/works/pieTimeMockup2.jpg"
+
+  - name: Sharebio
+    description: "../assets/images/works/sharebio.jpg"
+    info1: "UX/UI, Web Dev"
+    info2: "June - July 2019"
+    subtitle: "Center for bioinformatics research"
+    hero: "../assets/images/works/sharebioRenderMockup.jpg"
+    problem: "../assets/images/works/sharebio-logo.png"
+    challenge1: "../assets/images/works/sharebio-browse.png"
+    challenge2: "../assets/images/works/sharebio-projects.png"
+    concept:
+    process:
+    challenges:
+    results:

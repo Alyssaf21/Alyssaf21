@@ -1,0 +1,98 @@
+---
+layout: default
+title: Sharebio
+permalink: /sharebio1/
+---
+
+<div id="landing" class="proj-section">
+    <div class="hero"></div>
+    <div class="time-roles">
+        <div class="time">
+            Summer 2019 - present
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="roles">
+            ui / front-end / debugging
+        </div>
+    </div>
+    <h1> Sharebio </h1>
+    <h3> <i>Center of excellence for bioinformatics research</i> </h3>
+    <p>
+        Last summer, I overhauled the design of the Sharebio research
+        coalition, which hosts bioinformatics research
+        materials shared between Reed College, Whitworth
+        University, and Lewis & Clark College.
+        Along with cleaning up the site's UI, I also patched issues with
+        existing website infrastructure, which ran on the Yii2 PHP
+        framework and used the hosting service ownCloud to store project
+        files.
+    </p>
+</div>
+
+<div id="objectives" class="proj-section">
+    <div class="objective-wrapper">
+        <div class="objective">
+            <img src="/assets/images/pencil-edit.svg" alt="">
+            <h4>Reinforced Brand Image</h4>
+            <p>
+                Redesigned the old logo and integrated it into the site's interface
+            </p>
+        </div>
+        <!-- <div class="vert-divider"></div> -->
+        <div class="objective">
+            <img src="/assets/images/comment-checked.svg" alt="">
+            <!-- <img src="/assets/images/user.svg" alt=""> -->
+            <h4>Streamlined project editing and viewing</h4>
+            <p>
+                Added visual cues to project thumbnails to indicate status, ID, and other possible actions
+            </p>
+        </div>
+        <!-- <div class="vert-divider"></div> -->
+        <div class="objective">
+            <img src="/assets/images/code.svg" alt="">
+            <h4>Debugged signup and project-creation</h4>
+            <p>
+                Resolved issues between the site's database and ownCloud, which was used to host projects
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="subject-one" class="proj-section">
+    <div class="img-wrapper">
+        <img src="/assets/images/sharebio-browse.png" alt="">
+    </div>
+    <div class="text-wrapper">
+        <h2>Displaying Projects</h2>
+        <p>
+            One of the biggest user experience challenges on the site was making the best of the
+            space available on each project thumbnail. Given that each project had a unique identifier
+            on the database but no way to view it on the front end, I added an ID number to each project,
+            which also helped distinguish projects with similar names or images. <br> <br>
+            The other major consideration was permissions, since each user had to request access to view
+            and edit the files of other people's projects. Here, I used icons to indicate that the
+            status of each request, and to help communicate that projects would be opened elsewhere- in
+            this case, in a new tab on ownCloud, which was where all of the project files were stored.
+        </p>
+    </div>
+</div>
+<div id="subject-two" class="proj-section">
+    <div class="img-wrapper">
+        <img src="/assets/images/old-logo-cropped.png" alt="">
+        <span class="arrow is-triangle arrow-bar is-bottom"></span>
+        <img src="/assets/images/sharebio-logo.png" alt="">
+    </div>
+    <div class="text-wrapper">
+        <h2>Branding</h2>
+        <p>
+            While I was working on testing project creation and modification, I noticed
+            that aside from the favicon, Sharebio's logo was only used once on the entire site.
+            The logo also used the site's tagline but didn't incorporate it's name, which made
+            it potentially confusing out of context. <br> <br>
+            As I brainstormed a new one, I made sure to include the site's accent color, as
+            well as the original's iconic microscope. I went with a wordmark logo so it could
+            fit in the upper-left navbar where it would be readily seen by first-time visitors
+            and associated with the title.
+        </p>
+    </div>
+</div>
