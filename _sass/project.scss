@@ -38,8 +38,8 @@ $hero-size: 55vh;
   h1 {
     font-size: 50px;
     margin-bottom: 0em;
-    margin-top: .5em;
-    color: white;
+    margin-top: 0.5em;
+    color: $text-secondary;
     font-weight: 200;
   }
 
@@ -75,8 +75,6 @@ $hero-size: 55vh;
 }
 
 #objectives {
-  // background-color: white;
-  // color: $main-color;
   display: flex;
   flex-direction: column;
   align-items: flex-start !important;
@@ -101,9 +99,7 @@ $hero-size: 55vh;
       img {
         height: 4em;
         width: auto;
-        opacity: .75;
-        // Compute new svg color: https://codepen.io/sosuke/pen/Pjoqqp
-        // filter: invert(46%) sepia(56%) saturate(1762%) hue-rotate(310deg) brightness(101%) contrast(101%);
+        opacity: 0.75;
         filter: invert(51%) sepia(6%) saturate(4534%) hue-rotate(166deg) brightness(91%) contrast(80%);
       }
 
@@ -143,14 +139,11 @@ $hero-size: 55vh;
       // position: absolute;
     }
   }
-  .text-wrapper {
-    // margin-left: 335px;
-  }
 }
 
 #subject-two {
   display: flex;
-  background-color: white;
+  background-color:$text-secondary;
   padding-top: 3em;
   padding-bottom: 3em;
   color: black;

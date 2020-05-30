@@ -19,6 +19,10 @@ $heroMarginTop: 45vh;
     align-items: center;
 }
 
+.darkBg {
+    background: $darkBg;
+}
+
 a {
     color: $highlight-dark;
     &:visited {
@@ -149,14 +153,9 @@ a {
         }
     } //.projectSection
 
-    .darkBg {
-        background: $darkBg;
-    }
-
     #heroImg {
         width: 100%;
         height: 25vh;
-        // position: absolute;
         top: 0;
         left: 0;
         z-index: -2;
@@ -164,22 +163,12 @@ a {
         background-position: bottom;
     } //#heroImg
     #projectHero {
-        // margin-top: 40vh;
-        // padding-right: 0;
         .infoItemWrap {
             padding-right: 4rem;
             .infoItem {
                 width: 35vw;
             }
         }
-        // #textBg {
-        //     padding-left: 5rem;
-        //     margin-left: -5rem;
-        //     z-index: -1;
-        //     background-color: $main-color;
-        //     border-radius: 20px;
-        //     max-width: 60rem;
-        //     padding: 4rem;
 
         #heroSectionText {
             .infoTextWrapper {
@@ -263,12 +252,10 @@ a {
             }
             img.sectionImg {
                 width: 100%;
-                // min-height: 70vw;
                 margin: 2rem 0 0 0;
             }
             a.sectionImg {
                 width: 100%;
-                // min-height: 70vw;
                 margin: 2rem 0 0 0;
             }
         }
