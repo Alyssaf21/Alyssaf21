@@ -7,6 +7,7 @@
     width: 100%;
 
     h2 {
+
       font: {
         size: 45px;
         family: "Public Sans", Arial, Helvetica, sans-serif;
@@ -100,6 +101,7 @@
       z-index: 0;
     }
   }
+
   .year-title {
     font: {
       size: 11.5vmax;
@@ -167,9 +169,6 @@ $rounded-rect: 7px;
     flex-wrap: wrap;
 
     .project-link {
-      // width: 100%;
-      // width: 33%;
-      // margin-right: 0.5em;
 
       .project-item {
         height: 25em;
@@ -220,6 +219,7 @@ $rounded-rect: 7px;
       }
     }
   }
+
   img:hover {
     background-color: blue;
   }
@@ -235,13 +235,16 @@ a:-webkit-any-link {
 
 #chocolat-content-0 {
   z-index: 1000000000000000000000;
+
   .chocolat-overlay {
     background-color: $dark-blue;
   }
+
   .chocolat-overlay.chocolat-visible {
     opacity: 0.9;
   }
 }
+
 .chocolat-wrapper .chocolat-right {
   height: 88.5vh !important;
   background: url('/assets/images/rightChevron.svg') 50% 50% no-repeat !important;
@@ -252,6 +255,7 @@ a:-webkit-any-link {
     mix-blend-mode: screen;
   }
 }
+
 .chocolat-wrapper .chocolat-left {
   height: 88.5vh !important;
   background: url('/assets/images/leftChevron.svg') 50% 50% no-repeat !important;
@@ -269,6 +273,7 @@ a:-webkit-any-link {
   grid-gap: 0.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
+
   .gallery-link {
     .gallery-item {
       width: 100%;
@@ -277,6 +282,7 @@ a:-webkit-any-link {
       background-position: center;
       border-radius: $rounded-rect;
       transition: ease-in 0.15s;
+
       &:hover {
         background-blend-mode: multiply;
         background-color: #062739;
@@ -290,6 +296,7 @@ a:-webkit-any-link {
           text-decoration: none !important;
         }
       }
+
       span {
         border-radius: $rounded-rect;
         height: 100%;
@@ -303,6 +310,7 @@ a:-webkit-any-link {
           line-height: 1;
           font-size: 200%;
         }
+
         p {
           font-weight: 300;
           line-height: 1.2;
@@ -317,17 +325,13 @@ a:-webkit-any-link {
 }
 
 #gallery {
-  // margin-left: $content-margin-left;
-  // margin-bottom: 5em;
 
   #lightgallery {
     display: flex;
-    // align-content: stretch;
     flex-wrap: wrap;
 
     .gallery-link {
-      // width: 33.3%;
-      // min-width: 10em;
+
       .gallery-item {
         margin-bottom: 0.5em;
         margin-right: 0.5em;
@@ -335,6 +339,7 @@ a:-webkit-any-link {
         min-width: 100%;
         height: 15em;
         border-radius: $rounded-rect;
+
         background: {
           repeat: no-repeat;
           size: cover;
@@ -369,6 +374,7 @@ a:-webkit-any-link {
             line-height: 1;
             font-size: 200%;
           }
+          
           p {
             font-weight: 300;
             line-height: 1.2;
@@ -383,16 +389,14 @@ a:-webkit-any-link {
   }
 }
 
-/*----------------------------------------
-- ABOUT                              
-----------------------------------------*/
+//-----------------------------------------
+//- ABOUT
+//-----------------------------------------
 
 #about {
-  // margin: 0 5em 8em $content-margin-left;
   margin-bottom: 8em;
 
   .about-wrapper {
-    // background-color: $baby-blue;
     display: flex;
     flex-direction: row;
     padding: 2em 5em 5em;
@@ -427,10 +431,12 @@ a:-webkit-any-link {
         font-size: 2.5rem;
         font-weight: 100;
         line-height: 1.4;
-        color: $baby-blue + 50;
+        color: $baby-blue;
+        // color: $baby-blue + 50;
         line-height: 1.4;
         max-width: 25em;
       }
+
       p {
         width: 100%;
         max-width: 40em;
@@ -451,11 +457,13 @@ a:-webkit-any-link {
 }
 
 @media only screen and (max-width: 1100px) {
+
   #gridContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 
   #about {
+
     .about-wrapper {
       flex-direction: column !important;
       justify-content: center;
@@ -473,6 +481,7 @@ a:-webkit-any-link {
   h2 {
     margin-left: 1em !important;
   }
+
   .time-roles {
     display: flex;
     flex-direction: column;
@@ -498,13 +507,16 @@ a:-webkit-any-link {
 
   .about-wrapper {
     margin-left: 5%;
+
     .about-content {
       flex-direction: column !important;
+      
       .about-img {
         min-height: 20em !important;
         width: 80% !important;
         margin-bottom: 2em !important;
       }
+
       p {
         width: 85% !important;
         padding: 1em !important;

@@ -66,6 +66,7 @@ gallery:
     - HTML/CSS
     - JavaScript
     - Illustration
+
   - name: Maton
     icon: "/assets/images/maton-thumb.jpg"
     image: "/assets/images/maton.jpg"
@@ -98,7 +99,6 @@ gallery:
     type:
     - mockup
     - site redesign
-
 
 pages:
   - name: PieTime

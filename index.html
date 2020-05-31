@@ -64,11 +64,13 @@ permalink:
         <div class="highlight">
             <h2>Gallery</h2>
         </div>
-        <div id="gridContainer" class="chocolat-parent">
+        <div id="gridContainer" class="">
             {% for block in site.data.my-projects.gallery %}
             <!-- <div class="col-4"> -->
-            <a href="{{ block.image | asset_url }}" class="gallery-link chocolat-image chocolat-child"
-                title="{{ block.name }}">
+            <a href="{{ block.image | asset_url }}" class="gallery-link fresco"
+            data-fresco-group="Gallery" data-fresco-caption="{{ block.name }}"
+                title="{{ block.name }}" data-fresco-group-options="loop: true"
+                data-fresco-options="thumbnail: '{{ block.icon | asset_url }}'">
                 <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
                     <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
                         <h2>
@@ -124,13 +126,6 @@ permalink:
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#lightgallery").lightGallery({
-            selector: '.gallery-link',
-            thumbnail: false,
-            animateThumb: false,
-            showThumbByDefault: false
-        });
-
         var slideDown = {
             interval: 60,
             distance: '50px',
@@ -171,17 +166,4 @@ permalink:
         var parallaxInstance = new Parallax(home);
     });
 
-    document.addEventListener("DOMContentLoaded", function (event) {
-        Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'), {
-            loop: true,
-            // imageSize: 'contain',
-            allowZoom: true,
-            firstImageIndex: 0,
-            setTitle: function () { return 'Gallery' },
-            // description: function () {
-            //     const currentImage = this.settings.images[this.settings.currentImageIndex]
-            //     return currentImage.title
-            // }
-        })
-    });
 </script>
