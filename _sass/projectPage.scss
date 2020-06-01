@@ -9,6 +9,13 @@ $heroMarginTop: 45vh;
     background-position: center;
 }
 
+@mixin paragraph {
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+
 .flex-column {
     flex-direction: column;
     align-items: flex-start;
@@ -160,7 +167,7 @@ a {
                 transform: translate(-5px, -5px);
             }
         } //img.sectionImg
-        
+
         p.caption {
             font-style: italic;
             font-weight: 500;
@@ -171,6 +178,8 @@ a {
             max-width: 24rem;
         }
     } //.projectSection
+
+
 
     #heroImg {
         width: 100%;
@@ -216,6 +225,56 @@ a {
     } //#projectHero
     // } //#textBg
 } //#main
+
+    #objectives {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        .objective-wrapper {
+            min-width: 27em;
+            max-width: 100%;
+            padding: 3em 0em 4em 3em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+            .vert-divider {
+                @include vert-line(3em, 1px, steelblue);
+                align-self: center;
+            }
+
+            .objective {
+                width: 45em;
+                padding: 0em 3em;
+
+                img {
+                    height: 4em;
+                    width: auto;
+                    opacity: 0.75;
+                    filter: invert(51%) sepia(6%) saturate(4534%) hue-rotate(166deg) brightness(91%) contrast(80%);
+                }
+
+                h4 {
+                    margin: 2em 0 0.5em;
+                    font-size: 22px;
+                }
+
+                p {
+                    margin: 0 0.2em;
+                    @include paragraph;
+                    font-size: 16px;
+                }
+
+                &:first-of-type {
+                    padding-left: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
 
 @media only screen and (max-width: 1100px) {
     $section-left: 1rem;
