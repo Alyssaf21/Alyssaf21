@@ -233,46 +233,46 @@ a:-webkit-any-link {
 - GALLERY                              
 ----------------------------------------*/
 
-#chocolat-content-0 {
-  z-index: 1000000000000000000000;
+// #chocolat-content-0 {
+//   z-index: 1000000000000000000000;
 
-  .chocolat-overlay {
-    background-color: $dark-blue;
-  }
+//   .chocolat-overlay {
+//     background-color: $dark-blue;
+//   }
 
-  .chocolat-overlay.chocolat-visible {
-    opacity: 0.9;
-  }
-}
+//   .chocolat-overlay.chocolat-visible {
+//     opacity: 0.9;
+//   }
+// }
 
-.chocolat-wrapper .chocolat-right {
-  height: 88.5vh !important;
-  background: url('/assets/images/rightChevron.svg') 50% 50% no-repeat !important;
-  padding: 0 2rem;
-  mix-blend-mode: soft-light;
+// .chocolat-wrapper .chocolat-right {
+//   height: 88.5vh !important;
+//   background: url('/assets/images/rightChevron.svg') 50% 50% no-repeat !important;
+//   padding: 0 2rem;
+//   mix-blend-mode: soft-light;
   
-  &:hover {
-    mix-blend-mode: screen;
-  }
-}
+//   &:hover {
+//     mix-blend-mode: screen;
+//   }
+// }
 
-.chocolat-wrapper .chocolat-left {
-  height: 88.5vh !important;
-  background: url('/assets/images/leftChevron.svg') 50% 50% no-repeat !important;
-  padding: 0 2rem;
-  mix-blend-mode: soft-light;
+// .chocolat-wrapper .chocolat-left {
+//   height: 88.5vh !important;
+//   background: url('/assets/images/leftChevron.svg') 50% 50% no-repeat !important;
+//   padding: 0 2rem;
+//   mix-blend-mode: soft-light;
   
-  &:hover {
-    mix-blend-mode: screen;
-  }
-}
+//   &:hover {
+//     mix-blend-mode: screen;
+//   }
+// }
 
 #gridContainer {
   display: grid;
-  height: 40rem;
-  grid-gap: 0.5rem;
+  // height: 30rem;
+  grid-gap: 0.65rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 15rem;
 
   .gallery-link {
     .gallery-item {
@@ -325,7 +325,6 @@ a:-webkit-any-link {
 }
 
 #gallery {
-
   #lightgallery {
     display: flex;
     flex-wrap: wrap;
@@ -400,7 +399,8 @@ a:-webkit-any-link {
     display: flex;
     flex-direction: row;
     padding: 2em 5em 5em;
-    margin-left: 2em;
+    margin-left: $nav-width;
+    align-items: center;
 
     > div {
       align-self: flex-start;
@@ -409,16 +409,17 @@ a:-webkit-any-link {
     .about-img {
       width: 20%;
       min-width: 12em;
-      height: 14em;
+      height: 17em;
       vertical-align: middle;
       display: inline-block;
-      margin: 2em 5em 2em -6em;
+      // margin: 2em 5em 2em -4em;
       @include bg-img();
       background-position: top;
       border-radius: 15px;
     }
 
     .about-content {
+      margin-left:3rem;
       display: flex;
       flex-direction: column;
       color: $text-primary;

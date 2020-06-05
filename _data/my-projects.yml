@@ -3,13 +3,13 @@ projects:
   - name: PieTime
     link: /pietime/
     icon: "/assets/images/pieTimeThumb.png"
-    color: "#bd3f3f"
+    color: "rgb(176, 25, 25)"
     date: Spring 2020
     skills: 
     - UX design 
     - UI design
     - Mobile App Dev
-    desc: "A picturesque timer for visual thinkers and people who like pie."
+    desc: "A picturesque timer app for visual thinkers and people who like pie. My role involved concept development, UX/UI design, and mobile implementation in Flutter."
         
   - name: Sharebio
     link: /sharebio/
@@ -23,17 +23,15 @@ projects:
     desc: "An intercollegiate platform that hosts bioinformatics research
           materials shared between Whitworth, Reed, and Lewis & Clark College."
   
-  - name: Montage
-    link: /under-construction/
-    icon: "/assets/images/montage-thumbnail.png"
-    color: "#0d8b8b"
-    date: Fall 2019
+  - name: Starbird
+    link: /starbird/
+    icon: "/assets/images/starbird-thumbnail.png"
+    color: "#270986"
+    date: Jan. 2019
     skills: 
     - UX design 
     - UI design
-    desc: "Aimed towards TAs and students in freshman seminar, Montage helps 
-          instructors coordinate appointments and advising meetings for entire classes.
-          (Page under construction)"
+    desc: "A classic intergalactic astroid-dodging game I designed, animated, and helped code. See if you can get Starbird back to the spaceship in one piece!"
 
   # - name: Starbird
   #   link: /under-construction/
@@ -49,56 +47,81 @@ projects:
   #         Starbird catch the next spaceship back! (Page under construction)"
   
 gallery:
-  - name: Starbird
-    icon: "/assets/images/starbird-thumbnail.png"
-    image: "/assets/images/starbirdscrn.png"
-    color: "#37356b"
-    type:
-    - HTML/CSS
-    - JavaScript
-    - Illustration
-
-  - name: Kitchen Icons
-    icon: "/assets/images/icons-thumb.png"
-    image: "/assets/images/icons.png"
-    color: "#37356b"
-    type:
-    - HTML/CSS
-    - JavaScript
-    - Illustration
-
-  - name: Maton
-    icon: "/assets/images/maton-thumb.jpg"
-    image: "/assets/images/maton.jpg"
-    color: "#217984"
-    type: 
-    - concept
-    - mockup
-    - graphic design
   
-  - name: Video Narrative animations
-    icon: "/assets/images/street_corner.png"
-    image: "/assets/images/video_narrative.png"
-    color: "#34530a"
+  - name: Video Narrative
+    icon: "/assets/images/design/staticReading.jpg"
+    image: "/assets/images/design/animatedReading.gif"
+    color: "#6c572f"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative II
+    icon: "/assets/images/design/staticStairs.gif"
+    image: "/assets/images/design/animatedStairs.gif"
+    color: "#43659a"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative III
+    icon: "/assets/images/design/staticFridge.jpg"
+    image: "/assets/images/design/animatedFridge.gif"
+    color: "#5b5a5f"
     type:
     - animation
     - illustration
    
-  - name: Spine and Scoliosis Clinic
-    icon: "/assets/images/SSC-site-edited.png"
-    image: "/assets/images/SSC-site-edited.png"
-    color: "#2067a0"
-    type:
-    - mockup
-    - site redesign
 
-  - name: Lorien Herbs & Natural Foods
-    icon: "/assets/images/lorien.png"
-    image: "/assets/images/lorien.png"
-    color: "#37356b"
+  # - name: Maton
+  #   icon: "/assets/images/maton-thumb.jpg"
+  #   image: "/assets/images/maton.jpg"
+  #   color: "#217984"
+  #   type: 
+  #   - concept
+  #   - mockup
+  #   - graphic design
+
+  # - name: Spine and Scoliosis Clinic
+  #   icon: "/assets/images/SSC-site-edited.png"
+  #   image: "/assets/images/SSC-site-edited.png"
+  #   color: "#2067a0"
+  #   type:
+  #   - mockup
+  #   - site redesign
+
+  # - name: Lorien Herbs & Natural Foods
+  #   icon: "/assets/images/lorien.png"
+  #   image: "/assets/images/lorien.png"
+  #   color: "#37356b" 
+  #   type:
+  #   - mockup
+  #   - site redesign
+
+gallery2:
+  - name: Montage
+    icon: "/assets/images/design/montage-thumbnail.png"
+    image: "/assets/images/design/Montage_fullview.png"
+    color: "#34a9a9"
     type:
-    - mockup
-    - site redesign
+    - UI Design
+    - UX Design
+
+  - name: Maton
+    icon: "/assets/images/design/maton_thumbnail.jpg"
+    image: "/assets/images/design/maton.jpg"
+    color: "#de8f17"
+    type:
+    - Graphic Design
+
+  - name: Spine & Scoliosis Clinic
+    icon: "/assets/images/design/SSC-site-edited.png"
+    image: "/assets/images/design/SSC-site-edited.png"
+    color: "#1d8bbb"
+    type:
+    - UI Design
+    - Web Design
+
 
 pages:
   - name: PieTime
