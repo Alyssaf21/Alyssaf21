@@ -71,6 +71,29 @@ gallery:
     type:
     - animation
     - illustration
+
+  - name: Montage
+    icon: "/assets/images/design/montage-thumbnail.png"
+    image: "/assets/images/design/Montage_fullview.png"
+    color: "#34a9a9"
+    type:
+    - UI Design
+    - UX Design
+
+  - name: Maton
+    icon: "/assets/images/design/maton_thumbnail.jpg"
+    image: "/assets/images/design/maton.jpg"
+    color: "#de8f17"
+    type:
+    - Graphic Design
+
+  - name: Spine & Scoliosis Clinic
+    icon: "/assets/images/design/SSC-site-edited.png"
+    image: "/assets/images/design/SSC-site-edited.png"
+    color: "#1d8bbb"
+    type:
+    - UI Design
+    - Web Design
    
 
   # - name: Maton
@@ -99,28 +122,7 @@ gallery:
   #   - site redesign
 
 gallery2:
-  - name: Montage
-    icon: "/assets/images/design/montage-thumbnail.png"
-    image: "/assets/images/design/Montage_fullview.png"
-    color: "#34a9a9"
-    type:
-    - UI Design
-    - UX Design
 
-  - name: Maton
-    icon: "/assets/images/design/maton_thumbnail.jpg"
-    image: "/assets/images/design/maton.jpg"
-    color: "#de8f17"
-    type:
-    - Graphic Design
-
-  - name: Spine & Scoliosis Clinic
-    icon: "/assets/images/design/SSC-site-edited.png"
-    image: "/assets/images/design/SSC-site-edited.png"
-    color: "#1d8bbb"
-    type:
-    - UI Design
-    - Web Design
 
 
 pages:

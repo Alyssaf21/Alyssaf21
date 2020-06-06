@@ -68,7 +68,7 @@ permalink:
         <div id="gridContainer" class="">
             {% for block in site.data.my-projects.gallery %}
             <!-- <div class="col-4"> -->
-            <a href="{{ block.image | asset_url }}" class="gallery-link fresco"
+            <a href="{{ block.image | asset_url }}" class="gallery-link fresco zoom"
                 data-fresco-group="Gallery" data-fresco-caption="{{ block.name }}"
                 title="{{ block.name }}" data-fresco-group-options="loop: true"
                 data-fresco-options="thumbnail: '{{ block.icon | asset_url }}'">
@@ -93,35 +93,10 @@ permalink:
             </a>
             <!-- </div> -->
             {% endfor %}
-            {% for block in site.data.my-projects.gallery2 %}
-            <a href="{{ block.image | asset_url }}" class="gallery-link fresco" data-fresco-group="Gallery2"
-                data-fresco-caption="{{ block.name }}" title="{{ block.name }}"
-                data-fresco-group-options="loop: true"
-                data-fresco-options="thumbnail: '{{ block.icon | asset_url }}'">
-                <div class="gallery-item" style="background-image: url('{{ block.icon | asset_url }}')">
-                    <span onMouseOver="this.style.backgroundColor='{{ block.color }}'">
-                        <h2>
-                            {{ block.name }}
-                        </h2>
-                        <p>
-                            {% for type in block.type %}
-                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
-                            {% if forloop.last == true %}
-                            {% break %}
-                            {% else %}
-                            &nbsp;|&nbsp;
-                            {% endif %}
-                            {% endfor %}
-                        </p>
-                    </span>
-                </div>
-            </a>
-            <!-- </div> -->
-            {% endfor %}
-    </div>
-           
         </div>
+
     </div>
+
 
     <div id="about" class="main-section">
         <!-- <div class="highlight">
@@ -129,21 +104,20 @@ permalink:
         </div> -->
         <div class="about-wrapper">
             <!-- <div class="col-8"> -->
-            <div class="about-img" style="background-image: url('/assets/images/profile.jpg')">
+            <div class="about-img" style="background-image: url('/assets/images/profilebw.jpg')">
             </div>
             <div class="about-content responsive-hide-M">
-                <div class="about-img responsive-hide-L"
-                    style="background-image: url('/assets/images/portrait.png')">
-                </div>
-                <span> Hi! I'm Alyssa, an aspiring user interface and experience
-                    designer.</span><br>
+                <span><b> Hi!</b> I'm Alyssa, an aspiring user<b> interface</b> and<b>
+                    experience
+                        designer</b>.</span><br>
                 <p>
                     I like to think of the creative challenges presented by my work as a combination
                     of two of my favorite things: puzzles and art. Whether it's by overhauling a
                     site,
                     designing a framework for organizing office supplies or rearranging the
                     furniture
-                    in my house, I'm always looking for ways to improve the systems I interact with. <br> <br>
+                    in my house, I'm always looking for ways to improve the systems I interact with.
+                    <br> <br>
                     Work aside, I also have a great love for psychology, philosophy, hand-drawn
                     animation, and wacky puzzle games. <br> <br>
                     Drop me a line or request a resume at
@@ -151,9 +125,9 @@ permalink:
                 </p>
             </div>
             <!-- </div> -->
-
         </div>
     </div>
+</div>
 </div>
 
 <script type="text/javascript">
