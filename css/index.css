@@ -146,7 +146,7 @@ h2 {
 
 .bird {
   z-index: 100;
-  background-image: url("../img/bird_flap.gif");
+  background-image: url("../assets/images/starbird/bird_flap.gif");
   height: 8rem;
   width: 8rem;
   position: absolute;
@@ -160,7 +160,7 @@ h2 {
   position: absolute;
   height: 11rem;
   width: 8rem;
-  background: url("../img/nest_hover.gif");
+  background: url("../assets/images/starbird/nest_hover.gif");
   background-size: contain;
   background-repeat: no-repeat;
   right: -20%;
@@ -176,7 +176,7 @@ h2 {
   position: absolute;
   height: 50px;
   width: 50px;
-  background: url("../img/asteroid01.gif");
+  background: url("../assets/images/starbird/asteroid01.gif");
   background-size: contain;
   background-repeat: no-repeat;
   right: 0%;
@@ -190,7 +190,7 @@ h2 {
 }
 
 .rockSmash {
-  background-image: url("../img/asteroid_break.gif");
+  background-image: url("../assets/images/starbird/asteroid_break.gif");
   position: absolute;
   height: 80px;
   width: 80px;
@@ -208,7 +208,7 @@ h2 {
 
 .sliding-background {
   position: absolute;
-  background: url("../img/main_bg.png") repeat-x;
+  background: url("../assets/images/starbird/main_bg.png") repeat-x;
   height: 550px;
   width: 12000px;
   animation-name: scrollBg;
@@ -220,7 +220,7 @@ h2 {
 
 .sliding-galaxies {
   position: absolute;
-  background: url("../img/galaxy_layer.png") repeat-x;
+  background: url("../assets/images/starbird/galaxy_layer.png") repeat-x;
   height: 550px;
   width: 6000px;
   animation-name: scrollGalaxy;
@@ -376,7 +376,7 @@ h2 {
 }
 
 .spaceBg {
-  background-image: url('../img/main_bg.png');
+  background-image: url('../assets/images/starbird/main_bg.png');
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
