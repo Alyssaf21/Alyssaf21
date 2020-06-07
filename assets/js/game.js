@@ -1,8 +1,6 @@
 //////////////////////////////////////
-//  CS301 INTERNET APP DEV JAN 2019
-//  Group Project 3: StarBird Game
-//  Group JAAB (Jude, Alyssa, Apoorv, Becca)
-//  Last edit: 1/14/2019
+//  StarBird, side-scrolling browser game 
+//  Jude, Alyssa
 //  Purpose: Main code for the game
 //////////////////////////////////////
 
