@@ -66,7 +66,7 @@ gallery:
 
   - name: Video Narrative III
     icon: "/assets/images/design/staticFridge.jpg"
-    image: "/assets/images/design/animatedFridge.gif"
+    image: "/assets/images/design/animatedFridge-min.gif"
     color: "#5b5a5f"
     type:
     - animation
