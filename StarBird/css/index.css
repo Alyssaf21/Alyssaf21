@@ -18,14 +18,14 @@ body {
 }
 
 h2 {
-  font-family: "Ruda", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: bold;
   font-size: 200%;
 }
 
 .navbar {
   text-transform: uppercase;
-  font-family: "Ruda", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -100,7 +100,7 @@ h2 {
 
 .startbutton {
   text-transform: uppercase;
-  font-family: "Ruda", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: bold;
   letter-spacing: 1px;
   color: #231161;
@@ -140,7 +140,7 @@ h2 {
   color: white;
   text-decoration: none;
   font-size: 1.75rem;
-  font-family: "Ruda", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: bold;
 }
 
