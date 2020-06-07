@@ -17,7 +17,7 @@ title: Alyssa Fusato Personal Site
 email: a.c.fusato@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Alyssa Fusato's personal site! Unfortunately, it is still under 
-  construction- please stop by sometime soon(Friday)! 
+  construction- please stop by sometime soon! 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
