@@ -361,10 +361,10 @@ function overlapRadial(x1, y1, x2, y2, radius1, radius2) {
 function hitBird(damage) {
     if(gameState.invulnerable === false){
         bird.healthCurrent -= damage;
-        document.getElementById("bird").style.backgroundImage = 'url("img/bird_flapinj.gif")';
+        document.getElementById("bird").style.backgroundImage = 'url("../assets/images/starbird/bird_flapinj.gif")';
         gameState.invulnerable = true;
         window.setTimeout(function () {
-            document.getElementById("bird").style.backgroundImage = 'url("img/bird_flap.gif")';
+            document.getElementById("bird").style.backgroundImage = 'url("../assets/images/starbird/bird_flap.gif")';
             gameState.invulnerable = false;
         }, 400);
         updateBird();
