@@ -20,7 +20,18 @@ https://jeremyckahn.github.io/keydrown/
   'SPACE': 32,*/
 var moveDist = 9;
 
+function updateMoveDist() {
+    var $speed = document.getElementById("speedValue");
+    var $value = $speed.value;
+    console.log("Current speed is: " + $value);
+    if ($value < 0 || $value == undefined) {
+        $value = 1;
+    }
+    moveDist = $value * 9;
+}
+
 kd.DOWN.down = function () {
+    updateMoveDist();
     var $bird = $("#bird");
     var birdTop = $bird.position().top;
     var birdHeight = $bird.height();
@@ -46,6 +57,7 @@ kd.DOWN.down = function () {
 };
 
 kd.UP.down = function () {
+    updateMoveDist();
     var $bird = $("#bird");
     var birdTop = $bird.position().top;
 
@@ -67,6 +79,7 @@ kd.UP.down = function () {
 };
 
 kd.LEFT.down = function () {
+    updateMoveDist();
     var $bird = $("#bird");
     var birdLeft = $bird.position().left;
 
@@ -87,6 +100,7 @@ kd.LEFT.down = function () {
 };
 
 kd.RIGHT.down = function () {
+    updateMoveDist();
     var $bird = $("#bird");
     var birdLeft = $bird.position().left;
     var birdWidth = $bird.width();

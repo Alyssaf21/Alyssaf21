@@ -55,26 +55,26 @@ $(document).ready(
 /*  Splashscreen that appears once the game win/lose. Displays overlay, message,
     and a start button that resets and runs the game*/
 function gamescreen(buttontext, splashtext) {
-    
+
     /*var $img = $("<div>");*/ //for splashscreen pictures, implement if time 
     var $startscreen = $("<div>");
     $startscreen.attr("id", "splashscreen");
     $startscreen.attr("class", "splashscreen");
     $startscreen.html(splashtext);
-    
+
     var $button = $("<div>");
     $button.attr("id", "startbutton");
     $button.addClass("startbutton");
     $button.attr("tabindex", "1");
     $button.html(buttontext);
-    kd.ENTER.down = function (){
+    kd.ENTER.down = function () {
         $("#startbutton").focus();
         window.setTimeout(function () {
             $("#startbutton").click();
         }, 300);
     }
     $button.on("click", function () {
-        $button.css("border","5px solid #3847ce");
+        $button.css("border", "5px solid #3847ce");
         gameReset();
         $button.parent().css("display", "none");
         gameRun();
@@ -137,7 +137,8 @@ function gameRun() {
     bird.width = $bird.width();
     bird.radius = Math.min(bird.height, bird.width) / 2;
 
-    generateLives();
+
+    generateToggles();
 
     //Add the galaxy backdrop
     var $backgroundMom = $("#gameBox");
@@ -191,24 +192,24 @@ function generateNest() {
 /*  Creates asteroid divs and assigns them css values and attributes.
     Also creates numbered Ids for them and gives them a speed value */
 function generateAsteroids() {
- /*
-    if (gameState.timer % 600 === 0) {
-        var numRocks = gameState.level;
-        var $rockMom = $("#gameBox");
-        var $rock;
-        var portHeight = $rockMom.height();
-        var portTop = $rockMom.position().top;
-        var rockVerticalGap = portHeight / numRocks;
-        for (var ndx = 0; ndx < numRocks; ndx++) {
-            $rock = $("<div>");
-            $rock.attr("id", "rock" + ndx);
-            $rock.attr("class", "rock");
-            $rock.css("top", ndx * rockVerticalGap + portTop);
-            $rock.css("animation-duration", Math.random() * 5 + 1 + "s");
-            $rockMom.append($rock);
-        }
-    }
-    */
+    /*
+       if (gameState.timer % 600 === 0) {
+           var numRocks = gameState.level;
+           var $rockMom = $("#gameBox");
+           var $rock;
+           var portHeight = $rockMom.height();
+           var portTop = $rockMom.position().top;
+           var rockVerticalGap = portHeight / numRocks;
+           for (var ndx = 0; ndx < numRocks; ndx++) {
+               $rock = $("<div>");
+               $rock.attr("id", "rock" + ndx);
+               $rock.attr("class", "rock");
+               $rock.css("top", ndx * rockVerticalGap + portTop);
+               $rock.css("animation-duration", Math.random() * 5 + 1 + "s");
+               $rockMom.append($rock);
+           }
+       }
+       */
     ///*
     //every half second, check to see if we should generate asteroids
     //TODO: Extract target and timing
@@ -216,7 +217,7 @@ function generateAsteroids() {
     var chanceOfAsteroid = gameState.level / 20;
     //Uncomment the following line to turn off asteroid generation. Useful for debugging.
     //chanceOfAsteroid = 0;
-    
+
     //Modify the base chance by the distance travelled.
     //This formula should double the chance of an asteroid as the player approaches the end of the level.
     var distanceFactor = 2 - Math.floor((gameState.levelEnd - gameState.timer) / gameState.levelEnd);
@@ -357,7 +358,7 @@ function overlapRadial(x1, y1, x2, y2, radius1, radius2) {
 }
 
 function hitBird(damage) {
-    if(gameState.invulnerable === false){
+    if (gameState.invulnerable === false) {
         bird.healthCurrent -= damage;
         document.getElementById("bird").style.backgroundImage = 'url("../assets/images/starbird/bird_flapinj.gif")';
         gameState.invulnerable = true;
@@ -367,10 +368,10 @@ function hitBird(damage) {
         }, 400);
         updateBird();
     }
-   
+
 }
 
-function generateLives(){
+function generateLives() {
     var $livesMom = $("#healthBar");
     var $lives = $("<div>");
     $lives.attr("id", "lives");
@@ -379,7 +380,20 @@ function generateLives(){
     $livesMom.append($lives);
 }
 
-function updateLives(){
+function updateLives() {
     $lives = $(".lives");
     $lives.html(bird.healthCurrent);
+}
+
+function generateToggles() {
+    generateLives();
+    
+    var $speedWrap = $(".speedWrap");
+    $speedWrap.attr("class", "number-input");
+    $speedWrap.html("<span>Bird<br>Speed</span><button onclick=\"this.parentNode.querySelector('input[type=number]').stepDown()\" ></button><input id=\"speedValue\" class=\"quantity\" min=\"0\" name=\"quantity\" value=\"1\" type=\"number\"><button onclick=\"this.parentNode.querySelector('input[type=number]').stepUp()\" class=\"plus\"></button>");
+}
+
+function checkSpeed() {
+    var $speedWrap = $(".speedWrap");
+    var $speed = $speedWrap.value();
 }
