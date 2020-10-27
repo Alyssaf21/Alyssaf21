@@ -177,7 +177,6 @@ pages:
     description: "../assets/images/works/sharebio.jpg"
     info1: "June - July 2019"
     info2: ""
-    subtitle: "Center for bioinformatics research"
     hero: "../assets/images/works/sharebioRenderMockup.jpg"
     problem: "../assets/images/works/sharebio-logo.png"
     challenge1: "../assets/images/works/sharebio-browse.png"
