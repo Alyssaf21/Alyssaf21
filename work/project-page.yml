@@ -13,7 +13,7 @@ pietime:
     concept: "../assets/images/works/concept.jpg"
     process: "../assets/images/works/pieTimeFigmaHQ.jpg"
     challenges:
-    results: "../assets/images/works/pieTimeMockup2.jpg"
+    results: "../assets/images/works/pietime_mockup.jpg"
 
 Sharebio:
   - name: Sharebio

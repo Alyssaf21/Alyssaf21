@@ -72,9 +72,9 @@ a {
                 font-weight: 700;
                 color: $main-color;
                 // color: $baby-blue;
-                color: lighten($main-color, 12%);
+                color: lighten($main-color, 22%);
                 letter-spacing: 0.2px;
-                text-shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000,
+                text-shadow: 2px 2px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000,
                     1px 0 0 #000, 0 -1px 0 #000;
                 &:hover,
                 &:focus {
@@ -171,10 +171,12 @@ a {
         p.caption {
             font-style: italic;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 145%;
             letter-spacing: 0.07em;
-            color: $baby-blue;
+            color: lighten($baby-blue, 15%);
+            // color: lighten($baby-blue 50%);
+            // color: $baby-blue;
             max-width: 24rem;
         }
     } //.projectSection

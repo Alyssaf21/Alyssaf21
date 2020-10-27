@@ -159,9 +159,9 @@ gallery2:
 
 pages:
   - name: PieTime
-    subtitle: "A multitasking visual timer"
-    info1: "UX/UI, Mobile App Dev"
-    info2: "Spring 2020 - Present"
+    subtitle: "UX/UI, Mobile App Development"
+    info1: "Spring 2020 - Present"
+    info2: ""
     hero: "../assets/images/works/pieTimeMockup3.jpg"
     description: "../assets/images/works/pieTimeMockup.jpg"
     problem1: "../assets/images/works/visualTimers.jpg"
@@ -170,11 +170,13 @@ pages:
     process: "../assets/images/works/pieTimeFigmaHQ.jpg"
     challenges:
     results: "../assets/images/works/pieTimeMockup2.jpg"
+    results2: "../assets/images/works/pietime_mockups.jpg"
 
   - name: Sharebio
+    subtitle: "UX/UI, Front-end Web Development"
     description: "../assets/images/works/sharebio.jpg"
-    info1: "UX/UI, Web Dev"
-    info2: "June - July 2019"
+    info1: "June - July 2019"
+    info2: ""
     subtitle: "Center for bioinformatics research"
     hero: "../assets/images/works/sharebioRenderMockup.jpg"
     problem: "../assets/images/works/sharebio-logo.png"
