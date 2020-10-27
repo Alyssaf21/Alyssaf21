@@ -69,7 +69,7 @@ permalink:
             {% for block in site.data.my-projects.gallery %}
             <!-- <div class="col-4"> -->
             <a href="{{ block.image | asset_url }}" class="gallery-link fresco zoom"
-                data-fresco-group="Gallery" data-fresco-caption="{{ block.name }}"
+                data-fresco-group="Gallery" data-fresco-caption="{{ block.caption }}"
                 title="{{ block.name }}" data-fresco-group-options="loop: true"
                 data-fresco-options="thumbnail: '{{ block.icon | asset_url }}'">
                 <div class="gallery-item"

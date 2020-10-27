@@ -47,54 +47,86 @@ projects:
   #         Starbird catch the next spaceship back! (Page under construction)"
   
 gallery:
+
+  - name: Another Good Meeting
+    caption: Another Good Meeting mobile wireframes
+    icon: "/assets/images/design/agm_thumbnail.jpg"
+    image: "/assets/images/design/agm_wireframes.jpg"
+    color: "#146AB4"
+    type:
+    - UX/UI Design
+    - Mobile
+
+  - name: Hawaiian Air Registration
+    caption: Hawaiian Air Registration concept
+    icon: "/assets/images/design/HA_thumbnail.jpg"
+    image: "/assets/images/design/HA_screens.jpg"
+    color: "#7813a7"
+    type:
+    - UI Design
+    - Mobile   
   
-  - name: Video Narrative
-    icon: "/assets/images/design/staticReading.jpg"
-    image: "/assets/images/design/animatedReading.gif"
-    color: "#6c572f"
-    type:
-    - animation
-    - illustration
-
-  - name: Video Narrative II
-    icon: "/assets/images/design/staticStairs.gif"
-    image: "/assets/images/design/animatedStairs.gif"
-    color: "#43659a"
-    type:
-    - animation
-    - illustration
-
-  - name: Video Narrative III
-    icon: "/assets/images/design/staticFridge.jpg"
-    image: "/assets/images/design/animatedFridge-min.gif"
-    color: "#5b5a5f"
-    type:
-    - animation
-    - illustration
-
   - name: Montage
-    icon: "/assets/images/design/montage-thumbnail.png"
+    caption: Montage mockups
+    icon: "/assets/images/design/montage_green.jpg"
     image: "/assets/images/design/Montage_fullview.png"
     color: "#34a9a9"
     type:
     - UI Design
     - UX Design
 
-  - name: Maton
-    icon: "/assets/images/design/maton_thumbnail.jpg"
-    image: "/assets/images/design/maton.jpg"
-    color: "#de8f17"
+  - name: Sacred Heart Schools
+    caption: Sacred Heart Schools wireframe and mockup
+    icon: "/assets/images/design/shs_thumbnail.jpg"
+    image: "/assets/images/design/shs_wireframe_mockup.jpg"
+    color: "#c05353"
     type:
-    - Graphic Design
+    - UX/UI Design
+    - Mobile
 
   - name: Spine & Scoliosis Clinic
+    caption: Spine & Scoliosis Clinic mockup concept
     icon: "/assets/images/design/SSC-site-edited.png"
     image: "/assets/images/design/SSC-site-edited.png"
     color: "#1d8bbb"
     type:
     - UI Design
     - Web Design
+
+  - name: Maton
+    caption: Maton logo concept
+    icon: "/assets/images/design/maton_thumbnail.jpg"
+    image: "/assets/images/design/maton.jpg"
+    color: "#de8f17"
+    type:
+    - Graphic Design
    
+  - name: Video Narrative
+    caption: Video Narrative highlight
+    icon: "/assets/images/design/staticReading.jpg"
+    image: "/assets/images/design/animatedReading.gif"
+    color: "#2b3c74"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative II
+    caption: Video Narrative highlight II
+    icon: "/assets/images/design/staticStairs.gif"
+    image: "/assets/images/design/animatedStairs.gif"
+    color: "#a72913"
+    type:
+    - animation
+    - illustration
+
+  - name: Video Narrative III
+    caption: Video Narrative highlight III
+    icon: "/assets/images/design/staticFridge.jpg"
+    image: "/assets/images/design/animatedfridge.gif"
+    color: "#8b4a24"
+    type:
+    - animation
+    - illustration
 
   # - name: Maton
   #   icon: "/assets/images/maton-thumb.jpg"
