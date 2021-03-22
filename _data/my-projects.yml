@@ -164,7 +164,7 @@ pages:
     info2: ""
     hero: "../assets/images/works/heroimg.png"
     description: "../assets/images/works/pietime_outlines.png"
-    problem: "../assets/images/works/problem.png"
+    problem: "../assets/images/works/Problem.png"
     concept: "../assets/images/works/layout_variations.png"
     process: "../assets/images/works/process.png"
     challenges:
