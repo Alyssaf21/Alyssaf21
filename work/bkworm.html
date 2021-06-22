@@ -1,0 +1,140 @@
+---
+layout: default
+title: BK Work
+permalink: /bkworm/
+---
+
+{% for block in site.data.my-projects.pages %}
+{% if block.name == 'BK Worm' %}
+<div id="main">
+    <div id="heroImg" style="background-image: url('{{ block.hero | asset_url }}');">
+        {{ site.data.my-projects.block.name }}
+    </div>
+    <div id="projectHero" class="projectSection">
+        <div id="heroSectionText" class="sectionText">
+            <div class="infoTextWrapper">
+                <div class="infoText">{{ block.info1 }}</div>
+                <div class="infoText">{{ block.info2 }}</div>
+            </div>
+            <h1 class="sectionTitle">{{ block.name }}</h1>
+            <h2 class="sectionSubHeader">{{ block.subtitle }}</h2>
+            <p class="sectionBody">
+                PieTime is a task-oriented visual timer app that helps users better manage their
+                time. As the sole
+                designer on the project, I worked on a team of three other developers to bring the
+                app from concept
+                to reality.
+            </p>
+        </div>
+        <div class="imgWrap">
+            <a href="{{ block.description | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Description">
+                <img src="{{ block.description | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+    </div>
+    <div id="problem" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Problem</h1>
+                <p class="sectionBody">
+                    Keeping track of time when you have multiple tasks can be difficult, especially
+                    for those who experience <a
+                        href="https://health.usnews.com/health-care/patient-advice/articles/2017-07-21/what-methods-can-help-manage-adhd-related-time-blindness">time
+                        blindness</a>, such as people with autism or ADHD. Devices like visual
+                    timers are popular in these circles for their ability to make the passage of
+                    time more tangible, but can only represent one task at a time. This makes visual
+                    timers frustrating to use when you have multiple tasks to complete in a set
+                    period of time.
+                </p>
+            </div>
+        </div>
+        <div class="imgWrap">
+            <a href="{{ block.problem | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Problem" data-fresco-group-options="loop: false">
+                <img src="{{ block.problem | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+    </div>
+    <div id="process" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Process</h1>
+                <p class="sectionBody">
+                    Due to our timeline, my team and I decided to adopt a lean UX approach to go
+                    alongside our agile development workflow. This involved drafting an MVP early on
+                    and regularly consulting the dev team at stand-up meetings and throughout
+                    sprints to keep it up-to-date and as realistic as possible. I also helped out
+                    with the front-end implementation of the app in Flutter to ensure that it
+                    adhered to our mockups and theming conventions.
+                </p>
+            </div>
+        </div>
+        <div class="imgWrap">
+            <a href="{{ block.process | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Process" data-fresco-group-options="loop: true">
+                <img src="{{ block.process | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+    </div>
+    <div id="research" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Research Insights</h1>
+                <p class="sectionBody">
+                    The initial user research into time blindness and executive dysfunction
+                    translated into a competitive analysis of time management apps built to combat
+                    them. While combing through the features and user reviews of existing visual
+                    timer and schedule-making apps, I identified some recurring pain points:
+                    <br><br> <b>Visual timer apps:</b>
+                    <br>Inability to create a “sequence” of timers
+                    <br>1-2 hour limit on most visual timer apps is too restrictive
+                    <br>Distracting visual clutter
+                    <br><br> <b>Time management and schedule-making apps:</b>
+                    <br>Sharp learning curve due to wide range of features and options
+                    <br>Complicated and/or time consuming setup process
+                    <br>Lack of images and graphics to effectively “visualize” time
+
+                </p>
+            </div>
+        </div>
+        <div class="imgWrap">
+            <a href="{{ block.concept | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Concept"
+                data-fresco-caption="Brainstorming and sketches for app ideas">
+                <img src="{{ block.concept | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+    </div>
+    <div id="results" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Results</h1>
+                <p class="sectionBody">
+                    PieTime currently allows users to set a timer and divide that time up into tasks
+                    with customizable titles, durations, and colors. Each task appears as a labelled
+                    “slice” on the timer face, which darkens as time elapses to illustrate the
+                    relationship between individual tasks and overall time limit. Users can stop,
+                    play, and reset the timer, or save the current sequence of tasks as a preset
+                    to use later. All tasks can also be viewed in the bottom drawer in list form,
+                    which also allows users to check them off as complete.
+                    <br><br>
+                    One of the main challenges of the project was in balancing the roles of designer
+                    and software engineer in a totally new framework throughout the development
+                    process. It meant that I was constantly revising the design to match what was
+                    possible on the frontend side and to better cooperate with Flutter’s built-in
+                    UI. That being said, PieTime has been a blast to work on and my team
+                    and I hope to release it to the app store later this year.
+                </p>
+            </div>
+        </div>
+        <div class="imgWrap">
+            <a href="{{ block.results2 | asset_url }}" alt="" class="fresco"
+                data-fresco-group="Results" data-fresco-group-options="loop: true">
+                <img src="{{ block.results2 | asset_url }}" alt="" class="sectionImg-height">
+            </a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
