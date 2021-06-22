@@ -80,7 +80,8 @@ permalink:
                         </h2>
                         <p>
                             {% for type in block.type %}
-                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' | split:'' | reverse | join:'' }}
+                            {{ type | split:'' | reverse | join:'' | replace_first: ' ', ';psbn&' |
+                            split:'' | reverse | join:'' }}
                             {% if forloop.last == true %}
                             {% break %}
                             {% else %}
@@ -107,17 +108,15 @@ permalink:
             <div class="about-img" style="background-image: url('/assets/images/profilebw.jpg')">
             </div>
             <div class="about-content responsive-hide-M">
-                <span> Hi! <b>I'm Alyssa</b>, an aspiring<br><b>user interface</b> &<b>
-                    experience
-                        designer</b>.</span><br>
+                    <span> <b>Hi! I'm Alyssa,</b>
+                        <br> a UX/UI Designer with a background in Frontend Development and Visual
+                        Design.
+                    </span><br>
                 <p>
-                    I like to think of the creative challenges presented by my work as a combination
-                    of two of my favorite things: puzzles and art. Whether it's by overhauling a
-                    site,
-                    designing a framework for organizing office supplies or rearranging the
-                    furniture
-                    in my house, I'm always looking for ways to improve the systems I interact with.
-                    <br> <br>
+                    I love taking on new tools and frameworks and strive to make things that are
+                    thoughtful,
+                    engaging,
+                    and enduring.
                     Work aside, I also have a great love for psychology, philosophy, hand-drawn
                     animation, and wacky puzzle games. <br> <br>
                     Drop me a line or request a resume at
