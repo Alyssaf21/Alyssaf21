@@ -1,15 +1,26 @@
 ---
 projects:
+  - name: BK Worm
+    link: /bkworm/
+    icon: "/assets/images/BKWORM.png"
+    color: "#0A766E"
+    date: Spring 2021
+    skills:
+    - UX Research
+    - UX/UI Design
+    - Branding
+    desc: "A mobile educational platform for children’s eBooks and reading education in a hybrid learning environment."
+
   - name: PieTime
     link: /pietime/
-    icon: "/assets/images/pieTimeThumb.png"
+    icon: "/assets/images/pietime-thumbnail.png"
     color: "rgb(176, 25, 25)"
     date: Spring 2020
     skills: 
     - UX design 
     - UI design
     - Mobile App Dev
-    desc: "A picturesque timer app for visual thinkers and people who like pie. My role involved concept development, UX/UI design, and mobile implementation in Flutter."
+    desc: "A visual timer for visual thinkers. My role involved concept development, UX/UI design, and mobile implementation in Flutter."
         
   - name: Sharebio
     link: /sharebio/
@@ -23,29 +34,16 @@ projects:
     desc: "An intercollegiate platform that hosts bioinformatics research
           materials shared between Whitworth, Reed, and Lewis & Clark College."
   
-  - name: Starbird
-    link: /starbird/
-    icon: "/assets/images/starbird-thumbnail.png"
-    color: "#270986"
-    date: Jan. 2019
-    skills: 
-    - UX design 
-    - UI design
-    desc: "A classic intergalactic astroid-dodging game I designed, animated, and helped code. See if you can get Starbird back to the spaceship in one piece!"
-
   # - name: Starbird
-  #   link: /under-construction/
+  #   link: /starbird/
   #   icon: "/assets/images/starbird-thumbnail.png"
-  #   color: "#4a3296"
-  #   date: January 2019
+  #   color: "#270986"
+  #   date: Jan. 2019
   #   skills: 
-  #   - front-end development
+  #   - UX design 
   #   - UI design
-  #   - graphic design
-  #   desc: "A classic browser-based side-scrolling adventure about a bird
-  #         trying to find its way home across the galaxy. Dodge asteroids to help 
-  #         Starbird catch the next spaceship back! (Page under construction)"
-  
+  #   desc: "A classic intergalactic astroid-dodging game I designed, animated, and helped code. See if you can get Starbird back to the spaceship in one piece!"
+
 gallery:
 
   - name: Another Good Meeting
@@ -100,64 +98,63 @@ gallery:
     color: "#de8f17"
     type:
     - Graphic Design
+
+  - name: StarBird
+    caption: StarBird browser game.
+    icon: "/assets/images/starbird-thumbnail.png"
+    color: "#270986"
+    image: "/assets/images/design/starbirdscrn.png"
+    type: 
+    - Web design 
+    - Graphic design
+    - Frontend Dev
    
-  - name: Video Narrative
-    caption: Video Narrative highlight
-    icon: "/assets/images/design/staticReading.jpg"
-    image: "/assets/images/design/animatedReading.gif"
-    color: "#2b3c74"
-    type:
-    - animation
-    - illustration
-
-  - name: Video Narrative II
-    caption: Video Narrative highlight II
-    icon: "/assets/images/design/staticStairs.gif"
-    image: "/assets/images/design/animatedStairs.gif"
-    color: "#a72913"
-    type:
-    - animation
-    - illustration
-
-  - name: Video Narrative III
-    caption: Video Narrative highlight III
-    icon: "/assets/images/design/staticFridge.jpg"
-    image: "/assets/images/design/animatedfridge.gif"
-    color: "#8b4a24"
-    type:
-    - animation
-    - illustration
-
-  # - name: Maton
-  #   icon: "/assets/images/maton-thumb.jpg"
-  #   image: "/assets/images/maton.jpg"
-  #   color: "#217984"
-  #   type: 
-  #   - concept
-  #   - mockup
-  #   - graphic design
-
-  # - name: Spine and Scoliosis Clinic
-  #   icon: "/assets/images/SSC-site-edited.png"
-  #   image: "/assets/images/SSC-site-edited.png"
-  #   color: "#2067a0"
+  # - name: Video Narrative
+  #   caption: Video Narrative highlight
+  #   icon: "/assets/images/design/staticReading.jpg"
+  #   image: "/assets/images/design/animatedReading.gif"
+  #   color: "#2b3c74"
   #   type:
-  #   - mockup
-  #   - site redesign
+  #   - animation
+  #   - illustration
 
-  # - name: Lorien Herbs & Natural Foods
-  #   icon: "/assets/images/lorien.png"
-  #   image: "/assets/images/lorien.png"
-  #   color: "#37356b" 
+  # - name: Video Narrative II
+  #   caption: Video Narrative highlight II
+  #   icon: "/assets/images/design/staticStairs.gif"
+  #   image: "/assets/images/design/animatedStairs.gif"
+  #   color: "#a72913"
   #   type:
-  #   - mockup
-  #   - site redesign
+  #   - animation
+  #   - illustration
 
-gallery2:
-
-
+  # - name: Video Narrative III
+  #   caption: Video Narrative highlight III
+  #   icon: "/assets/images/design/staticFridge.jpg"
+  #   image: "/assets/images/design/animatedfridge.gif"
+  #   color: "#8b4a24"
+  #   type:
+  #   - animation
+  #   - illustration
 
 pages:
+  - name: BK Worm
+    subtitle: "UX Research, UX/UI Design, Branding"
+    info1: "Spring 2021"
+    info2: ""
+    hero: "../assets/images/works/bkwm-preview.png"
+    description: "../assets/images/works/bkwm-versions.png"
+    role: "../assets/images/works/bkwm-roles.png"
+    definition: "../assets/images/works/bkwm-ui.png"
+    research: "../assets/images/works/bkwm-interview.png"
+    analysis: "../assets/images/works/bkwm-feature-canvas.jpg"
+    design1: "../assets/images/works/bkwm-logo.png"
+    design2: "../assets/images/works/bkwm-initial.png"
+    design3: "../assets/images/works/bkwm-docs.png"
+    design4: "../assets/images/works/bkwm-newstudent.png"
+    design5: "../assets/images/works/bkwm-login.png"
+    design6: "../assets/images/works/bkwm-remake.png"
+    design7: "../assets/images/works/bkwm-remake.png"
+    
   - name: PieTime
     subtitle: "UX/UI, Mobile App Development"
     info1: "Spring 2020 - Present"

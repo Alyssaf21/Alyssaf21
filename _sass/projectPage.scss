@@ -13,11 +13,10 @@ $sectionBody: rgb(231, 231, 231);
 }
 
 @mixin paragraph {
-  line-height: 1.7;
-  font-weight: 300;
-  font-size: 18px;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 18px;
 }
-
 
 .flex-column {
     flex-direction: column;
@@ -47,12 +46,14 @@ a {
     padding-left: $nav-width;
 
     .projectSection {
-        padding: 4rem 2rem 2rem 8rem;
+        padding: 0rem 2rem 2rem 8rem;
         display: flex;
         flex-direction: column;
 
         figure {
-            margin: unset;
+            display: flex;
+            flex-direction: column;
+            margin: 2.5rem 0;
         }
 
         .imgHide {
@@ -68,7 +69,7 @@ a {
             h1.sectionTitle {
                 display: inline-block;
                 font-family: "Inter";
-                font-size: 70px;
+                font-size: 4rem;
                 margin-bottom: 0em;
                 margin-top: 0.5em;
                 text-transform: none;
@@ -92,23 +93,37 @@ a {
                 margin-top: -0.25rem;
             } //h2.sectionSubHeader
 
-            p.sectionBody {
+            .sectionBody {
                 font-style: normal;
                 font-weight: 300;
-                font-size: 17px;
+                font-size: 19px;
                 line-height: 1.7;
                 color: $sectionBody;
                 max-width: 50rem;
                 min-width: 30%;
-                margin-bottom: 3.5rem;
-            } //.sectionBody
-        }
+                span {
+                    margin-bottom: 0.6rem;
+                }
 
-        .imgWrap {
-            display: flex;
-            flex-direction: column;
-            // padding-right: 4rem;
-            justify-content: space-evenly;
+                ol > li {
+                    margin-bottom: 1rem;
+                }
+            } //.sectionBody
+
+            blockquote {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            blockquote + figcaption {
+                align-self: flex-end;
+            }
+
+            .imgWrap + figcaption {
+                font-size: 1rem;
+                font-style: italic;
+                color: $text-secondary;
+            }
         }
 
         div.sectionImg {
@@ -141,7 +156,7 @@ a {
                 box-shadow: 6px 6px 0px 1px black;
                 transform: translate(-5px, -5px);
             }
-        } //img.sectionImgy 
+        } //img.sectionImgy
 
         img.sectionImg-height {
             height: auto;
@@ -181,8 +196,6 @@ a {
         }
     } //.projectSection
 
-
-
     #heroImg {
         width: 100%;
         height: 25vh;
@@ -207,6 +220,7 @@ a {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                margin-top: 3rem;
 
                 .infoText {
                     opacity: 0.76;
@@ -228,55 +242,55 @@ a {
     // } //#textBg
 } //#main
 
-    #objectives {
+#objectives {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    .objective-wrapper {
+        min-width: 27em;
+        max-width: 100%;
+        padding: 3em 1.5em 4em 0em;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start !important;
+        justify-content: space-evenly;
+        align-items: baseline;
 
-        .objective-wrapper {
-            min-width: 27em;
-            max-width: 100%;
-            padding: 3em 1.5em 4em 0em;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: baseline;
+        .vert-divider {
+            @include vert-line(3em, 1px, steelblue);
+            align-self: center;
+        }
 
-            .vert-divider {
-                @include vert-line(3em, 1px, steelblue);
-                align-self: center;
+        .objective {
+            width: 45em;
+            padding: 0em 3em;
+
+            img {
+                height: 4em;
+                width: auto;
+                opacity: 0.75;
+                filter: invert(51%) sepia(6%) saturate(4534%) hue-rotate(166deg) brightness(91%) contrast(80%);
             }
 
-            .objective {
-                width: 45em;
-                padding: 0em 3em;
+            h4 {
+                margin: 2em 0 0.5em;
+                font-size: 22px;
+            }
 
-                img {
-                    height: 4em;
-                    width: auto;
-                    opacity: 0.75;
-                    filter: invert(51%) sepia(6%) saturate(4534%) hue-rotate(166deg) brightness(91%) contrast(80%);
-                }
+            p {
+                margin: 0 0.2em;
+                @include paragraph;
+                font-size: 16px;
+            }
 
-                h4 {
-                    margin: 2em 0 0.5em;
-                    font-size: 22px;
-                }
-
-                p {
-                    margin: 0 0.2em;
-                    @include paragraph;
-                    font-size: 16px;
-                }
-
-                &:first-of-type {
-                    padding-left: 0;
-                }
-                &:last-of-type {
-                    padding-right: 0;
-                }
+            &:first-of-type {
+                padding-left: 0;
+            }
+            &:last-of-type {
+                padding-right: 0;
             }
         }
     }
+}
 
 @media only screen and (max-width: 1100px) {
     $section-left: 1rem;

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BK Work
+title: BK Worm
 permalink: /bkworm/
 ---
 
@@ -18,121 +18,471 @@ permalink: /bkworm/
             </div>
             <h1 class="sectionTitle">{{ block.name }}</h1>
             <h2 class="sectionSubHeader">{{ block.subtitle }}</h2>
-            <p class="sectionBody">
-                PieTime is a task-oriented visual timer app that helps users better manage their
-                time. As the sole
-                designer on the project, I worked on a team of three other developers to bring the
-                app from concept
-                to reality.
-            </p>
+            <!-- <p class="sectionBody"> -->
+            <div class="sectionBody">
+                <p>
+                    <b>
+                        <a href="https://doi.org/10.7249/RRA168-1" target="_blank">Research
+                            shows</a>
+                        that student participation and engagement has plummeted nationwide as a
+                        result of remote learning.
+                    </b>
+                </p>
+                <p>
+                    BK Worm is a mobile educational platform for accessing children’s eBooks and
+                    developing literacy skills. Designed to be used in classrooms or at home, BK
+                    Worm integrates an extensive eBook library, assignments, and activity tracking
+                    to help keep parents and teachers updated on their child’s progress.
+                </p>
+                <p>
+                    The app was designed and implemented as a part of a software engineering course.
+                    With design occurring parallel to development, the process took place over four
+                    sprints throughout a 12-week period, totaling about 108 hours.
+                </p>
+            </div>
+            <!-- </p> -->
         </div>
-        <div class="imgWrap">
+        <figure class="imgWrap">
             <a href="{{ block.description | asset_url }}" alt="" class="fresco"
                 data-fresco-group="Description">
                 <img src="{{ block.description | asset_url }}" alt="" class="sectionImg-height">
             </a>
-        </div>
+        </figure>
     </div>
-    <div id="problem" class="projectSection">
+    <div id="role" class="projectSection">
         <div class="sectionText">
             <div class="textWrapper">
-                <h1 class="sectionTitle">Problem</h1>
-                <p class="sectionBody">
-                    Keeping track of time when you have multiple tasks can be difficult, especially
-                    for those who experience <a
-                        href="https://health.usnews.com/health-care/patient-advice/articles/2017-07-21/what-methods-can-help-manage-adhd-related-time-blindness">time
-                        blindness</a>, such as people with autism or ADHD. Devices like visual
-                    timers are popular in these circles for their ability to make the passage of
-                    time more tangible, but can only represent one task at a time. This makes visual
-                    timers frustrating to use when you have multiple tasks to complete in a set
-                    period of time.
-                </p>
+                <h1 class="sectionTitle">Role</h1>
+                <div class="sectionBody">
+                    <p>
+                        <b>
+                            As the sole designer on the team, I was responsible for UX research,
+                            wireframes, mockups, prototypes, creative assets, and branding.
+                        </b>
+                    </p>
+
+                    <p>
+                        With UX design and development happening simultaneously, I had to work
+                        quickly to conduct and analyze research, create graphics, and deliver
+                        prototypes for the software team to implement. I collaborated with the
+                        project lead to hold user interviews, brainstorm potential solutions, and
+                        present client updates.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="imgWrap">
-            <a href="{{ block.problem | asset_url }}" alt="" class="fresco"
-                data-fresco-group="Problem" data-fresco-group-options="loop: false">
-                <img src="{{ block.problem | asset_url }}" alt="" class="sectionImg-height">
+        <figure class="imgWrap">
+            <a href="{{ block.role | asset_url }}" alt="" class="fresco" data-fresco-group="Role"
+                data-fresco-group-options="loop: false">
+                <img src="{{ block.role | asset_url }}" alt="" class="sectionImg-height">
             </a>
-        </div>
+        </figure>
     </div>
-    <div id="process" class="projectSection">
+    <div id="definition" class="projectSection">
         <div class="sectionText">
             <div class="textWrapper">
-                <h1 class="sectionTitle">Process</h1>
-                <p class="sectionBody">
-                    Due to our timeline, my team and I decided to adopt a lean UX approach to go
-                    alongside our agile development workflow. This involved drafting an MVP early on
-                    and regularly consulting the dev team at stand-up meetings and throughout
-                    sprints to keep it up-to-date and as realistic as possible. I also helped out
-                    with the front-end implementation of the app in Flutter to ensure that it
-                    adhered to our mockups and theming conventions.
-                </p>
+                <h1 class="sectionTitle">Product Definition</h1>
+                <div class="sectionBody">
+                    <p><b>
+                            Originally pitched as a subscription-based platform for streaming
+                            eBooks, BK Worm’s focus shifted towards children’s books and education
+                            after researching opportunities in the market.
+                        </b> </p>
+                    <figure>
+                        <blockquote> “bkworm is an industry-disrupting streaming platform that
+                            offers a wide variety of eBooks on an iOS app. As long as you’re
+                            connected to the internet, you can read any of the
+                            books, anytime and anywhere. You’ll be able to highlight and bookmark
+                            pages as you read, along with other features.”
+                        </blockquote>
+                        <figcaption>- Michael Zeng (client)</figcaption>
+                    </figure>
+
+                    <p>
+                        The clients provided a feature list, an outline of the backend, and
+                        conceptual UI mockups to help us get started. Our goal as a team was to
+                        create the first version of BK Worm, which would lay the
+                        groundwork for future development of the app.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.definition | asset_url }}" alt="" class="fresco"
+                                data-fresco-group="Problem" data-fresco-group-options="loop: false">
+                                <img src="{{ block.definition | asset_url }}" alt=""
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>Mockup of the app library provided by client</figcaption>
+                    </figure>
+                    <p> However, preliminary market research revealed that services like Kindle
+                        Unlimited and Prime Reading already existed as strong competitors to BK
+                        Worm. As a result, the team decided to scope out
+                        possible market niches and chose to focus on children’s eBooks and literacy
+                        skills. This shifted our attention to <b>children</b>, <b>parents</b>, and
+                        <b>educators</b> as our target audiences.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="imgWrap">
-            <a href="{{ block.process | asset_url }}" alt="" class="fresco"
-                data-fresco-group="Process" data-fresco-group-options="loop: true">
-                <img src="{{ block.process | asset_url }}" alt="" class="sectionImg-height">
-            </a>
         </div>
     </div>
     <div id="research" class="projectSection">
         <div class="sectionText">
             <div class="textWrapper">
-                <h1 class="sectionTitle">Research Insights</h1>
-                <p class="sectionBody">
-                    The initial user research into time blindness and executive dysfunction
-                    translated into a competitive analysis of time management apps built to combat
-                    them. While combing through the features and user reviews of existing visual
-                    timer and schedule-making apps, I identified some recurring pain points:
-                    <br><br> <b>Visual timer apps:</b>
-                    <br>Inability to create a “sequence” of timers
-                    <br>1-2 hour limit on most visual timer apps is too restrictive
-                    <br>Distracting visual clutter
-                    <br><br> <b>Time management and schedule-making apps:</b>
-                    <br>Sharp learning curve due to wide range of features and options
-                    <br>Complicated and/or time consuming setup process
-                    <br>Lack of images and graphics to effectively “visualize” time
-
-                </p>
+                <h1 class="sectionTitle">Research</h1>
+                <div class="sectionBody">
+                    <p>
+                        <b>
+                            I helped conduct four interviews with educators to get a better sense of
+                            how BK Worm could be adapted for classroom use and looked at best
+                            practices and advice for designing children’s interfaces.
+                        </b>
+                    </p>
+                    <p>
+                        While the developers worked on setting up storing and accessing eBook data,
+                        the team lead and I sought out educators to interview. We spoke with a total
+                        of four educators in 25-30 minute sessions on their experiences with
+                        teaching reading, classroom technology, remote learning, and educational
+                        standards.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.research | asset_url }}" alt="" class="fresco"
+                                data-fresco-group="Research"
+                                data-fresco-caption="Zoom interview with education expert Anne Wilcox">
+                                <img src="{{ block.research | asset_url }}" alt=""
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>Interview with Anne Wilcox, Assistant Professor of Education and
+                            director of the English Language Learner Endorsement program at
+                            Whitworth University</figcaption>
+                    </figure>
+                    <p> Key insights from the educator interviews included:</p>
+                    <ol>
+                        <li>On school days working from home, many students fail to complete any
+                            academic assignments.</li>
+                        <li>Some teachers use several different programs to assign and track reading
+                            exercises (Epic, Lexia, and DIBELS).</li>
+                        <li>Assignment tracking is time-consuming and diverts resources away from
+                            active teaching (“Feels like busywork for teachers”).</li>
+                        <li>Students often struggle to properly manage their devices (charging) and
+                            accounts (passwords).</li>
+                        <li>There are few apps designed for ELLs (English Language Learners), who
+                            face unique challenges as users.</li>
+                    </ol>
+                    <p> Without the opportunity to interview actual elementary-aged children, I
+                        searched for best practices and advice for designing children’s interfaces
+                        to learn from the experience of others. Here are some examples of what I
+                        found:</p>
+                    <ol>
+                        <li>Kids tend to ignore written instructions and will read explanations only
+                            if nothing else helps.
+                            (<cite><a
+                                    href="https://uxstudioteam.com/ux-blog/design-for-kids/">Product
+                                    Design For Kids: A UX Guide To The Child’s Mind</a></cite>)
+                        </li>
+                        <li>Use simple words and rely heavily on symbols, icons, and pictures to
+                            communicate meaning.
+                            (<cite><a
+                                    href="https://www.lullabot.com/articles/ux-kids-personal-journey">UX
+                                    For Kids: A Personal Journey</a></cite>)</li>
+                        <li>Important links should be displayed as buttons. Kids notice and interact
+                            with them more often than
+                            text links. (<cite><a
+                                    href="https://www.lullabot.com/articles/ux-kids-personal-journey">UX
+                                    For Kids: A Personal
+                                    Journey</a></cite>)</li>
+                        <li>Kids aged 5 to 11 tend to rely heavily on the autocorrect function of
+                            the search engine due to typos
+                            and challenges with spelling. (<cite><a
+                                    href="https://www.nngroup.com/articles/kids-cognition/">Designing
+                                    for Kids: Cognitive Considerations</a></cite>)
+                        </li>
+                        <li>Use voiceover support for young kids, and let the older kids turn off
+                            sound if they can read.
+                            (<cite><a
+                                    href="https://www.smashingmagazine.com/2015/08/designing-web-interfaces-for-kids/">Designing
+                                    Web Interfaces For Kids</a></cite>)
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </div>
-        <div class="imgWrap">
-            <a href="{{ block.concept | asset_url }}" alt="" class="fresco"
-                data-fresco-group="Concept"
-                data-fresco-caption="Brainstorming and sketches for app ideas">
-                <img src="{{ block.concept | asset_url }}" alt="" class="sectionImg-height">
-            </a>
         </div>
     </div>
-    <div id="results" class="projectSection">
+    <div id="analysis" class="projectSection">
         <div class="sectionText">
             <div class="textWrapper">
-                <h1 class="sectionTitle">Results</h1>
-                <p class="sectionBody">
-                    PieTime currently allows users to set a timer and divide that time up into tasks
-                    with customizable titles, durations, and colors. Each task appears as a labelled
-                    “slice” on the timer face, which darkens as time elapses to illustrate the
-                    relationship between individual tasks and overall time limit. Users can stop,
-                    play, and reset the timer, or save the current sequence of tasks as a preset
-                    to use later. All tasks can also be viewed in the bottom drawer in list form,
-                    which also allows users to check them off as complete.
-                    <br><br>
-                    One of the main challenges of the project was in balancing the roles of designer
-                    and software engineer in a totally new framework throughout the development
-                    process. It meant that I was constantly revising the design to match what was
-                    possible on the frontend side and to better cooperate with Flutter’s built-in
-                    UI. That being said, PieTime has been a blast to work on and my team
-                    and I hope to release it to the app store later this year.
-                </p>
+                <div class="sectionBody">
+                    <h1 class="sectionTitle">Analysis</h1>
+                    <p><b>
+                            The insights gathered from the educator interviews and reviewing best
+                            practices for kids’ interfaces allowed me to translate our findings into
+                            feature ideas and better define BK Worm’s purpose and value.
+                        </b></p>
+                    <p> Talking to educators about their experiences with technology and teaching
+                        during the pandemic brought special attention to the ways BK Worm could be
+                        used as a classroom tool.
+                    </p>
+                    <p>
+                        By handling time-consuming tasks like activity tracking and assessments, BK
+                        Worm would be able to help ease the workload for teachers in and outside of
+                        class. Employing elements of gamification into the app could vastly improve
+                        rates of student engagement at home, and adding features such as text
+                        glossing (Annotations for highlighted text, often on translation or meaning)
+                        and dictionary images would be incredibly useful for students learning
+                        English.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.analysis | asset_url }}"
+                                alt="Feature canvas for BK Worm" class="fresco"
+                                data-fresco-group="Analysis" data-fresco-group-options="loop: true">
+                                <img src="{{ block.analysis | asset_url }}"
+                                    alt="Feature canvas for BK Worm" class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>Feature canvas mapping the problems BK Worm addresses, why, and
+                            how</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
-        <div class="imgWrap">
-            <a href="{{ block.results2 | asset_url }}" alt="" class="fresco"
-                data-fresco-group="Results" data-fresco-group-options="loop: true">
-                <img src="{{ block.results2 | asset_url }}" alt="" class="sectionImg-height">
-            </a>
+    </div>
+    <div id="design" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <div class="sectionBody">
+                    <h1 class="sectionTitle">Design</h1>
+                    <p><b>
+                            I designed the UI and branding for the MVP version of BK Worm we could
+                            reasonably expect to implement by our deadline, as well as some mockups
+                            illustrating how BK Worm could be expanded in the future.
+                        </b></p>
+                    <h2> Logo</h2>
+                    <p> As the main designer on the project, I was also responsible for cultivating
+                        the app’s branding and visual identity. The face of the project became Whit
+                        the Worm, a friendly, approachable, and somewhat goofy cartoon earthworm
+                        with glasses.</p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design1 | asset_url }}"
+                                alt="Sketches and squiggles of a worm in glasses next to the final logo"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design1 | asset_url }}"
+                                    alt="Sketches and squiggles of a worm in glasses next to the final logo"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>Fun fact: the worm didn't have a name for most of the
+                            project. I came up with one for the sake of this case study. Also, The
+                            name Whit takes after Whitworms, Whitworth University's vermicomposting
+                            program
+                        </figcaption>
+                    </figure>
+                    <h2> Initial Wireframes</h2>
+                    <p> The first round of wireframes covered the parts of the app dedicated
+                        to the homepage containing book suggestions and built-in reader
+                        features. Informed by the mockups provided by the client as well as
+                        interfaces of competing eBook readers such as Kindle and BryteWave,
+                        a platform for digital textbooks, I designed an interactive
+                        prototype on Figma that demonstrated several core features we wanted
+                        to include in the eBook reader.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design2 | asset_url }}"
+                                alt="Screenshot of initial wireframes showing BK Worm's eBook reader"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design2 | asset_url }}"
+                                    alt="Screenshot of initial wireframes showing BK Worm's eBook reader"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>Initial wireframes for the home screen, main reader,
+                            highlighting/notetaking, dictionary, and navigation menu
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Due to the product’s shift towards kids’ eBooks, which had to be pitched to
+                        the client for approval, the design phase began during sprint one before
+                        educator interviews could be completed. It was imperative to design out this
+                        section of the app early on for both the pitch and the development team,
+                        which was ready to begin basic frontend implementation.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design3 | asset_url }}"
+                                alt="Screenshot of home screen wireframe with text about the navigation bar"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design3 | asset_url }}"
+                                    alt="Screenshot of home screen wireframe with text about the navigation bar"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>
+                            Brief design documentation explaining design choices for
+                            the frontend developers to reference
+                        </figcaption>
+                    </figure>
+                    <p>
+                        The reader was also one part of the app we could count on remaining
+                        relatively stable; it was central to the idea behind our client’s pitch and
+                        MVP, whereas the design of the educational tools for teaching literacy
+                        skills depended heavily on the results of our research, which had yet to
+                        take place at the time.
+                    </p>
+                    <h2> Final Mockups</h2>
+                    <p>
+                        After finishing the first iteration of research and analysis, I created
+                        another set of mockups to flesh out the educator view of the app. These
+                        screens illustrate how teachers create student profiles to add to their
+                        class.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design4 | asset_url }}"
+                                alt="Three mobile screens depicting BK Worm's educator view"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design4 | asset_url }}"
+                                    alt="Three mobile screens depicting BK Worm's educator view"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>
+                            Student creation from the educator view of the app
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Once created, users can log in as that student to begin reading. Currently,
+                        student profiles can only be created and accessed through an educator
+                        account, since there is no way for parents to create accounts for
+                        their children and link them to a class to be used during school.
+                        Ideally, this functionality would be added in the next phase of development.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design5 | asset_url }}"
+                                alt="Three mobile screens depicting BK Worm's login flow"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design5
+                                     | asset_url }}"
+                                    alt="Three mobile screens depicting BK Worm's login flow"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>
+                            Educator logs in and either continues using the app as an educator or
+                            selects Class Login to hand the device off to students
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Finally, the redesigned versions of the home screen and reader view are
+                        pictured below.</p>
+                    <p>
+                        I added a header to break up the monotony of the layout and help give the
+                        page a little more warmth and personality. The progress bar on the “Continue
+                        Reading” section is more visually intuitive and omits the number of pages to
+                        avoid discouraging readers.
+                    </p>
+                    <p>
+                        On the eBook reader screens, I simplified the navigation view to reflect
+                        what we were able to implement and changed the font to <a
+                            href="https://www.lexend.com/">Lexend</a>, a typeface intentionally
+                        designed for enhanced character recognition and improved reading
+                        performance.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design6 | asset_url }}"
+                                alt="Three mobile screens depicting the redesigned home, reader, and reader navigation"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design6
+                                     | asset_url }}"
+                                    alt="Three mobile screens depicting redesigned home, reader, and reader navigation"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>
+                            The limitations of development meant that the reader features and
+                            navigation were drastically simplified compared to the original
+                            wireframes, which I don't think was entirely a bad thing
+                        </figcaption>
+                    </figure>
+                    <h2>Future Preview</h2>
+                    <p>
+                        In addition to the screens to help guide frontend implementation, I designed
+                        a few mockups to embody the team’s vision for what the app could become in
+                        the future. The screens below show assignment creation by educators and the
+                        student view of reading quizzes and assessments.
+                    </p>
+                    <figure>
+                        <div class="imgWrap">
+                            <a href="{{ block.design7 | asset_url }}"
+                                alt="Three mobile screens depicting assignment creation, quizzes, and assessments"
+                                class="fresco" data-fresco-group="Design"
+                                data-fresco-group-options="loop: true">
+                                <img src="{{ block.design7 | asset_url }}"
+                                    alt="Three mobile screens depicting assignment creation, quizzes, and assessments"
+                                    class="sectionImg-height">
+                            </a>
+                        </div>
+                        <figcaption>
+                            Along with parent accounts, assignment creation, reading quizzes and
+                            reading level assessments would be the main goals of a second version of
+                            the app
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="conclusion" class="projectSection">
+        <div class="sectionText">
+            <div class="textWrapper">
+                <h1 class="sectionTitle">Final Thoughts</h1>
+                <div class="sectionBody">
+                    <p>To date, BK Worm is one of the biggest projects I've designed for and I
+                        learned a lot
+                        along the way. Here are a few key takeaways:</p>
+                    <ol>
+                        <li><b>
+                                Prioritizing certain features and coming up with balanced versions
+                                of an app is important.
+                            </b> <br>
+                            Especially with software, it is likely that development will
+                            continue after the initial release of the app. Instead of hoping
+                            that everything will make it in the first release, it makes more sense
+                            to design with consecutive versions of the app in mind.</li>
+                        <li>
+                            <b>
+                                Validate your assumptions before you design something nobody wants
+                                (or needs).
+                            </b> <br>
+                            While brainstorming features, conducting research, and going through
+                            interviews, it was easy to assume users had certain problems. For
+                            instance, early on in the project I was convinced we'd need a way to
+                            handle essays or long-answer assignments through the app. However, the
+                            teachers we interviewed instead seemed concerned that the lack
+                            of handwritten assignments during the pandemic negatively impacted
+                            student handwriting and motor skills.
+                        </li>
+                        <li>
+                            <b>Exploratory questions can do a lot for user interviews.</b><br>
+                            There were times when it really paid off to ask questions that weren't
+                            strictly or straightforwardly connected to the product. It’s important
+                            to engage interviewees and create a open, friendly environment for
+                            understanding to happen. It can also lead to unforseen insights in
+                            places you’d never think to look.
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
 </div>
